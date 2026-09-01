@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.careerplanb.co/cpb-neet-pg-college-predictor/sitemap.xml
