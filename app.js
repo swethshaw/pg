@@ -79,26 +79,38 @@
   }
 
   // ---- Data Loading ----
+  function fetchCutoffs(counselling) {
+    dom.loadingState.classList.add('is-visible');
+    dom.btnPredict.disabled = true;
+    var filename = 'data/cutoffs/' + encodeURIComponent(counselling) + '.json';
+    return fetch(filename).then(function (r) { 
+      if (!r.ok) throw new Error(filename); 
+      return r.json(); 
+    }).then(function (data) {
+      cutoffsData = data;
+      // Generate specialties from cutoffs
+      var specSet = new Set();
+      cutoffsData.forEach(function (c) { if (c.specialty) specSet.add(c.specialty); });
+      filtersData.specialties = Array.from(specSet).sort();
+      dom.loadingState.classList.remove('is-visible');
+      dom.btnPredict.disabled = false;
+    });
+  }
+
+  // ---- Data Loading ----
   function loadData() {
     dom.loadingState.classList.add('is-visible');
     dom.btnPredict.disabled = true;
 
     Promise.all([
       fetch('data/filters.json').then(function (r) { if (!r.ok) throw new Error('filters.json'); return r.json(); }),
-      fetch('data/colleges.json').then(function (r) { if (!r.ok) throw new Error('colleges.json'); return r.json(); }),
-      fetch('data/cutoffs-2025.json').then(function (r) { if (!r.ok) throw new Error('cutoffs-2025.json'); return r.json(); }),
+      fetch('data/colleges.json').then(function (r) { if (!r.ok) throw new Error('colleges.json'); return r.json(); })
     ]).then(function (results) {
       filtersData = results[0];
-      cutoffsData = results[2];
-
+      
       // Build colleges map
       collegesMap = new Map();
       results[1].forEach(function (c) { collegesMap.set(c.id, c); });
-
-      // Generate specialties from cutoffs
-      var specSet = new Set();
-      cutoffsData.forEach(function (c) { if (c.specialty) specSet.add(c.specialty); });
-      filtersData.specialties = Array.from(specSet).sort();
 
       // Build quota label map
       if (Array.isArray(filtersData.quotas)) {
@@ -107,19 +119,28 @@
         });
       }
 
-      // Dev validation
-      validateDataIntegrity();
-
       populateFormDropdowns();
       dom.selectCategory.value = 'GN';
+      dom.selectCounselling.value = 'All India'; // default
       restoreFromUrl();
+      
+      var initialCounselling = dom.selectCounselling.value || 'All India';
+      
+      return fetchCutoffs(initialCounselling);
+    }).then(function() {
+      // Dev validation (optional, can run after cutoffs loaded)
+      validateDataIntegrity();
+
       toggleStateFilter();
+      updateCategoryDropdown();
+      updateStateDropdown();
+      updateQuotaDropdown();
+      updateSpecialtyDropdown();
+      updateCollegeTypeDropdown();
+      updateRoundDropdown();
       
       // Auto-run prediction on initial load
       runPrediction();
-
-      dom.loadingState.classList.remove('is-visible');
-      dom.btnPredict.disabled = false;
     }).catch(function (err) {
       console.error('Data loading failed:', err);
       dom.loadingState.classList.remove('is-visible');
@@ -133,7 +154,7 @@
     var sample = cutoffsData.slice(0, Math.min(cutoffsData.length, 1000));
     sample.forEach(function (c, i) {
       if (c.year !== 2025) errors.push('year≠2025 at ' + i);
-      if (c.authority !== 'MCC') errors.push('authority≠MCC at ' + i);
+      if (c.authority !== 'MCC' && c.authority !== 'Open States') errors.push('Unknown authority at ' + i);
       if (!collegesMap.has(c.collegeId)) errors.push('missing collegeId: ' + c.collegeId);
     });
     if (errors.length > 0) {
@@ -147,7 +168,9 @@
   function populateSelect(selectEl, items) {
     var firstOpt = selectEl.options[0]; // Keep "All ..." default
     selectEl.innerHTML = '';
-    selectEl.appendChild(firstOpt);
+    if (firstOpt) {
+      selectEl.appendChild(firstOpt);
+    }
     items.forEach(function (item) {
       var opt = document.createElement('option');
       if (typeof item === 'object') {
@@ -193,7 +216,16 @@
   }
 
   function getEligibleSeatCategories(cat) {
-    return CATEGORY_ELIGIBILITY[cat] || [cat];
+    var eligible = CATEGORY_ELIGIBILITY[cat] || [cat];
+    // Add open state categories
+    var openCategories = ['GEN', 'MNG', 'MQ', 'MQ1', 'OPN', 'S1A', 'UR', 'UR-GEN', 'UR-MNG', 'AGE'];
+    if (cat === 'GN' || cat === 'EW' || cat === 'BC' || cat === 'SC' || cat === 'ST') {
+      eligible = eligible.concat(openCategories);
+    }
+    if (cat === 'BC') eligible = eligible.concat(['OBC', 'OBC-Female']);
+    if (cat === 'SC') eligible = eligible.concat(['SC', 'SC-Female']);
+    if (cat === 'ST') eligible = eligible.concat(['ST', 'ST-Female']);
+    return eligible;
   }
 
   // ---- Filtering ----
@@ -201,7 +233,7 @@
     var eligible = getEligibleSeatCategories(userCategory);
 
     return cutoffsData.filter(function (row) {
-      if (row.year !== 2025 || row.authority !== 'MCC') return false;
+      if (row.year !== 2025) return false;
       if (eligible.indexOf(row.seatCategory) === -1) return false;
       if (row.closingRank < userRank) return false;
 
@@ -210,7 +242,10 @@
       if (filters.course && row.course !== filters.course) return false;
       if (filters.specialty && row.specialty !== filters.specialty) return false;
       if (filters.round && row.round !== filters.round) return false;
-      if (filters.counselling && row.counselling && row.counselling !== filters.counselling) return false;
+      if (filters.counselling) {
+        var rowCounselling = row.counselling || 'All India';
+        if (rowCounselling !== filters.counselling) return false;
+      }
 
       // College-level filters
       if (!collegesMap.has(row.collegeId)) return false;
@@ -380,17 +415,38 @@
     // Filter
     var filtered = applyFilters(rank, category, filters);
 
-    // Enrich with college data and predictions
+    // Enrich with college data, predictions, and keep only the nearest round
     var enriched = [];
+    var bestRoundsMap = {};
+
     filtered.forEach(function (row) {
       var college = collegesMap.get(row.collegeId);
       if (!college) return;
-      enriched.push({
+      
+      var item = {
         cutoff: row,
         college: college,
         prediction: calculatePrediction(rank, row.closingRank),
-      });
+      };
+
+      // Create a unique key for the specific seat
+      var uniqueKey = row.collegeId + '|' + row.course + '|' + row.specialty + '|' + row.quotaCode + '|' + row.seatCategory;
+
+      if (!bestRoundsMap[uniqueKey]) {
+        bestRoundsMap[uniqueKey] = item;
+      } else {
+        // Since closingRank >= userRank, the smallest closingRank is the nearest one
+        if (row.closingRank < bestRoundsMap[uniqueKey].cutoff.closingRank) {
+          bestRoundsMap[uniqueKey] = item;
+        }
+      }
     });
+
+    for (var key in bestRoundsMap) {
+      if (bestRoundsMap.hasOwnProperty(key)) {
+        enriched.push(bestRoundsMap[key]);
+      }
+    }
 
     // Sort
     currentResults = sortResults(enriched, dom.selectSort.value);
@@ -434,13 +490,241 @@
     var stateGroup = document.getElementById('state-filter-group');
     if (!stateGroup) return;
 
-    if (counselling === '' || counselling === 'Open States') {
+    if (counselling === '' || counselling === 'Open States' || counselling === 'All India') {
       stateGroup.style.display = 'block';
     } else {
       stateGroup.style.display = 'none';
       dom.selectState.value = '';
     }
   }
+
+  function updateCategoryDropdown() {
+    var counselling = dom.selectCounselling.value;
+    var currentCategory = dom.selectCategory.value;
+    
+    if (!counselling || counselling === '') {
+      populateSelect(dom.selectCategory, filtersData.categories);
+    } else {
+      var validCategories = new Set();
+      if (cutoffsData) {
+        cutoffsData.forEach(function (row) {
+          var rowCounselling = row.counselling || 'All India';
+          if (rowCounselling === counselling) {
+            validCategories.add(row.seatCategory);
+          }
+        });
+      }
+      
+      var filteredCategories = filtersData.categories.filter(function (c) {
+        return validCategories.has(c.code);
+      });
+      
+      if (filteredCategories.length === 0) {
+        filteredCategories = filtersData.categories;
+      }
+      
+      populateSelect(dom.selectCategory, filteredCategories);
+    }
+    
+    var exists = Array.prototype.slice.call(dom.selectCategory.options).some(function(opt) {
+      return opt.value === currentCategory;
+    });
+    
+    if (exists) {
+      dom.selectCategory.value = currentCategory;
+    } else if (dom.selectCategory.options.length > 1) {
+      dom.selectCategory.selectedIndex = 1;
+    } else {
+      dom.selectCategory.selectedIndex = 0;
+    }
+  }
+
+  function updateStateDropdown() {
+    var counselling = dom.selectCounselling.value;
+    var currentState = dom.selectState.value;
+
+    if (!(counselling === '' || counselling === 'Open States' || counselling === 'All India')) {
+      return;
+    }
+
+    var validStates = new Set();
+    if (cutoffsData && collegesMap) {
+      cutoffsData.forEach(function (row) {
+        var rowCounselling = row.counselling || 'All India';
+        if (counselling === '' || rowCounselling === counselling) {
+          var college = collegesMap.get(row.collegeId);
+          if (college && college.state) {
+            validStates.add(college.state);
+          }
+        }
+      });
+    }
+
+    var filteredStates = filtersData.states.filter(function(s) {
+      return validStates.has(s);
+    });
+
+    if (filteredStates.length === 0) {
+      filteredStates = filtersData.states;
+    }
+
+    populateSelect(dom.selectState, filteredStates);
+
+    var exists = Array.prototype.slice.call(dom.selectState.options).some(function(opt) {
+      return opt.value === currentState;
+    });
+
+    if (exists) {
+      dom.selectState.value = currentState;
+    } else {
+      dom.selectState.selectedIndex = 0;
+    }
+  }
+
+  function updateQuotaDropdown() {
+    var counselling = dom.selectCounselling.value;
+    var currentQuota = dom.selectQuota.value;
+
+    var validQuotas = new Set();
+    if (cutoffsData) {
+      cutoffsData.forEach(function (row) {
+        var rowCounselling = row.counselling || 'All India';
+        if (counselling === '' || rowCounselling === counselling) {
+          if (row.quotaCode) {
+            validQuotas.add(row.quotaCode);
+          }
+        }
+      });
+    }
+
+    var filteredQuotas = filtersData.quotas.filter(function(q) {
+      return validQuotas.has(q.code);
+    });
+
+    if (filteredQuotas.length === 0) {
+      filteredQuotas = filtersData.quotas;
+    }
+
+    populateSelect(dom.selectQuota, filteredQuotas);
+
+    var exists = Array.prototype.slice.call(dom.selectQuota.options).some(function(opt) {
+      return opt.value === currentQuota;
+    });
+
+    if (exists) {
+      dom.selectQuota.value = currentQuota;
+    } else {
+      dom.selectQuota.selectedIndex = 0;
+    }
+  }
+
+  function updateSpecialtyDropdown() {
+    var course = dom.selectCourse.value;
+    var currentSpecialty = dom.selectSpecialty.value;
+
+    if (!course || course === '') {
+      populateSelect(dom.selectSpecialty, filtersData.specialties);
+    } else {
+      var validSpecialties = new Set();
+      if (cutoffsData) {
+        cutoffsData.forEach(function (row) {
+          if (row.course === course && row.specialty) {
+            validSpecialties.add(row.specialty);
+          }
+        });
+      }
+
+      var filteredSpecialties = filtersData.specialties.filter(function(s) {
+        return validSpecialties.has(s);
+      });
+
+      if (filteredSpecialties.length === 0) {
+        filteredSpecialties = filtersData.specialties;
+      }
+
+      populateSelect(dom.selectSpecialty, filteredSpecialties);
+    }
+
+    var exists = Array.prototype.slice.call(dom.selectSpecialty.options).some(function(opt) {
+      return opt.value === currentSpecialty;
+    });
+
+    if (exists) {
+      dom.selectSpecialty.value = currentSpecialty;
+    } else {
+      dom.selectSpecialty.selectedIndex = 0;
+    }
+  }
+
+  function updateCollegeTypeDropdown() {
+    var counselling = dom.selectCounselling.value;
+    var currentCollegeType = dom.selectCollegeType.value;
+
+    if (!counselling || counselling === '') {
+      populateSelect(dom.selectCollegeType, filtersData.collegeTypes);
+    } else {
+      var validCollegeTypes = new Set();
+      if (cutoffsData && collegesMap) {
+        cutoffsData.forEach(function (row) {
+          var rowCounselling = row.counselling || 'All India';
+          if (rowCounselling === counselling) {
+            var college = collegesMap.get(row.collegeId);
+            if (college && college.collegeType) {
+              validCollegeTypes.add(college.collegeType);
+            }
+          }
+        });
+      }
+      var validArray = Array.from(validCollegeTypes).sort();
+      if (validArray.length === 0) validArray = filtersData.collegeTypes;
+      populateSelect(dom.selectCollegeType, validArray);
+    }
+
+    var exists = Array.prototype.slice.call(dom.selectCollegeType.options).some(function(opt) {
+      return opt.value === currentCollegeType;
+    });
+
+    if (exists) {
+      dom.selectCollegeType.value = currentCollegeType;
+    } else {
+      dom.selectCollegeType.selectedIndex = 0;
+    }
+  }
+
+  function updateRoundDropdown() {
+    var counselling = dom.selectCounselling.value;
+    var currentRound = dom.selectRound.value;
+
+    if (!counselling || counselling === '') {
+      populateSelect(dom.selectRound, filtersData.rounds);
+    } else {
+      var validRounds = new Set();
+      if (cutoffsData) {
+        cutoffsData.forEach(function (row) {
+          var rowCounselling = row.counselling || 'All India';
+          if (rowCounselling === counselling) {
+            if (row.round) {
+              validRounds.add(row.round);
+            }
+          }
+        });
+      }
+      var validArray = Array.from(validRounds).sort();
+      if (validArray.length === 0) validArray = filtersData.rounds;
+      populateSelect(dom.selectRound, validArray);
+    }
+
+    var exists = Array.prototype.slice.call(dom.selectRound.options).some(function(opt) {
+      return opt.value === currentRound;
+    });
+
+    if (exists) {
+      dom.selectRound.value = currentRound;
+    } else {
+      dom.selectRound.selectedIndex = 0;
+    }
+  }
+
 
   // ---- Reset ----
   function resetAll() {
@@ -510,13 +794,29 @@
       dom.btnNoResultsReset.addEventListener('click', resetAll);
     }
 
-    // Filter changes → refilter automatically
-    [dom.selectCounselling, dom.selectState, dom.selectQuota, dom.selectCourse, dom.selectSpecialty,
-     dom.selectCollegeType, dom.selectRound].forEach(function (sel) {
-      sel.addEventListener('change', autoPredict);
+    // State change -> refilter automatically
+    dom.selectState.addEventListener('change', autoPredict);
+
+    dom.selectCounselling.addEventListener('change', function() {
+      var counselling = dom.selectCounselling.value;
+      if (!counselling) return; // Should not happen since we removed empty option
+      
+      fetchCutoffs(counselling).then(function() {
+        toggleStateFilter();
+        updateCategoryDropdown();
+        updateStateDropdown();
+        updateQuotaDropdown();
+        updateCollegeTypeDropdown();
+        updateRoundDropdown();
+        autoPredict(); // Re-predict when counselling is switched completely
+      }).catch(function(err) {
+        console.error('Failed to load new counselling data:', err);
+        alert('Could not load data for ' + counselling);
+      });
     });
 
-    dom.selectCounselling.addEventListener('change', toggleStateFilter);
+    // Course change -> update specialties
+    dom.selectCourse.addEventListener('change', updateSpecialtyDropdown);
 
     // Sort change
     dom.selectSort.addEventListener('change', function () {

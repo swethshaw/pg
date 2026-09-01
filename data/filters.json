@@ -1,16 +1,676 @@
 {
   "categories": [
     {
-      "code": "GN",
-      "label": "Open Seat (GN)"
+      "code": "1G",
+      "label": "1G"
+    },
+    {
+      "code": "1H",
+      "label": "1H"
+    },
+    {
+      "code": "2AG",
+      "label": "2AG"
+    },
+    {
+      "code": "2AH",
+      "label": "2AH"
+    },
+    {
+      "code": "2BG",
+      "label": "2BG"
+    },
+    {
+      "code": "2BH",
+      "label": "2BH"
+    },
+    {
+      "code": "3AG",
+      "label": "3AG"
+    },
+    {
+      "code": "3AH",
+      "label": "3AH"
+    },
+    {
+      "code": "3BG",
+      "label": "3BG"
+    },
+    {
+      "code": "3BH",
+      "label": "3BH"
+    },
+    {
+      "code": "AGE",
+      "label": "AGE"
+    },
+    {
+      "code": "BC Service",
+      "label": "BC Service"
+    },
+    {
+      "code": "BC Service-GEN",
+      "label": "BC Service-GEN"
+    },
+    {
+      "code": "BC-FEM",
+      "label": "BC-FEM"
+    },
+    {
+      "code": "BC-GEN",
+      "label": "BC-GEN"
+    },
+    {
+      "code": "BC-I",
+      "label": "BC-I"
+    },
+    {
+      "code": "BC-I-PH",
+      "label": "BC-I-PH"
+    },
+    {
+      "code": "BC-II",
+      "label": "BC-II"
+    },
+    {
+      "code": "BC-PH",
+      "label": "BC-PH"
+    },
+    {
+      "code": "BCA",
+      "label": "BCA"
+    },
+    {
+      "code": "BCA ESM",
+      "label": "BCA ESM"
+    },
+    {
+      "code": "BCA ESM FF",
+      "label": "BCA ESM FF"
+    },
+    {
+      "code": "BCA Service",
+      "label": "BCA Service"
+    },
+    {
+      "code": "BCB",
+      "label": "BCB"
+    },
+    {
+      "code": "BCB Service",
+      "label": "BCB Service"
+    },
+    {
+      "code": "BCB-PH",
+      "label": "BCB-PH"
+    },
+    {
+      "code": "BCB-PH Service",
+      "label": "BCB-PH Service"
+    },
+    {
+      "code": "BS",
+      "label": "BS"
+    },
+    {
+      "code": "DQ-BC",
+      "label": "DQ-BC"
+    },
+    {
+      "code": "DQ-EBC",
+      "label": "DQ-EBC"
+    },
+    {
+      "code": "DQ-GEN",
+      "label": "DQ-GEN"
+    },
+    {
+      "code": "DQ-SC",
+      "label": "DQ-SC"
+    },
+    {
+      "code": "EBC Service-GEN",
+      "label": "EBC Service-GEN"
+    },
+    {
+      "code": "EBC-FEM",
+      "label": "EBC-FEM"
+    },
+    {
+      "code": "EBC-GEN",
+      "label": "EBC-GEN"
+    },
+    {
+      "code": "EW-PH",
+      "label": "EW-PH"
+    },
+    {
+      "code": "EWS",
+      "label": "EWS"
+    },
+    {
+      "code": "EWS Open",
+      "label": "EWS Open"
+    },
+    {
+      "code": "EW PwD",
+      "label": "EWS PwD"
+    },
+    {
+      "code": "EWS Service",
+      "label": "EWS Service"
+    },
+    {
+      "code": "EWS Service-PH",
+      "label": "EWS Service-PH"
+    },
+    {
+      "code": "EWS-FEM",
+      "label": "EWS-FEM"
+    },
+    {
+      "code": "EWS-GEN",
+      "label": "EWS-GEN"
+    },
+    {
+      "code": "EWS-OPEN",
+      "label": "EWS-OPEN"
+    },
+    {
+      "code": "EWS-Orphan",
+      "label": "EWS-Orphan"
+    },
+    {
+      "code": "EWS-PH",
+      "label": "EWS-PH"
+    },
+    {
+      "code": "EWS-PwD",
+      "label": "EWS-PwD"
+    },
+    {
+      "code": "EWS-WOMEN",
+      "label": "EWS-WOMEN"
+    },
+    {
+      "code": "EWS/PH/OP",
+      "label": "EWS/PH/OP"
+    },
+    {
+      "code": "EWS/X/OP",
+      "label": "EWS/X/OP"
+    },
+    {
+      "code": "EWS/X/OP Service",
+      "label": "EWS/X/OP Service"
+    },
+    {
+      "code": "GEN",
+      "label": "GEN"
+    },
+    {
+      "code": "GEN-GDO",
+      "label": "GEN-GDO"
+    },
+    {
+      "code": "GEN-GDO-PHY",
+      "label": "GEN-GDO-PHY"
+    },
+    {
+      "code": "GEN-PHY",
+      "label": "GEN-PHY"
+    },
+    {
+      "code": "GEN-PwD",
+      "label": "GEN-PwD"
     },
     {
       "code": "EW",
       "label": "General-EWS"
     },
     {
+      "code": "GM",
+      "label": "GM"
+    },
+    {
+      "code": "GMH",
+      "label": "GMH"
+    },
+    {
+      "code": "GMP",
+      "label": "GMP"
+    },
+    {
+      "code": "GMPH",
+      "label": "GMPH"
+    },
+    {
+      "code": "IP-BCA",
+      "label": "IP-BCA"
+    },
+    {
+      "code": "IP-BCA Service",
+      "label": "IP-BCA Service"
+    },
+    {
+      "code": "IP-BCB",
+      "label": "IP-BCB"
+    },
+    {
+      "code": "IP-BCB Service",
+      "label": "IP-BCB Service"
+    },
+    {
+      "code": "IP-SC",
+      "label": "IP-SC"
+    },
+    {
+      "code": "IP-SC Service",
+      "label": "IP-SC Service"
+    },
+    {
+      "code": "IP-SCD",
+      "label": "IP-SCD"
+    },
+    {
+      "code": "IP-SCD Service",
+      "label": "IP-SCD Service"
+    },
+    {
+      "code": "IP-UR",
+      "label": "IP-UR"
+    },
+    {
+      "code": "IP-UR Service",
+      "label": "IP-UR Service"
+    },
+    {
+      "code": "IP-UR Service ESM FF",
+      "label": "IP-UR Service ESM FF"
+    },
+    {
+      "code": "IP-UR-PH Service",
+      "label": "IP-UR-PH Service"
+    },
+    {
+      "code": "MA",
+      "label": "MA"
+    },
+    {
+      "code": "MBC",
+      "label": "MBC"
+    },
+    {
+      "code": "MC1",
+      "label": "MC1"
+    },
+    {
+      "code": "MC2",
+      "label": "MC2"
+    },
+    {
+      "code": "ME",
+      "label": "ME"
+    },
+    {
+      "code": "MEH",
+      "label": "MEH"
+    },
+    {
+      "code": "MGT",
+      "label": "MGT"
+    },
+    {
+      "code": "MGT-Minority",
+      "label": "MGT-Minority"
+    },
+    {
+      "code": "Minority",
+      "label": "Minority"
+    },
+    {
+      "code": "MINORITY",
+      "label": "MINORITY"
+    },
+    {
+      "code": "MM",
+      "label": "MM"
+    },
+    {
+      "code": "MM1",
+      "label": "MM1"
+    },
+    {
+      "code": "MM2",
+      "label": "MM2"
+    },
+    {
+      "code": "MMH1",
+      "label": "MMH1"
+    },
+    {
+      "code": "MMH2",
+      "label": "MMH2"
+    },
+    {
+      "code": "MNG",
+      "label": "MNG"
+    },
+    {
+      "code": "MQ",
+      "label": "MQ"
+    },
+    {
+      "code": "MQ1",
+      "label": "MQ1"
+    },
+    {
+      "code": "MU",
+      "label": "MU"
+    },
+    {
+      "code": "NRI",
+      "label": "NRI"
+    },
+    {
+      "code": "NT1",
+      "label": "NT1"
+    },
+    {
+      "code": "NT1 Service",
+      "label": "NT1 Service"
+    },
+    {
+      "code": "NT1-PH",
+      "label": "NT1-PH"
+    },
+    {
+      "code": "NT2",
+      "label": "NT2"
+    },
+    {
+      "code": "NT2 Service",
+      "label": "NT2 Service"
+    },
+    {
+      "code": "NT2 Service-PH",
+      "label": "NT2 Service-PH"
+    },
+    {
+      "code": "NT2-Orphan",
+      "label": "NT2-Orphan"
+    },
+    {
+      "code": "NT2-PH",
+      "label": "NT2-PH"
+    },
+    {
+      "code": "NT3",
+      "label": "NT3"
+    },
+    {
+      "code": "NT3 Service",
+      "label": "NT3 Service"
+    },
+    {
+      "code": "NT3 Service-PH",
+      "label": "NT3 Service-PH"
+    },
+    {
+      "code": "NT3-PH",
+      "label": "NT3-PH"
+    },
+    {
+      "code": "OBC",
+      "label": "OBC"
+    },
+    {
+      "code": "OBC A Open",
+      "label": "OBC A Open"
+    },
+    {
+      "code": "OBC A Service",
+      "label": "OBC A Service"
+    },
+    {
+      "code": "OBC B Open",
+      "label": "OBC B Open"
+    },
+    {
+      "code": "OBC B Service",
+      "label": "OBC B Service"
+    },
+    {
+      "code": "OBC Open",
+      "label": "OBC Open"
+    },
+    {
+      "code": "OBC Service",
+      "label": "OBC Service"
+    },
+    {
+      "code": "OBC Service-PH",
+      "label": "OBC Service-PH"
+    },
+    {
+      "code": "OBC-DPW",
+      "label": "OBC-DPW"
+    },
+    {
+      "code": "OBC-Female",
+      "label": "OBC-Female"
+    },
+    {
       "code": "BC",
       "label": "OBC-NCL"
+    },
+    {
+      "code": "BC PwD",
+      "label": "OBC-NCL PwD"
+    },
+    {
+      "code": "OBC-OPEN",
+      "label": "OBC-OPEN"
+    },
+    {
+      "code": "OBC-Orphan",
+      "label": "OBC-Orphan"
+    },
+    {
+      "code": "OBC-PH",
+      "label": "OBC-PH"
+    },
+    {
+      "code": "OBC-PwD",
+      "label": "OBC-PwD"
+    },
+    {
+      "code": "OBC-WOMEN",
+      "label": "OBC-WOMEN"
+    },
+    {
+      "code": "OBC/PH/OP",
+      "label": "OBC/PH/OP"
+    },
+    {
+      "code": "OBC/X/OP",
+      "label": "OBC/X/OP"
+    },
+    {
+      "code": "OBC/X/OP Service",
+      "label": "OBC/X/OP Service"
+    },
+    {
+      "code": "OPEN",
+      "label": "OPEN"
+    },
+    {
+      "code": "GN PwD",
+      "label": "Open PwD"
+    },
+    {
+      "code": "GN",
+      "label": "Open Seat (GN)"
+    },
+    {
+      "code": "OPEN Service",
+      "label": "OPEN Service"
+    },
+    {
+      "code": "OPEN Service-PH",
+      "label": "OPEN Service-PH"
+    },
+    {
+      "code": "OPEN-Orphan",
+      "label": "OPEN-Orphan"
+    },
+    {
+      "code": "OPEN-PH",
+      "label": "OPEN-PH"
+    },
+    {
+      "code": "OPN",
+      "label": "OPN"
+    },
+    {
+      "code": "P1G",
+      "label": "P1G"
+    },
+    {
+      "code": "P2AG",
+      "label": "P2AG"
+    },
+    {
+      "code": "P3AG",
+      "label": "P3AG"
+    },
+    {
+      "code": "P3BG",
+      "label": "P3BG"
+    },
+    {
+      "code": "PGM",
+      "label": "PGM"
+    },
+    {
+      "code": "PGMH",
+      "label": "PGMH"
+    },
+    {
+      "code": "PSTG",
+      "label": "PSTG"
+    },
+    {
+      "code": "RC1",
+      "label": "RC1"
+    },
+    {
+      "code": "RC2",
+      "label": "RC2"
+    },
+    {
+      "code": "RC3",
+      "label": "RC3"
+    },
+    {
+      "code": "RCG",
+      "label": "RCG"
+    },
+    {
+      "code": "S1A",
+      "label": "S1A"
+    },
+    {
+      "code": "SC ESM",
+      "label": "SC ESM"
+    },
+    {
+      "code": "SC Open",
+      "label": "SC Open"
+    },
+    {
+      "code": "SC PwD",
+      "label": "SC PwD"
+    },
+    {
+      "code": "SC Service",
+      "label": "SC Service"
+    },
+    {
+      "code": "SC Service-GEN",
+      "label": "SC Service-GEN"
+    },
+    {
+      "code": "SC Service-PH",
+      "label": "SC Service-PH"
+    },
+    {
+      "code": "SC-DPW",
+      "label": "SC-DPW"
+    },
+    {
+      "code": "SC-FEM",
+      "label": "SC-FEM"
+    },
+    {
+      "code": "SC-Female",
+      "label": "SC-Female"
+    },
+    {
+      "code": "SC-GDO",
+      "label": "SC-GDO"
+    },
+    {
+      "code": "SC-GEN",
+      "label": "SC-GEN"
+    },
+    {
+      "code": "SC-OPEN",
+      "label": "SC-OPEN"
+    },
+    {
+      "code": "SC-Orphan",
+      "label": "SC-Orphan"
+    },
+    {
+      "code": "SC-PH",
+      "label": "SC-PH"
+    },
+    {
+      "code": "SC-PwD",
+      "label": "SC-PwD"
+    },
+    {
+      "code": "SC-WOMEN",
+      "label": "SC-WOMEN"
+    },
+    {
+      "code": "SC/PH/OP",
+      "label": "SC/PH/OP"
+    },
+    {
+      "code": "SC/X/OP",
+      "label": "SC/X/OP"
+    },
+    {
+      "code": "SC/X/OP Service",
+      "label": "SC/X/OP Service"
+    },
+    {
+      "code": "SCD",
+      "label": "SCD"
+    },
+    {
+      "code": "SCD Service",
+      "label": "SCD Service"
+    },
+    {
+      "code": "SCG",
+      "label": "SCG"
+    },
+    {
+      "code": "SCH",
+      "label": "SCH"
     },
     {
       "code": "SC",
@@ -21,50 +681,354 @@
       "label": "Scheduled Tribe"
     },
     {
-      "code": "GN PwD",
-      "label": "Open PwD"
+      "code": "SEBC",
+      "label": "SEBC"
     },
     {
-      "code": "EW PwD",
-      "label": "EWS PwD"
+      "code": "SEBC Service",
+      "label": "SEBC Service"
     },
     {
-      "code": "BC PwD",
-      "label": "OBC-NCL PwD"
+      "code": "SEBC Service-PH",
+      "label": "SEBC Service-PH"
     },
     {
-      "code": "SC PwD",
-      "label": "SC PwD"
+      "code": "SEBC-Orphan",
+      "label": "SEBC-Orphan"
+    },
+    {
+      "code": "SEBC-PH",
+      "label": "SEBC-PH"
+    },
+    {
+      "code": "SGC-GDO",
+      "label": "SGC-GDO"
+    },
+    {
+      "code": "SM",
+      "label": "SM"
+    },
+    {
+      "code": "SS",
+      "label": "SS"
+    },
+    {
+      "code": "ST Open",
+      "label": "ST Open"
     },
     {
       "code": "ST PwD",
       "label": "ST PwD"
+    },
+    {
+      "code": "ST Service",
+      "label": "ST Service"
+    },
+    {
+      "code": "ST Service-PH",
+      "label": "ST Service-PH"
+    },
+    {
+      "code": "ST-FEM",
+      "label": "ST-FEM"
+    },
+    {
+      "code": "ST-Female",
+      "label": "ST-Female"
+    },
+    {
+      "code": "ST-GDO",
+      "label": "ST-GDO"
+    },
+    {
+      "code": "ST-GEN",
+      "label": "ST-GEN"
+    },
+    {
+      "code": "ST-OPEN",
+      "label": "ST-OPEN"
+    },
+    {
+      "code": "ST-PH",
+      "label": "ST-PH"
+    },
+    {
+      "code": "ST-STA",
+      "label": "ST-STA"
+    },
+    {
+      "code": "ST-WOMEN",
+      "label": "ST-WOMEN"
+    },
+    {
+      "code": "ST/PH/OP",
+      "label": "ST/PH/OP"
+    },
+    {
+      "code": "ST/X/OP",
+      "label": "ST/X/OP"
+    },
+    {
+      "code": "ST/X/OP Service",
+      "label": "ST/X/OP Service"
+    },
+    {
+      "code": "STG",
+      "label": "STG"
+    },
+    {
+      "code": "STH",
+      "label": "STH"
+    },
+    {
+      "code": "UR",
+      "label": "UR"
+    },
+    {
+      "code": "UR (Non Domicile)",
+      "label": "UR (Non Domicile)"
+    },
+    {
+      "code": "UR ESM",
+      "label": "UR ESM"
+    },
+    {
+      "code": "UR ESM FF",
+      "label": "UR ESM FF"
+    },
+    {
+      "code": "UR FF",
+      "label": "UR FF"
+    },
+    {
+      "code": "UR Open",
+      "label": "UR Open"
+    },
+    {
+      "code": "UR Service",
+      "label": "UR Service"
+    },
+    {
+      "code": "UR Service-GEN",
+      "label": "UR Service-GEN"
+    },
+    {
+      "code": "UR-DPW",
+      "label": "UR-DPW"
+    },
+    {
+      "code": "UR-FEM",
+      "label": "UR-FEM"
+    },
+    {
+      "code": "UR-Female",
+      "label": "UR-Female"
+    },
+    {
+      "code": "UR-GEN",
+      "label": "UR-GEN"
+    },
+    {
+      "code": "UR-MNG",
+      "label": "UR-MNG"
+    },
+    {
+      "code": "UR-NRI",
+      "label": "UR-NRI"
+    },
+    {
+      "code": "UR-Open",
+      "label": "UR-Open"
+    },
+    {
+      "code": "UR-OPEN",
+      "label": "UR-OPEN"
+    },
+    {
+      "code": "UR-Orphan",
+      "label": "UR-Orphan"
+    },
+    {
+      "code": "UR-PH",
+      "label": "UR-PH"
+    },
+    {
+      "code": "UR-PH Open",
+      "label": "UR-PH Open"
+    },
+    {
+      "code": "UR-PH Service",
+      "label": "UR-PH Service"
+    },
+    {
+      "code": "UR-PwD",
+      "label": "UR-PwD"
+    },
+    {
+      "code": "UR-WOMEN",
+      "label": "UR-WOMEN"
+    },
+    {
+      "code": "UR/NRI (Non Domicile)",
+      "label": "UR/NRI (Non Domicile)"
+    },
+    {
+      "code": "UR/NRI/OP",
+      "label": "UR/NRI/OP"
+    },
+    {
+      "code": "UR/PH/OP",
+      "label": "UR/PH/OP"
+    },
+    {
+      "code": "UR/PH/OP Service",
+      "label": "UR/PH/OP Service"
+    },
+    {
+      "code": "UR/X/OP",
+      "label": "UR/X/OP"
+    },
+    {
+      "code": "UR/X/OP Service",
+      "label": "UR/X/OP Service"
+    },
+    {
+      "code": "VJ",
+      "label": "VJ"
+    },
+    {
+      "code": "VJ Service",
+      "label": "VJ Service"
+    },
+    {
+      "code": "VJ Service-PH",
+      "label": "VJ Service-PH"
+    },
+    {
+      "code": "VJ-PH",
+      "label": "VJ-PH"
     }
   ],
   "quotas": [
     {
-      "code": "AD",
-      "label": "DNB Quota"
-    },
-    {
-      "code": "AF",
-      "label": "Armed Forces Medical"
+      "code": "AM",
+      "label": "Aligarh Muslim University"
     },
     {
       "code": "AI",
       "label": "All India"
     },
     {
-      "code": "AM",
-      "label": "Aligarh Muslim University"
+      "code": "APMgmt-S1-All-CatB",
+      "label": "AP Management Quota-S1A(B Cat)"
+    },
+    {
+      "code": "AF",
+      "label": "Armed Forces Medical"
     },
     {
       "code": "BH",
       "label": "Banaras Hindu University"
     },
     {
+      "code": "Bihar DNB Seats",
+      "label": "Bihar DNB Seats"
+    },
+    {
+      "code": "Bihar Govt Quota",
+      "label": "Bihar Govt Quota"
+    },
+    {
+      "code": "Bihar Private Seats - Minority Quota",
+      "label": "Bihar Private Seats - Minority Quota"
+    },
+    {
+      "code": "Bihar Private Seats - NRI Quota",
+      "label": "Bihar Private Seats - NRI Quota"
+    },
+    {
+      "code": "Bihar Priv-Open",
+      "label": "Bihar Private Seats - Open Quota"
+    },
+    {
+      "code": "Bihar Private Seats - Open Quota",
+      "label": "Bihar Private Seats - Open Quota"
+    },
+    {
+      "code": "Other State",
+      "label": "Chhattisgarh Other State"
+    },
+    {
+      "code": "Delhi State Quota",
+      "label": "Delhi State Quota"
+    },
+    {
       "code": "DU",
       "label": "Delhi University"
+    },
+    {
+      "code": "AD",
+      "label": "DNB Quota"
+    },
+    {
+      "code": "Haryana DNB Inservice Seats",
+      "label": "Haryana DNB Inservice Seats"
+    },
+    {
+      "code": "Haryana Private Seats - Institutional Preference",
+      "label": "Haryana Private Seats - Institutional Preference"
+    },
+    {
+      "code": "HAR Priv-Mgmt",
+      "label": "Haryana Private Seats - Management Quota"
+    },
+    {
+      "code": "Haryana Private Seats - Management Quota",
+      "label": "Haryana Private Seats - Management Quota"
+    },
+    {
+      "code": "Haryana Private Seats - Minority Quota",
+      "label": "Haryana Private Seats - Minority Quota"
+    },
+    {
+      "code": "Haryana Private Seats - NRI Quota",
+      "label": "Haryana Private Seats - NRI Quota"
+    },
+    {
+      "code": "Haryana Private Seats - State Quota",
+      "label": "Haryana Private Seats - State Quota"
+    },
+    {
+      "code": "Haryana State Quota",
+      "label": "Haryana State Quota"
+    },
+    {
+      "code": "Haryana State Quota - Institutional Preference",
+      "label": "Haryana State Quota - Institutional Preference"
+    },
+    {
+      "code": "HP DNB Inservice Seats",
+      "label": "HP DNB Inservice Seats"
+    },
+    {
+      "code": "HP Priv All",
+      "label": "HP Private Seats - All"
+    },
+    {
+      "code": "HP Private Seats - All",
+      "label": "HP Private Seats - All"
+    },
+    {
+      "code": "HP Private Seats - NRI",
+      "label": "HP Private Seats - NRI"
+    },
+    {
+      "code": "HP Private Seats - State Quota",
+      "label": "HP Private Seats - State Quota"
+    },
+    {
+      "code": "HP State Quota",
+      "label": "HP State Quota"
     },
     {
       "code": "IP",
@@ -75,6 +1039,98 @@
       "label": "Jain Minority"
     },
     {
+      "code": "Jharkhand Govt Quota",
+      "label": "Jharkhand Govt Quota"
+    },
+    {
+      "code": "Karnataka DNB Inservice Seats",
+      "label": "Karnataka DNB Inservice Seats"
+    },
+    {
+      "code": "Karnataka Govt Quota - Inservice",
+      "label": "Karnataka Govt Quota - Inservice"
+    },
+    {
+      "code": "Karnataka Govt Quota - Open",
+      "label": "Karnataka Govt Quota - Open"
+    },
+    {
+      "code": "Karnataka NRI Quota",
+      "label": "Karnataka NRI Quota"
+    },
+    {
+      "code": "KAR Others (Inst.Q)",
+      "label": "Karnataka Other Seats (Institutional Quota)"
+    },
+    {
+      "code": "Karnataka Other Seats (Institutional Quota)",
+      "label": "Karnataka Other Seats (Institutional Quota)"
+    },
+    {
+      "code": "Karnataka Private Seats - GMP Quota",
+      "label": "Karnataka Private Seats - GMP Quota"
+    },
+    {
+      "code": "Karnataka Private Seats - Minority Quota",
+      "label": "Karnataka Private Seats - Minority Quota"
+    },
+    {
+      "code": "KAR Priv Seats-Open",
+      "label": "Karnataka Private Seats - Open Quota"
+    },
+    {
+      "code": "Karnataka Private Seats - Open Quota",
+      "label": "Karnataka Private Seats - Open Quota"
+    },
+    {
+      "code": "Maharashtra Govt Quota",
+      "label": "Maharashtra Govt Quota"
+    },
+    {
+      "code": "Maharashtra Management Quota",
+      "label": "Maharashtra Management Quota"
+    },
+    {
+      "code": "Maharashtra Minority Quota",
+      "label": "Maharashtra Minority Quota"
+    },
+    {
+      "code": "Maharashtra NRI Quota",
+      "label": "Maharashtra NRI Quota"
+    },
+    {
+      "code": "MP Govt Quota",
+      "label": "MP Govt Quota"
+    },
+    {
+      "code": "MP Govt-NonDomicile",
+      "label": "MP Govt Quota - Non Domicile"
+    },
+    {
+      "code": "MP Govt Quota - Non Domicile",
+      "label": "MP Govt Quota - Non Domicile"
+    },
+    {
+      "code": "MP Priv-NonDomicile",
+      "label": "MP Private Seats - Non Domicile"
+    },
+    {
+      "code": "MP Private Seats - Non Domicile",
+      "label": "MP Private Seats - Non Domicile"
+    },
+    {
+      "code": "MP Private Seats - NRI Non Domicile",
+      "label": "MP Private Seats - NRI Non Domicile"
+    },
+    {
+      "code": "MP Private Seats - NRI Quota",
+      "label": "MP Private Seats - NRI Quota"
+    },
+    {
+      "code": "MP Private Seats - Open Quota",
+      "label": "MP Private Seats - Open Quota"
+    },
+    {
       "code": "MM",
       "label": "Muslim Minority"
     },
@@ -83,8 +1139,132 @@
       "label": "Non-Resident Indian"
     },
     {
+      "code": "PY Mgmt-Open",
+      "label": "Pondicherry Management Quota"
+    },
+    {
+      "code": "Punjab Open Quota (AI Basis)",
+      "label": "Punjab Open Quota (All India Basis)"
+    },
+    {
+      "code": "Punjab Open Quota (AI Basis)-Converted",
+      "label": "Punjab Open Quota (All India Basis)-Converted"
+    },
+    {
+      "code": "Rajasthan DNB Inservice Seats",
+      "label": "Rajasthan DNB Inservice Seats"
+    },
+    {
+      "code": "Rajasthan Govt Seats - Govt Quota",
+      "label": "Rajasthan Govt Seats - Govt Quota"
+    },
+    {
+      "code": "Rajasthan Govt Seats - Management Quota",
+      "label": "Rajasthan Govt Seats - Management Quota"
+    },
+    {
+      "code": "RAJ Priv-All India",
+      "label": "Rajasthan Private Seats - All India (Eligibility)"
+    },
+    {
+      "code": "Rajasthan Private Seats - All India (Eligibility)",
+      "label": "Rajasthan Private Seats - All India (Eligibility)"
+    },
+    {
+      "code": "Rajasthan Private Seats - Govt Quota",
+      "label": "Rajasthan Private Seats - Govt Quota"
+    },
+    {
+      "code": "RAJ Priv-Mgmt Quota",
+      "label": "Rajasthan Private Seats - Management Quota"
+    },
+    {
+      "code": "Rajasthan Private Seats - Management Quota",
+      "label": "Rajasthan Private Seats - Management Quota"
+    },
+    {
       "code": "PS",
       "label": "Self-Financed Merit Seat"
+    },
+    {
+      "code": "Sikkim Gen Quota",
+      "label": "Sikkim General Quota"
+    },
+    {
+      "code": "Sikkim Mgmt Quota",
+      "label": "Sikkim Management Quota"
+    },
+    {
+      "code": "TELMgmt-MQ1-CatB-All",
+      "label": "Telangana Management Quota-MQ1(B Cat)"
+    },
+    {
+      "code": "TN Mgmt Quota",
+      "label": "TN Management Quota"
+    },
+    {
+      "code": "Uttar Pradesh DNB Inservice Seats",
+      "label": "Uttar Pradesh DNB Inservice Seats"
+    },
+    {
+      "code": "Uttar Pradesh Govt Quota",
+      "label": "Uttar Pradesh Govt Quota"
+    },
+    {
+      "code": "Uttar Pradesh Private Seats - Minority Quota",
+      "label": "Uttar Pradesh Private Seats - Minority Quota"
+    },
+    {
+      "code": "UP Priv-Open Quota",
+      "label": "Uttar Pradesh Private Seats - Open Quota"
+    },
+    {
+      "code": "Uttar Pradesh Private Seats - Open Quota",
+      "label": "Uttar Pradesh Private Seats - Open Quota"
+    },
+    {
+      "code": "Uttarakhand DNB Inservice Seats",
+      "label": "Uttarakhand DNB Inservice Seats"
+    },
+    {
+      "code": "Uttarakhand Govt Quota",
+      "label": "Uttarakhand Govt Quota"
+    },
+    {
+      "code": "UK Priv-AllIndia/Mgmt",
+      "label": "Uttarakhand Private Seats - All India / Management"
+    },
+    {
+      "code": "Uttarakhand Private Seats - All India / Management",
+      "label": "Uttarakhand Private Seats - All India / Management"
+    },
+    {
+      "code": "Uttarakhand Private Seats - Govt Quota",
+      "label": "Uttarakhand Private Seats - Govt Quota"
+    },
+    {
+      "code": "Uttarakhand Private Seats - NRI",
+      "label": "Uttarakhand Private Seats - NRI"
+    },
+    {
+      "code": "West Bengal DNB Inservice Seats",
+      "label": "West Bengal DNB Inservice Seats"
+    },
+    {
+      "code": "West Bengal Govt Quota",
+      "label": "West Bengal Govt Quota"
+    },
+    {
+      "code": "WB Mgmt Quota",
+      "label": "West Bengal Management Quota"
+    },
+    {
+      "code": "West Bengal Management Quota",
+      "label": "West Bengal Management Quota"
+    },
+    {
+      "code": "West Bengal NRI Quota",
+      "label": "West Bengal NRI Quota"
     }
   ],
   "courses": [
@@ -143,22 +1323,54 @@
     "West Bengal"
   ],
   "counsellings": [
+    "All India",
     "Open States",
-    "Andhra Pradesh",
     "Bihar",
-    "Chhattisgarh",
+    "Delhi",
     "Haryana",
     "Himachal Pradesh",
+    "Jharkhand",
     "Karnataka",
     "Madhya Pradesh",
-    "Pondicherry",
-    "Punjab",
+    "Maharashtra",
     "Rajasthan",
-    "Sikkim",
-    "Tamil Nadu",
-    "Telangana",
     "Uttar Pradesh",
     "Uttarakhand",
     "West Bengal"
+  ],
+  "specialties": [
+    "Anaesthesiology",
+    "Anatomy",
+    "Bio-Chemistry",
+    "Dermatology, Venereology & Leprosy",
+    "ENT",
+    "Emergency Medicine",
+    "Forensic Medicine",
+    "General Medicine",
+    "General Surgery",
+    "Hospital Administration",
+    "Immuno Haematology & Blood Transfusion",
+    "Lab Medicine",
+    "Microbiology",
+    "Nuclear Medicine",
+    "Obstetrics & Gynaecology",
+    "Ophthalmology",
+    "Orthopaedics",
+    "Paediatrics",
+    "Palliative Medicine",
+    "Pathology",
+    "Pharmacology",
+    "Physical Medicine & Rehabilitation",
+    "Physiology",
+    "Psychiatry",
+    "Radiation Oncology",
+    "Radio Diagnosis",
+    "Social & Preventive Medicine",
+    "Traumatology and Surgery",
+    "Tuberculosis & Respiratory Diseases",
+    "in Clinical Pathology",
+    "in Orthopaedics",
+    "in Public Health",
+    "in Sports Medicine"
   ]
 }

@@ -1,0 +1,54 @@
+[
+  {
+    "year": 2025,
+    "authority": "Delhi",
+    "counselling": "Delhi",
+    "round": "Round 1",
+    "collegeId": "CHACHA_NEHRU_BAL_CHIKITSALAYA__DELHI",
+    "quotaCode": "Delhi State Quota",
+    "course": "MD",
+    "specialty": "PAEDIATRICS",
+    "seatCategory": "UR",
+    "closingRank": 1,
+    "numberOfAllotments": 1
+  },
+  {
+    "year": 2025,
+    "authority": "Delhi",
+    "counselling": "Delhi",
+    "round": "Round 1",
+    "collegeId": "CHACHA_NEHRU_BAL_CHIKITSALAYA__DELHI",
+    "quotaCode": "Delhi State Quota",
+    "course": "MD",
+    "specialty": "PAEDIATRICS",
+    "seatCategory": "SC",
+    "closingRank": 2,
+    "numberOfAllotments": 1
+  },
+  {
+    "year": 2025,
+    "authority": "Delhi",
+    "counselling": "Delhi",
+    "round": "Round 1",
+    "collegeId": "CHACHA_NEHRU_BAL_CHIKITSALAYA__DELHI",
+    "quotaCode": "Delhi State Quota",
+    "course": "MD",
+    "specialty": "PAEDIATRICS",
+    "seatCategory": "ST",
+    "closingRank": 3,
+    "numberOfAllotments": 1
+  },
+  {
+    "year": 2025,
+    "authority": "Delhi",
+    "counselling": "Delhi",
+    "round": "Round 1",
+    "collegeId": "CHACHA_NEHRU_BAL_CHIKITSALAYA__DELHI",
+    "quotaCode": "Delhi State Quota",
+    "course": "MD",
+    "specialty": "PAEDIATRICS",
+    "seatCategory": "OBC",
+    "closingRank": 4,
+    "numberOfAllotments": 1
+  }
+]
