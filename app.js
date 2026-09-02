@@ -357,7 +357,7 @@
       '</div>' +
       '<div class="result-course-name">' + courseStr + '</div>' +
       '<div class="result-meta-row">' +
-        '<div class="meta-group"><span class="meta-label">Category:</span> <span class="meta-value">' + escapeHtml(item.cutoff.seatCategory) + '</span></div>' +
+        '<div class="meta-group"><span class="meta-label">Seat Category:</span> <span class="meta-value">' + escapeHtml(item.cutoff.seatCategory) + '</span></div>' +
         '<div class="meta-group"><span class="meta-label">Quota:</span> <span class="meta-value">' + escapeHtml(quotaLabel) + '</span></div>' +
         (stateLabel ? '<div class="meta-group"><span class="meta-label">State:</span> <span class="meta-value">' + stateLabel + '</span></div>' : '') +
       '</div>';
@@ -418,14 +418,14 @@
         prediction: calculatePrediction(rank, row.closingRank),
       };
 
-      // Create a unique key for the specific seat
-      var uniqueKey = row.collegeId + '|' + row.course + '|' + row.specialty + '|' + row.quotaCode + '|' + row.seatCategory;
+      // Create a unique key for the specific seat (without seat category so we pick the safest one)
+      var uniqueKey = row.collegeId + '|' + row.course + '|' + row.specialty + '|' + row.quotaCode;
 
       if (!bestRoundsMap[uniqueKey]) {
         bestRoundsMap[uniqueKey] = item;
       } else {
-        // Since closingRank >= userRank, the smallest closingRank is the nearest one
-        if (row.closingRank < bestRoundsMap[uniqueKey].cutoff.closingRank) {
+        // Pick the seat with the highest closing rank (the safest and most favorable option for the user)
+        if (row.closingRank > bestRoundsMap[uniqueKey].cutoff.closingRank) {
           bestRoundsMap[uniqueKey] = item;
         }
       }
@@ -686,7 +686,7 @@
     dom.form.reset();
     dom.selectCategory.value = 'GN';
     if (dom.selectState) dom.selectState.value = '';
-    if (dom.selectSort) dom.selectSort.value = 'prediction';
+    if (dom.selectSort) dom.selectSort.value = 'college';
     dom.inputSearch.value = '';
     searchTerm = '';
     clearErrors();
@@ -768,7 +768,14 @@
     });
 
     // Course change -> update specialties
-    dom.selectCourse.addEventListener('change', updateSpecialtyDropdown);
+    dom.selectCourse.addEventListener('change', function() {
+      updateSpecialtyDropdown();
+      autoPredict();
+    });
+
+    dom.selectSpecialty.addEventListener('change', autoPredict);
+    dom.selectCollegeType.addEventListener('change', autoPredict);
+    dom.selectQuota.addEventListener('change', autoPredict);
 
     // Sort change
     dom.selectSort.addEventListener('change', function () {
@@ -813,6 +820,7 @@
     dom.selectCategory.addEventListener('change', function () {
       document.getElementById('fg-category').classList.remove('has-error');
       dom.errCategory.textContent = '';
+      autoPredict();
     });
   }
 
