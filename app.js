@@ -50,7 +50,6 @@
     dom.selectCourse = document.getElementById('select-course');
     dom.selectSpecialty = document.getElementById('select-specialty');
     dom.selectCollegeType = document.getElementById('select-college-type');
-    dom.selectRound = document.getElementById('select-round');
     dom.btnPredict = document.getElementById('btn-predict');
     dom.btnReset = document.getElementById('btn-reset');
     dom.errRank = document.getElementById('err-rank');
@@ -137,7 +136,6 @@
       updateQuotaDropdown();
       updateSpecialtyDropdown();
       updateCollegeTypeDropdown();
-      updateRoundDropdown();
       
       // Auto-run prediction on initial load
       runPrediction();
@@ -199,8 +197,6 @@
     populateSelect(dom.selectSpecialty, filtersData.specialties);
     // College types
     populateSelect(dom.selectCollegeType, filtersData.collegeTypes);
-    // Rounds
-    populateSelect(dom.selectRound, filtersData.rounds);
   }
 
   // ---- Prediction ----
@@ -347,30 +343,23 @@
     card.className = 'result-card';
     card.setAttribute('role', 'listitem');
 
-
-
-    var locationParts = [];
-    if (item.college.city) locationParts.push(escapeHtml(item.college.city));
-    if (item.college.state) locationParts.push(escapeHtml(item.college.state));
-    var locationStr = locationParts.join(', ');
-    if (item.college.collegeType) locationStr += ' · ' + escapeHtml(item.college.collegeType);
-
     var quotaLabel = QUOTA_LABELS[item.cutoff.quotaCode] || item.cutoff.quotaCode;
+    var stateLabel = item.college.state ? escapeHtml(item.college.state) : '';
+
+    var courseStr = escapeHtml(item.cutoff.course);
+    if (item.cutoff.specialty) {
+        courseStr += ' ' + escapeHtml(item.cutoff.specialty);
+    }
 
     card.innerHTML =
-      '<div class="result-card-header">' +
-        '<div>' +
-          '<div class="result-college-name">' + escapeHtml(item.college.name) + '</div>' +
-          '<div class="result-location">' + locationStr + '</div>' +
-          '<div class="result-course-line">' + escapeHtml(item.cutoff.course) + ' · ' + escapeHtml(item.cutoff.specialty) + '</div>' +
-          '<div class="result-quota-line">' + escapeHtml(quotaLabel) + ' · ' + escapeHtml(item.cutoff.seatCategory) + '</div>' +
-        '</div>' +
+      '<div class="result-card-top">' +
+        '<h3 class="result-college-name">' + escapeHtml(item.college.name) + '</h3>' +
       '</div>' +
-      '<div class="result-meta">' +
-        '<div class="result-meta-item">' +
-          '<span class="result-meta-label">Closing Rank</span>' +
-          '<span class="result-meta-value">' + formatNumber(item.cutoff.closingRank) + '</span>' +
-        '</div>' +
+      '<div class="result-course-name">' + courseStr + '</div>' +
+      '<div class="result-meta-row">' +
+        '<div class="meta-group"><span class="meta-label">Category:</span> <span class="meta-value">' + escapeHtml(item.cutoff.seatCategory) + '</span></div>' +
+        '<div class="meta-group"><span class="meta-label">Quota:</span> <span class="meta-value">' + escapeHtml(quotaLabel) + '</span></div>' +
+        (stateLabel ? '<div class="meta-group"><span class="meta-label">State:</span> <span class="meta-value">' + stateLabel + '</span></div>' : '') +
       '</div>';
 
     return card;
@@ -409,7 +398,7 @@
       course: dom.selectCourse.value,
       specialty: dom.selectSpecialty.value,
       collegeType: dom.selectCollegeType.value,
-      round: dom.selectRound.value,
+      round: "",
     };
 
     // Filter
@@ -691,40 +680,6 @@
     }
   }
 
-  function updateRoundDropdown() {
-    var counselling = dom.selectCounselling.value;
-    var currentRound = dom.selectRound.value;
-
-    if (!counselling || counselling === '') {
-      populateSelect(dom.selectRound, filtersData.rounds);
-    } else {
-      var validRounds = new Set();
-      if (cutoffsData) {
-        cutoffsData.forEach(function (row) {
-          var rowCounselling = row.counselling || 'All India';
-          if (rowCounselling === counselling) {
-            if (row.round) {
-              validRounds.add(row.round);
-            }
-          }
-        });
-      }
-      var validArray = Array.from(validRounds).sort();
-      if (validArray.length === 0) validArray = filtersData.rounds;
-      populateSelect(dom.selectRound, validArray);
-    }
-
-    var exists = Array.prototype.slice.call(dom.selectRound.options).some(function(opt) {
-      return opt.value === currentRound;
-    });
-
-    if (exists) {
-      dom.selectRound.value = currentRound;
-    } else {
-      dom.selectRound.selectedIndex = 0;
-    }
-  }
-
 
   // ---- Reset ----
   function resetAll() {
@@ -751,7 +706,6 @@
     if (dom.selectQuota.value) params.set('quota', dom.selectQuota.value);
     if (dom.selectCourse.value) params.set('course', dom.selectCourse.value);
     if (dom.selectSpecialty.value) params.set('specialty', dom.selectSpecialty.value);
-    if (dom.selectRound.value) params.set('round', dom.selectRound.value);
     if (dom.selectCollegeType.value) params.set('collegeType', dom.selectCollegeType.value);
 
     var qs = params.toString();
@@ -774,7 +728,6 @@
     if (params.has('quota')) dom.selectQuota.value = params.get('quota');
     if (params.has('course')) dom.selectCourse.value = params.get('course');
     if (params.has('specialty')) dom.selectSpecialty.value = params.get('specialty');
-    if (params.has('round')) dom.selectRound.value = params.get('round');
     if (params.has('collegeType')) dom.selectCollegeType.value = params.get('collegeType');
     if (params.has('counselling')) dom.selectCounselling.value = params.get('counselling');
     if (params.has('state')) dom.selectState.value = params.get('state');
@@ -807,7 +760,6 @@
         updateStateDropdown();
         updateQuotaDropdown();
         updateCollegeTypeDropdown();
-        updateRoundDropdown();
         autoPredict(); // Re-predict when counselling is switched completely
       }).catch(function(err) {
         console.error('Failed to load new counselling data:', err);
