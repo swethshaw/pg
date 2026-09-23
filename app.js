@@ -230,7 +230,7 @@
 
     return cutoffsData.filter(function (row) {
       if (row.year !== 2025) return false;
-      if (eligible.indexOf(row.seatCategory) === -1) return false;
+      if (userCategory !== 'ALL' && eligible.indexOf(row.seatCategory) === -1) return false;
       if (row.closingRank < userRank) return false;
 
       // Form/sidebar filters
@@ -287,6 +287,8 @@
           return a.cutoff.specialty.localeCompare(b.cutoff.specialty);
         case 'specialty':
           return a.cutoff.specialty.localeCompare(b.cutoff.specialty);
+        case 'rank':
+          return a.cutoff.closingRank - b.cutoff.closingRank;
         default:
           return 0;
       }
@@ -360,6 +362,8 @@
         '<div class="meta-group"><span class="meta-label">Seat Category:</span> <span class="meta-value">' + escapeHtml(item.cutoff.seatCategory) + '</span></div>' +
         '<div class="meta-group"><span class="meta-label">Quota:</span> <span class="meta-value">' + escapeHtml(quotaLabel) + '</span></div>' +
         (stateLabel ? '<div class="meta-group"><span class="meta-label">State:</span> <span class="meta-value">' + stateLabel + '</span></div>' : '') +
+        '<div class="meta-group"><span class="meta-label">Closing Rank:</span> <span class="meta-value">' + item.cutoff.closingRank.toLocaleString('en-IN') + '</span></div>' +
+        '<div class="meta-group"><span class="meta-label">Round:</span> <span class="meta-value">' + escapeHtml(item.cutoff.round) + '</span></div>' +
       '</div>';
 
     return card;
