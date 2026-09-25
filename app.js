@@ -55,7 +55,13 @@
     if (tomSelectInstances[selectEl.id]) {
       tomSelectInstances[selectEl.id].setValue(val, silent);
     } else {
-      selectEl.value = val;
+      if (selectEl.multiple && Array.isArray(val)) {
+        Array.prototype.slice.call(selectEl.options).forEach(function(opt) {
+          opt.selected = val.indexOf(opt.value) !== -1;
+        });
+      } else {
+        selectEl.value = val;
+      }
     }
   }
   var currentUserRank = null;
@@ -71,6 +77,7 @@
   function cacheDom() {
     // Form
     dom.form = document.getElementById('predictor-form');
+    dom.themeToggle = document.getElementById('theme-toggle');
     dom.inputRank = document.getElementById('input-rank');
     dom.selectCategory = document.getElementById('select-category');
     dom.selectCounselling = document.getElementById('select-counselling');
@@ -193,7 +200,7 @@
   // ---- Populate Dropdowns ----
   function populateSelect(selectEl, items) {
     var id = selectEl.id;
-    var currentVal = selectEl.value;
+    var currentVal = tomSelectInstances[id] ? tomSelectInstances[id].getValue() : (selectEl.multiple ? Array.prototype.slice.call(selectEl.selectedOptions).map(function(o){return o.value;}) : selectEl.value);
 
     if (tomSelectInstances[id]) {
       tomSelectInstances[id].destroy();
@@ -202,7 +209,7 @@
 
     var firstOpt = selectEl.options[0]; // Keep "All ..." default
     selectEl.innerHTML = '';
-    if (firstOpt) {
+    if (firstOpt && !selectEl.multiple) {
       selectEl.appendChild(firstOpt);
     }
     items.forEach(function (item) {
@@ -218,24 +225,37 @@
     });
 
     // Re-apply value before initializing to make TomSelect pick it up
-    var exists = Array.prototype.slice.call(selectEl.options).some(function(opt) {
-      return opt.value === currentVal;
-    });
-    if (exists && currentVal) {
-      selectEl.value = currentVal;
+    if (selectEl.multiple) {
+      var valArray = Array.isArray(currentVal) ? currentVal : [currentVal];
+      Array.prototype.slice.call(selectEl.options).forEach(function(opt) {
+        if (valArray.indexOf(opt.value) !== -1 && opt.value !== '') {
+          opt.selected = true;
+        }
+      });
     } else {
-      selectEl.selectedIndex = 0;
+      var exists = Array.prototype.slice.call(selectEl.options).some(function(opt) {
+        return opt.value === currentVal;
+      });
+      if (exists && currentVal) {
+        selectEl.value = currentVal;
+      } else {
+        selectEl.selectedIndex = 0;
+      }
     }
 
     // Initialize Tom Select
-    tomSelectInstances[id] = new TomSelect(selectEl, {
+    var tsOptions = {
       create: false,
       maxOptions: null,
       sortField: {
         field: "text",
         direction: "asc"
       }
-    });
+    };
+    if (selectEl.multiple) {
+      tsOptions.plugins = ['remove_button'];
+    }
+    tomSelectInstances[id] = new TomSelect(selectEl, tsOptions);
   }
 
   function populateFormDropdowns() {
@@ -299,7 +319,10 @@
       // Form/sidebar filters
       if (filters.quota && row.quotaCode !== filters.quota) return false;
       if (filters.course && row.course !== filters.course) return false;
-      if (filters.specialty && row.specialty !== filters.specialty) return false;
+      if (filters.specialties && filters.specialties.length > 0) {
+        var specArray = Array.isArray(filters.specialties) ? filters.specialties : [filters.specialties];
+        if (specArray.indexOf(row.specialty) === -1) return false;
+      }
       if (filters.round) {
         if (getRoundNumber(row.round) < getRoundNumber(filters.round)) return false;
       }
@@ -333,6 +356,12 @@
   }
 
   // ---- Sorting ----
+  function parseCurrency(str) {
+    if (!str) return 0;
+    var numStr = str.replace(/[^\d.-]/g, '');
+    return parseFloat(numStr) || 0;
+  }
+
   function sortResults(results, sortBy) {
     results.sort(function (a, b) {
       switch (sortBy) {
@@ -354,6 +383,10 @@
           return a.cutoff.specialty.localeCompare(b.cutoff.specialty);
         case 'rank':
           return a.cutoff.closingRank - b.cutoff.closingRank;
+        case 'fee':
+          return parseCurrency(a.cutoff.fee) - parseCurrency(b.cutoff.fee);
+        case 'stipend':
+          return parseCurrency(b.cutoff.stipend) - parseCurrency(a.cutoff.stipend);
         default:
           return 0;
       }
@@ -470,6 +503,8 @@
 
     if (!rank || rank < 1 || isNaN(rank)) {
       showError('fg-rank', 'err-rank', 'Enter a valid positive rank.');
+      dom.inputRank.focus();
+      dom.inputRank.scrollIntoView({ behavior: 'smooth', block: 'center' });
       valid = false;
     }
     if (!category) {
@@ -488,7 +523,7 @@
       state: dom.selectState.value,
       quota: dom.selectQuota.value,
       course: dom.selectCourse.value,
-      specialty: dom.selectSpecialty.value,
+      specialties: tomSelectInstances['select-specialty'] ? tomSelectInstances['select-specialty'].getValue() : [],
       collegeType: dom.selectCollegeType.value,
       round: dom.selectRound ? dom.selectRound.value : "",
     };
@@ -653,7 +688,7 @@
 
   function updateSpecialtyDropdown() {
     var course = dom.selectCourse.value;
-    var currentSpecialty = dom.selectSpecialty.value;
+    var currentSpecialty = tomSelectInstances['select-specialty'] ? tomSelectInstances['select-specialty'].getValue() : dom.selectSpecialty.value;
 
     if (!course || course === '') {
       populateSelect(dom.selectSpecialty, filtersData.specialties);
@@ -741,7 +776,12 @@
     if (dom.selectState.value) params.set('state', dom.selectState.value);
     if (dom.selectQuota.value) params.set('quota', dom.selectQuota.value);
     if (dom.selectCourse.value) params.set('course', dom.selectCourse.value);
-    if (dom.selectSpecialty.value) params.set('specialty', dom.selectSpecialty.value);
+    var specVal = tomSelectInstances['select-specialty'] ? tomSelectInstances['select-specialty'].getValue() : dom.selectSpecialty.value;
+    if (Array.isArray(specVal) && specVal.length > 0) {
+      params.set('specialty', specVal.join(','));
+    } else if (typeof specVal === 'string' && specVal !== '') {
+      params.set('specialty', specVal);
+    }
     if (dom.selectCollegeType.value) params.set('collegeType', dom.selectCollegeType.value);
     if (dom.selectRound && dom.selectRound.value) params.set('round', dom.selectRound.value);
 
@@ -764,7 +804,10 @@
 
     if (params.has('quota')) setSelectValue(dom.selectQuota, params.get('quota'), true);
     if (params.has('course')) setSelectValue(dom.selectCourse, params.get('course'), true);
-    if (params.has('specialty')) setSelectValue(dom.selectSpecialty, params.get('specialty'), true);
+    if (params.has('specialty')) {
+      var specs = params.get('specialty').split(',');
+      setSelectValue(dom.selectSpecialty, specs, true);
+    }
     if (params.has('collegeType')) setSelectValue(dom.selectCollegeType, params.get('collegeType'), true);
     if (params.has('counselling')) setSelectValue(dom.selectCounselling, params.get('counselling'), true);
     if (params.has('state')) setSelectValue(dom.selectState, params.get('state'), true);
@@ -773,6 +816,15 @@
 
   // ---- Event Binding ----
   function bindEvents() {
+    if (dom.themeToggle) {
+      dom.themeToggle.addEventListener('click', function() {
+        var currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
+        var newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+      });
+    }
+
     // Form submit
     dom.form.addEventListener('submit', function (e) {
       e.preventDefault();
