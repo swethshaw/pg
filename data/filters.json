@@ -41,8 +41,20 @@
       "label": "3BH"
     },
     {
+      "code": "AFMS-Priority III",
+      "label": "AFMS-Priority III"
+    },
+    {
+      "code": "AFMS-Priority IV",
+      "label": "AFMS-Priority IV"
+    },
+    {
       "code": "AGE",
       "label": "AGE"
+    },
+    {
+      "code": "BC",
+      "label": "BC"
     },
     {
       "code": "BC Service",
@@ -141,6 +153,10 @@
       "label": "EBC-GEN"
     },
     {
+      "code": "EW",
+      "label": "EW"
+    },
+    {
       "code": "EW-PH",
       "label": "EW-PH"
     },
@@ -151,10 +167,6 @@
     {
       "code": "EWS Open",
       "label": "EWS Open"
-    },
-    {
-      "code": "EW PwD",
-      "label": "EWS PwD"
     },
     {
       "code": "EWS Service",
@@ -223,10 +235,6 @@
     {
       "code": "GEN-PwD",
       "label": "GEN-PwD"
-    },
-    {
-      "code": "EW",
-      "label": "General-EWS"
     },
     {
       "code": "GM",
@@ -325,10 +333,6 @@
       "label": "MGT-Minority"
     },
     {
-      "code": "Minority",
-      "label": "Minority"
-    },
-    {
       "code": "MINORITY",
       "label": "MINORITY"
     },
@@ -369,8 +373,20 @@
       "label": "MU"
     },
     {
+      "code": "Minority",
+      "label": "Minority"
+    },
+    {
       "code": "NRI",
       "label": "NRI"
+    },
+    {
+      "code": "NRI-Priority I",
+      "label": "NRI-Priority I"
+    },
+    {
+      "code": "NRI-Priority II",
+      "label": "NRI-Priority II"
     },
     {
       "code": "NT1",
@@ -461,14 +477,6 @@
       "label": "OBC-Female"
     },
     {
-      "code": "BC",
-      "label": "OBC-NCL"
-    },
-    {
-      "code": "BC PwD",
-      "label": "OBC-NCL PwD"
-    },
-    {
       "code": "OBC-OPEN",
       "label": "OBC-OPEN"
     },
@@ -503,14 +511,6 @@
     {
       "code": "OPEN",
       "label": "OPEN"
-    },
-    {
-      "code": "GN PwD",
-      "label": "Open PwD"
-    },
-    {
-      "code": "GN",
-      "label": "Open Seat (GN)"
     },
     {
       "code": "OPEN Service",
@@ -581,16 +581,16 @@
       "label": "S1A"
     },
     {
+      "code": "SC",
+      "label": "SC"
+    },
+    {
       "code": "SC ESM",
       "label": "SC ESM"
     },
     {
       "code": "SC Open",
       "label": "SC Open"
-    },
-    {
-      "code": "SC PwD",
-      "label": "SC PwD"
     },
     {
       "code": "SC Service",
@@ -673,14 +673,6 @@
       "label": "SCH"
     },
     {
-      "code": "SC",
-      "label": "Scheduled Caste"
-    },
-    {
-      "code": "ST",
-      "label": "Scheduled Tribe"
-    },
-    {
       "code": "SEBC",
       "label": "SEBC"
     },
@@ -713,12 +705,12 @@
       "label": "SS"
     },
     {
-      "code": "ST Open",
-      "label": "ST Open"
+      "code": "ST",
+      "label": "ST"
     },
     {
-      "code": "ST PwD",
-      "label": "ST PwD"
+      "code": "ST Open",
+      "label": "ST Open"
     },
     {
       "code": "ST Service",
@@ -751,6 +743,10 @@
     {
       "code": "ST-PH",
       "label": "ST-PH"
+    },
+    {
+      "code": "ST-PwD",
+      "label": "ST-PwD"
     },
     {
       "code": "ST-STA",
@@ -837,12 +833,12 @@
       "label": "UR-NRI"
     },
     {
-      "code": "UR-Open",
-      "label": "UR-Open"
-    },
-    {
       "code": "UR-OPEN",
       "label": "UR-OPEN"
+    },
+    {
+      "code": "UR-Open",
+      "label": "UR-Open"
     },
     {
       "code": "UR-Orphan",
@@ -911,24 +907,28 @@
   ],
   "quotas": [
     {
-      "code": "AM",
-      "label": "Aligarh Muslim University"
+      "code": "AFMS",
+      "label": "AFMS"
     },
     {
-      "code": "AI",
-      "label": "All India"
+      "code": "AFMS-DNB",
+      "label": "AFMS-DNB"
+    },
+    {
+      "code": "AIQ",
+      "label": "AIQ"
+    },
+    {
+      "code": "AMU",
+      "label": "AMU"
     },
     {
       "code": "APMgmt-S1-All-CatB",
       "label": "AP Management Quota-S1A(B Cat)"
     },
     {
-      "code": "AF",
-      "label": "Armed Forces Medical"
-    },
-    {
-      "code": "BH",
-      "label": "Banaras Hindu University"
+      "code": "BHU",
+      "label": "BHU"
     },
     {
       "code": "Bihar DNB Seats",
@@ -939,11 +939,11 @@
       "label": "Bihar Govt Quota"
     },
     {
-      "code": "Bihar Private Seats - Minority Quota",
+      "code": "Bihar Priv-Minority",
       "label": "Bihar Private Seats - Minority Quota"
     },
     {
-      "code": "Bihar Private Seats - NRI Quota",
+      "code": "Bihar Priv-NRI",
       "label": "Bihar Private Seats - NRI Quota"
     },
     {
@@ -951,111 +951,95 @@
       "label": "Bihar Private Seats - Open Quota"
     },
     {
-      "code": "Bihar Private Seats - Open Quota",
-      "label": "Bihar Private Seats - Open Quota"
-    },
-    {
-      "code": "Other State",
-      "label": "Chhattisgarh Other State"
-    },
-    {
       "code": "Delhi State Quota",
       "label": "Delhi State Quota"
     },
     {
+      "code": "DNB Post MBBS",
+      "label": "DNB Post MBBS"
+    },
+    {
       "code": "DU",
-      "label": "Delhi University"
+      "label": "DU"
     },
     {
-      "code": "AD",
-      "label": "DNB Quota"
+      "code": "HAR Govt-All",
+      "label": "Haryana State Quota"
     },
     {
-      "code": "Haryana DNB Inservice Seats",
-      "label": "Haryana DNB Inservice Seats"
+      "code": "HAR Govt-Inst. Pref",
+      "label": "Haryana State Quota - Institutional Preference"
     },
     {
-      "code": "Haryana Private Seats - Institutional Preference",
-      "label": "Haryana Private Seats - Institutional Preference"
+      "code": "HAR Priv-Govt Quota",
+      "label": "Haryana Private Seats - State Quota"
     },
     {
       "code": "HAR Priv-Mgmt",
       "label": "Haryana Private Seats - Management Quota"
     },
     {
-      "code": "Haryana Private Seats - Management Quota",
-      "label": "Haryana Private Seats - Management Quota"
-    },
-    {
-      "code": "Haryana Private Seats - Minority Quota",
+      "code": "HAR Priv-Minority",
       "label": "Haryana Private Seats - Minority Quota"
     },
     {
-      "code": "Haryana Private Seats - NRI Quota",
+      "code": "Haryana DNB Serv",
+      "label": "Haryana DNB Inservice Seats"
+    },
+    {
+      "code": "Haryana Priv IP",
+      "label": "Haryana Private Seats - Institutional Preference"
+    },
+    {
+      "code": "Haryana Priv NRI",
       "label": "Haryana Private Seats - NRI Quota"
     },
     {
-      "code": "Haryana Private Seats - State Quota",
-      "label": "Haryana Private Seats - State Quota"
-    },
-    {
-      "code": "Haryana State Quota",
-      "label": "Haryana State Quota"
-    },
-    {
-      "code": "Haryana State Quota - Institutional Preference",
-      "label": "Haryana State Quota - Institutional Preference"
-    },
-    {
-      "code": "HP DNB Inservice Seats",
+      "code": "HP DNB Serv",
       "label": "HP DNB Inservice Seats"
+    },
+    {
+      "code": "HP Govt Quota",
+      "label": "HP State Quota"
     },
     {
       "code": "HP Priv All",
       "label": "HP Private Seats - All"
     },
     {
-      "code": "HP Private Seats - All",
-      "label": "HP Private Seats - All"
-    },
-    {
-      "code": "HP Private Seats - NRI",
+      "code": "HP Priv NRI",
       "label": "HP Private Seats - NRI"
     },
     {
-      "code": "HP Private Seats - State Quota",
+      "code": "HP Private-StateQuota",
       "label": "HP Private Seats - State Quota"
     },
     {
-      "code": "HP State Quota",
-      "label": "HP State Quota"
-    },
-    {
       "code": "IP",
-      "label": "IP University"
+      "label": "IP"
     },
     {
-      "code": "JM",
-      "label": "Jain Minority"
-    },
-    {
-      "code": "Jharkhand Govt Quota",
+      "code": "JHKND Govt Quota",
       "label": "Jharkhand Govt Quota"
     },
     {
-      "code": "Karnataka DNB Inservice Seats",
+      "code": "JM",
+      "label": "JM"
+    },
+    {
+      "code": "KAR DNB Serv",
       "label": "Karnataka DNB Inservice Seats"
     },
     {
-      "code": "Karnataka Govt Quota - Inservice",
+      "code": "KAR Govt Quota-InS",
       "label": "Karnataka Govt Quota - Inservice"
     },
     {
-      "code": "Karnataka Govt Quota - Open",
+      "code": "KAR Govt Quota-Open",
       "label": "Karnataka Govt Quota - Open"
     },
     {
-      "code": "Karnataka NRI Quota",
+      "code": "KAR NRI Quota",
       "label": "Karnataka NRI Quota"
     },
     {
@@ -1063,15 +1047,11 @@
       "label": "Karnataka Other Seats (Institutional Quota)"
     },
     {
-      "code": "Karnataka Other Seats (Institutional Quota)",
-      "label": "Karnataka Other Seats (Institutional Quota)"
-    },
-    {
-      "code": "Karnataka Private Seats - GMP Quota",
+      "code": "KAR Priv Seats-GMP",
       "label": "Karnataka Private Seats - GMP Quota"
     },
     {
-      "code": "Karnataka Private Seats - Minority Quota",
+      "code": "KAR Priv Seats-Min.",
       "label": "Karnataka Private Seats - Minority Quota"
     },
     {
@@ -1079,24 +1059,28 @@
       "label": "Karnataka Private Seats - Open Quota"
     },
     {
-      "code": "Karnataka Private Seats - Open Quota",
-      "label": "Karnataka Private Seats - Open Quota"
-    },
-    {
-      "code": "Maharashtra Govt Quota",
-      "label": "Maharashtra Govt Quota"
-    },
-    {
-      "code": "Maharashtra Management Quota",
+      "code": "MAHA Priv-Mgmt Quota",
       "label": "Maharashtra Management Quota"
     },
     {
-      "code": "Maharashtra Minority Quota",
+      "code": "MAHA Priv-Min Quota",
       "label": "Maharashtra Minority Quota"
     },
     {
-      "code": "Maharashtra NRI Quota",
+      "code": "MAHA-Govt Quota",
+      "label": "Maharashtra Govt Quota"
+    },
+    {
+      "code": "MAHA-NRI Quota",
       "label": "Maharashtra NRI Quota"
+    },
+    {
+      "code": "MM",
+      "label": "MM"
+    },
+    {
+      "code": "MNG",
+      "label": "MNG"
     },
     {
       "code": "MP Govt Quota",
@@ -1107,40 +1091,32 @@
       "label": "MP Govt Quota - Non Domicile"
     },
     {
-      "code": "MP Govt Quota - Non Domicile",
-      "label": "MP Govt Quota - Non Domicile"
-    },
-    {
       "code": "MP Priv-NonDomicile",
       "label": "MP Private Seats - Non Domicile"
     },
     {
-      "code": "MP Private Seats - Non Domicile",
-      "label": "MP Private Seats - Non Domicile"
-    },
-    {
-      "code": "MP Private Seats - NRI Non Domicile",
-      "label": "MP Private Seats - NRI Non Domicile"
-    },
-    {
-      "code": "MP Private Seats - NRI Quota",
+      "code": "MP Priv-NRI",
       "label": "MP Private Seats - NRI Quota"
     },
     {
-      "code": "MP Private Seats - Open Quota",
+      "code": "MP Priv-NRINonDomicil",
+      "label": "MP Private Seats - NRI Non Domicile"
+    },
+    {
+      "code": "MP Priv-Open",
       "label": "MP Private Seats - Open Quota"
     },
     {
-      "code": "MM",
-      "label": "Muslim Minority"
+      "code": "NBE Diploma",
+      "label": "NBE Diploma"
     },
     {
-      "code": "NR",
-      "label": "Non-Resident Indian"
+      "code": "NRI",
+      "label": "NRI"
     },
     {
-      "code": "PY Mgmt-Open",
-      "label": "Pondicherry Management Quota"
+      "code": "Other State",
+      "label": "Chhattisgarh Other State"
     },
     {
       "code": "Punjab Open Quota (AI Basis)",
@@ -1151,15 +1127,19 @@
       "label": "Punjab Open Quota (All India Basis)-Converted"
     },
     {
-      "code": "Rajasthan DNB Inservice Seats",
+      "code": "PY Mgmt-Open",
+      "label": "Pondicherry Management Quota"
+    },
+    {
+      "code": "Raj DNB Serv",
       "label": "Rajasthan DNB Inservice Seats"
     },
     {
-      "code": "Rajasthan Govt Seats - Govt Quota",
+      "code": "RAJ Govt - Govt Quota",
       "label": "Rajasthan Govt Seats - Govt Quota"
     },
     {
-      "code": "Rajasthan Govt Seats - Management Quota",
+      "code": "RAJ Govt - Mgmt Quota",
       "label": "Rajasthan Govt Seats - Management Quota"
     },
     {
@@ -1167,24 +1147,12 @@
       "label": "Rajasthan Private Seats - All India (Eligibility)"
     },
     {
-      "code": "Rajasthan Private Seats - All India (Eligibility)",
-      "label": "Rajasthan Private Seats - All India (Eligibility)"
-    },
-    {
-      "code": "Rajasthan Private Seats - Govt Quota",
+      "code": "RAJ Priv-Govt Quota",
       "label": "Rajasthan Private Seats - Govt Quota"
     },
     {
       "code": "RAJ Priv-Mgmt Quota",
       "label": "Rajasthan Private Seats - Management Quota"
-    },
-    {
-      "code": "Rajasthan Private Seats - Management Quota",
-      "label": "Rajasthan Private Seats - Management Quota"
-    },
-    {
-      "code": "PS",
-      "label": "Self-Financed Merit Seat"
     },
     {
       "code": "Sikkim Gen Quota",
@@ -1203,15 +1171,27 @@
       "label": "TN Management Quota"
     },
     {
-      "code": "Uttar Pradesh DNB Inservice Seats",
-      "label": "Uttar Pradesh DNB Inservice Seats"
+      "code": "UK DNB Serv",
+      "label": "Uttarakhand DNB Inservice Seats"
     },
     {
-      "code": "Uttar Pradesh Govt Quota",
-      "label": "Uttar Pradesh Govt Quota"
+      "code": "UK Priv-AllIndia/Mgmt",
+      "label": "Uttarakhand Private Seats - All India / Management"
     },
     {
-      "code": "Uttar Pradesh Private Seats - Minority Quota",
+      "code": "UK Priv-Govt Quota",
+      "label": "Uttarakhand Private Seats - Govt Quota"
+    },
+    {
+      "code": "UK Priv-NRI",
+      "label": "Uttarakhand Private Seats - NRI"
+    },
+    {
+      "code": "UK-Govt Quota",
+      "label": "Uttarakhand Govt Quota"
+    },
+    {
+      "code": "UP Priv-Min. Quota",
       "label": "Uttar Pradesh Private Seats - Minority Quota"
     },
     {
@@ -1219,39 +1199,19 @@
       "label": "Uttar Pradesh Private Seats - Open Quota"
     },
     {
-      "code": "Uttar Pradesh Private Seats - Open Quota",
-      "label": "Uttar Pradesh Private Seats - Open Quota"
+      "code": "UP-DNB InS",
+      "label": "Uttar Pradesh DNB Inservice Seats"
     },
     {
-      "code": "Uttarakhand DNB Inservice Seats",
-      "label": "Uttarakhand DNB Inservice Seats"
+      "code": "UP-Govt Quota",
+      "label": "Uttar Pradesh Govt Quota"
     },
     {
-      "code": "Uttarakhand Govt Quota",
-      "label": "Uttarakhand Govt Quota"
-    },
-    {
-      "code": "UK Priv-AllIndia/Mgmt",
-      "label": "Uttarakhand Private Seats - All India / Management"
-    },
-    {
-      "code": "Uttarakhand Private Seats - All India / Management",
-      "label": "Uttarakhand Private Seats - All India / Management"
-    },
-    {
-      "code": "Uttarakhand Private Seats - Govt Quota",
-      "label": "Uttarakhand Private Seats - Govt Quota"
-    },
-    {
-      "code": "Uttarakhand Private Seats - NRI",
-      "label": "Uttarakhand Private Seats - NRI"
-    },
-    {
-      "code": "West Bengal DNB Inservice Seats",
+      "code": "WB DNB Serv",
       "label": "West Bengal DNB Inservice Seats"
     },
     {
-      "code": "West Bengal Govt Quota",
+      "code": "WB Govt Quota",
       "label": "West Bengal Govt Quota"
     },
     {
@@ -1259,36 +1219,50 @@
       "label": "West Bengal Management Quota"
     },
     {
-      "code": "West Bengal Management Quota",
-      "label": "West Bengal Management Quota"
-    },
-    {
-      "code": "West Bengal NRI Quota",
+      "code": "WB NRI Quota",
       "label": "West Bengal NRI Quota"
     }
   ],
   "courses": [
     "DNB",
-    "DNB Diploma",
     "Diploma",
+    "MCh",
     "MD",
-    "MS"
+    "MS",
+    "Master"
   ],
   "collegeTypes": [
-    "Armed Forces",
-    "DNB Hospital",
-    "Deemed/Private",
-    "Government"
+    {
+      "code": "DNB Hospital",
+      "label": "DNB Hospital"
+    },
+    {
+      "code": "Government",
+      "label": "Government"
+    },
+    {
+      "code": "Private",
+      "label": "Private"
+    }
   ],
   "rounds": [
-    "Round 1",
-    "Round 2",
-    "Round 3",
-    "Stray Vacancy Round",
+    "24 round 0",
     "24 round 1",
     "24 round 2",
     "24 round 3",
-    "24 stray vacancy"
+    "24 round 3.5",
+    "24 round 4",
+    "24 round 5",
+    "24 round 6",
+    "Round 0.1",
+    "Round 0.2",
+    "Round 1",
+    "Round 2",
+    "Round 3",
+    "Round 3.5",
+    "Round 4",
+    "Round 4.5",
+    "Round 5"
   ],
   "states": [
     "Andaman and Nicobar Islands",
@@ -1298,6 +1272,7 @@
     "Bihar",
     "Chandigarh",
     "Chhattisgarh",
+    "Dadra and Nagar Haveli",
     "Delhi",
     "Goa",
     "Gujarat",
@@ -1315,7 +1290,7 @@
     "Mizoram",
     "Nagaland",
     "Odisha",
-    "Puducherry",
+    "Pondicherry",
     "Punjab",
     "Rajasthan",
     "Sikkim",
@@ -1345,36 +1320,82 @@
   "specialties": [
     "Anaesthesiology",
     "Anatomy",
+    "Aviation Medicine/Aerospace Medicine",
     "Bio-Chemistry",
+    "Biochemistry",
+    "Cardio Thoracic Surgery (6 years)",
+    "Community Health Administration",
+    "Dermatology & Venereology",
     "Dermatology, Venereology & Leprosy",
     "ENT",
     "Emergency Medicine",
+    "Family Medicine",
     "Forensic Medicine",
     "General Medicine",
     "General Surgery",
+    "Geriatric Medicine",
+    "Geriatrics",
+    "Health Administration including Hospital Administration",
     "Hospital Administration",
     "Immuno Haematology & Blood Transfusion",
+    "Immuno Hematology & Transfusion Medicine",
     "Lab Medicine",
     "Microbiology",
+    "Neuro Surgery (6 years)",
+    "Neurosurgery (6 years)",
     "Nuclear Medicine",
     "Obstetrics & Gynaecology",
     "Ophthalmology",
     "Orthopaedics",
+    "Orthopedics Surgery",
+    "Paediatric Surgery (6 years)",
     "Paediatrics",
     "Palliative Medicine",
     "Pathology",
     "Pharmacology",
     "Physical Medicine & Rehabilitation",
     "Physiology",
+    "Plastic Surgery (6 years)",
     "Psychiatry",
     "Radiation Oncology",
     "Radio Diagnosis",
+    "Radio Therapy",
+    "Respiratory Diseases",
     "Social & Preventive Medicine",
+    "Sports Medicine",
     "Traumatology and Surgery",
+    "Tropical Medicine",
     "Tuberculosis & Respiratory Diseases",
+    "in Anaesthesia",
+    "in Anaesthesia-NBE",
+    "in Child Health",
+    "in Child Health-NBE",
     "in Clinical Pathology",
+    "in Dermatology, Venereology and Leprosy",
+    "in Diabetology",
+    "in Emergency Medicine-NBE",
+    "in Family Medicine-NBE",
+    "in Forensic Medicine",
+    "in Health Administration",
+    "in Immuno-Haematology and Blood Transfusion",
+    "in Microbiology",
+    "in Obstetrics & Gynaecology",
+    "in Obstetrics & Gynaecology-NBE",
+    "in Ophthalmology",
+    "in Ophthalmology-NBE",
     "in Orthopaedics",
+    "in Oto-Rhino-Laryngology",
+    "in Oto-Rhino-Laryngology-NBE",
+    "in Physical Medicine & Rehabilitation",
+    "in Psychological Medicine",
     "in Public Health",
-    "in Sports Medicine"
+    "in Radiation Medicine",
+    "in Radio Therapy",
+    "in Radio-Diagnosis",
+    "in Radio-Diagnosis-NBE",
+    "in Sports Medicine",
+    "in Tuberculosis & Chest Diseases",
+    "in Tuberculosis & Chest Diseases-NBE",
+    "of Public Health (Epidemiology)"
   ]
 }
