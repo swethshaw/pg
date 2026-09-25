@@ -25,6 +25,19 @@
     'ST PwD': ['ST PwD', 'ST', 'GN PwD', 'GN'],
   };
 
+  var USER_CATEGORIES = [
+    { code: 'GN', label: 'General (UR)' },
+    { code: 'EW', label: 'EWS' },
+    { code: 'BC', label: 'OBC' },
+    { code: 'SC', label: 'SC' },
+    { code: 'ST', label: 'ST' },
+    { code: 'GN PwD', label: 'General PwD' },
+    { code: 'EW PwD', label: 'EWS PwD' },
+    { code: 'BC PwD', label: 'OBC PwD' },
+    { code: 'SC PwD', label: 'SC PwD' },
+    { code: 'ST PwD', label: 'ST PwD' }
+  ];
+
   // ---- Application State ----
   var filtersData = null;
   var collegesMap = null;     // Map: collegeId → college object
@@ -50,6 +63,7 @@
     dom.selectCourse = document.getElementById('select-course');
     dom.selectSpecialty = document.getElementById('select-specialty');
     dom.selectCollegeType = document.getElementById('select-college-type');
+    dom.selectRound = document.getElementById('select-round');
     dom.btnPredict = document.getElementById('btn-predict');
     dom.btnReset = document.getElementById('btn-reset');
     dom.errRank = document.getElementById('err-rank');
@@ -81,7 +95,7 @@
   function fetchCutoffs(counselling) {
     dom.loadingState.classList.add('is-visible');
     dom.btnPredict.disabled = true;
-    var filename = 'data/cutoffs/' + encodeURIComponent(counselling) + '.json';
+    var filename = 'data/cutoffs/' + encodeURIComponent(counselling) + '.json?v=' + Date.now();
     return fetch(filename).then(function (r) { 
       if (!r.ok) throw new Error(filename); 
       return r.json(); 
@@ -131,7 +145,6 @@
       validateDataIntegrity();
 
       toggleStateFilter();
-      updateCategoryDropdown();
       updateStateDropdown();
       updateQuotaDropdown();
       updateSpecialtyDropdown();
@@ -184,7 +197,7 @@
 
   function populateFormDropdowns() {
     // Categories
-    populateSelect(dom.selectCategory, filtersData.categories);
+    populateSelect(dom.selectCategory, USER_CATEGORIES);
     // Counselling
     populateSelect(dom.selectCounselling, filtersData.counsellings);
     // States
@@ -197,6 +210,8 @@
     populateSelect(dom.selectSpecialty, filtersData.specialties);
     // College types
     populateSelect(dom.selectCollegeType, filtersData.collegeTypes);
+    // Rounds
+    if (filtersData.rounds) populateSelect(dom.selectRound, filtersData.rounds);
   }
 
   // ---- Prediction ----
@@ -353,6 +368,20 @@
         courseStr += ' ' + escapeHtml(item.cutoff.specialty);
     }
 
+    var roundsHtml = item.rounds.map(function(r) {
+      var badgeClass = 'badge-' + r.prediction.band;
+      return '<span class="round-badge ' + badgeClass + '">' + escapeHtml(r.round) + ': <strong>' + r.closingRank.toLocaleString('en-IN') + '</strong></span>';
+    }).join(' ');
+
+    var feeHtml = '';
+    if (item.cutoff.fee) {
+      feeHtml = '<span class="round-badge" style="background: #eef2ff; color: #4338ca; border: 1px solid #c7d2fe;">Fee: <strong>' + escapeHtml(item.cutoff.fee) + '</strong></span>';
+    }
+    var stipendHtml = '';
+    if (item.cutoff.stipend) {
+      stipendHtml = '<span class="round-badge" style="background: #fdf4ff; color: #86198f; border: 1px solid #f5d0fe;">Stipend: <strong>' + escapeHtml(item.cutoff.stipend) + '</strong></span>';
+    }
+
     card.innerHTML =
       '<div class="result-card-top">' +
         '<h3 class="result-college-name">' + escapeHtml(item.college.name) + '</h3>' +
@@ -362,8 +391,11 @@
         '<div class="meta-group"><span class="meta-label">Seat Category:</span> <span class="meta-value">' + escapeHtml(item.cutoff.seatCategory) + '</span></div>' +
         '<div class="meta-group"><span class="meta-label">Quota:</span> <span class="meta-value">' + escapeHtml(quotaLabel) + '</span></div>' +
         (stateLabel ? '<div class="meta-group"><span class="meta-label">State:</span> <span class="meta-value">' + stateLabel + '</span></div>' : '') +
-        '<div class="meta-group"><span class="meta-label">Closing Rank:</span> <span class="meta-value">' + item.cutoff.closingRank.toLocaleString('en-IN') + '</span></div>' +
-        '<div class="meta-group"><span class="meta-label">Round:</span> <span class="meta-value">' + escapeHtml(item.cutoff.round) + '</span></div>' +
+      '</div>' +
+      '<div class="result-rounds-container" style="margin-top: 12px; display: flex; flex-wrap: wrap; gap: 8px;">' +
+        roundsHtml +
+        feeHtml +
+        stipendHtml +
       '</div>';
 
     return card;
@@ -402,42 +434,51 @@
       course: dom.selectCourse.value,
       specialty: dom.selectSpecialty.value,
       collegeType: dom.selectCollegeType.value,
-      round: "",
+      round: dom.selectRound ? dom.selectRound.value : "",
     };
 
     // Filter
     var filtered = applyFilters(rank, category, filters);
 
-    // Enrich with college data, predictions, and keep only the nearest round
-    var enriched = [];
-    var bestRoundsMap = {};
+    // Enrich with college data, predictions, and group by unique seat
+    var enrichedMap = {};
 
     filtered.forEach(function (row) {
       var college = collegesMap.get(row.collegeId);
       if (!college) return;
       
-      var item = {
-        cutoff: row,
-        college: college,
-        prediction: calculatePrediction(rank, row.closingRank),
-      };
-
-      // Create a unique key for the specific seat (without seat category so we pick the safest one)
       var uniqueKey = row.collegeId + '|' + row.course + '|' + row.specialty + '|' + row.quotaCode;
+      var roundItem = { round: row.round, closingRank: row.closingRank, prediction: calculatePrediction(rank, row.closingRank) };
 
-      if (!bestRoundsMap[uniqueKey]) {
-        bestRoundsMap[uniqueKey] = item;
+      if (!enrichedMap[uniqueKey]) {
+        enrichedMap[uniqueKey] = {
+          cutoff: row,
+          college: college,
+          prediction: calculatePrediction(rank, row.closingRank),
+          rounds: [roundItem]
+        };
       } else {
-        // Pick the seat with the highest closing rank (the safest and most favorable option for the user)
-        if (row.closingRank > bestRoundsMap[uniqueKey].cutoff.closingRank) {
-          bestRoundsMap[uniqueKey] = item;
+        enrichedMap[uniqueKey].rounds.push(roundItem);
+        // Keep the best cutoff (highest closing rank) as the main reference for sorting
+        if (row.closingRank > enrichedMap[uniqueKey].cutoff.closingRank) {
+          enrichedMap[uniqueKey].cutoff = row;
+          enrichedMap[uniqueKey].prediction = calculatePrediction(rank, row.closingRank);
         }
       }
     });
 
-    for (var key in bestRoundsMap) {
-      if (bestRoundsMap.hasOwnProperty(key)) {
-        enriched.push(bestRoundsMap[key]);
+    var enriched = [];
+    for (var key in enrichedMap) {
+      if (enrichedMap.hasOwnProperty(key)) {
+        var item = enrichedMap[key];
+        // Sort rounds within the card
+        item.rounds.sort(function(a, b) {
+           var rA = a.round.match(/\d+/) ? parseInt(a.round.match(/\d+/)[0]) : 99;
+           var rB = b.round.match(/\d+/) ? parseInt(b.round.match(/\d+/)[0]) : 99;
+           if (rA !== rB) return rA - rB;
+           return a.round.localeCompare(b.round);
+        });
+        enriched.push(item);
       }
     }
 
@@ -488,47 +529,6 @@
     } else {
       stateGroup.style.display = 'none';
       dom.selectState.value = '';
-    }
-  }
-
-  function updateCategoryDropdown() {
-    var counselling = dom.selectCounselling.value;
-    var currentCategory = dom.selectCategory.value;
-    
-    if (!counselling || counselling === '') {
-      populateSelect(dom.selectCategory, filtersData.categories);
-    } else {
-      var validCategories = new Set();
-      if (cutoffsData) {
-        cutoffsData.forEach(function (row) {
-          var rowCounselling = row.counselling || 'All India';
-          if (rowCounselling === counselling) {
-            validCategories.add(row.seatCategory);
-          }
-        });
-      }
-      
-      var filteredCategories = filtersData.categories.filter(function (c) {
-        return validCategories.has(c.code);
-      });
-      
-      if (filteredCategories.length === 0) {
-        filteredCategories = filtersData.categories;
-      }
-      
-      populateSelect(dom.selectCategory, filteredCategories);
-    }
-    
-    var exists = Array.prototype.slice.call(dom.selectCategory.options).some(function(opt) {
-      return opt.value === currentCategory;
-    });
-    
-    if (exists) {
-      dom.selectCategory.value = currentCategory;
-    } else if (dom.selectCategory.options.length > 1) {
-      dom.selectCategory.selectedIndex = 1;
-    } else {
-      dom.selectCategory.selectedIndex = 0;
     }
   }
 
@@ -711,6 +711,7 @@
     if (dom.selectCourse.value) params.set('course', dom.selectCourse.value);
     if (dom.selectSpecialty.value) params.set('specialty', dom.selectSpecialty.value);
     if (dom.selectCollegeType.value) params.set('collegeType', dom.selectCollegeType.value);
+    if (dom.selectRound && dom.selectRound.value) params.set('round', dom.selectRound.value);
 
     var qs = params.toString();
     var newUrl = qs ? window.location.pathname + '?' + qs : window.location.pathname;
@@ -735,6 +736,7 @@
     if (params.has('collegeType')) dom.selectCollegeType.value = params.get('collegeType');
     if (params.has('counselling')) dom.selectCounselling.value = params.get('counselling');
     if (params.has('state')) dom.selectState.value = params.get('state');
+    if (params.has('round') && dom.selectRound) dom.selectRound.value = params.get('round');
   }
 
   // ---- Event Binding ----
@@ -760,9 +762,9 @@
       
       fetchCutoffs(counselling).then(function() {
         toggleStateFilter();
-        updateCategoryDropdown();
         updateStateDropdown();
         updateQuotaDropdown();
+        updateSpecialtyDropdown();
         updateCollegeTypeDropdown();
         autoPredict(); // Re-predict when counselling is switched completely
       }).catch(function(err) {
@@ -778,8 +780,10 @@
     });
 
     dom.selectSpecialty.addEventListener('change', autoPredict);
+    dom.selectCategory.addEventListener('change', autoPredict);
     dom.selectCollegeType.addEventListener('change', autoPredict);
     dom.selectQuota.addEventListener('change', autoPredict);
+    if (dom.selectRound) dom.selectRound.addEventListener('change', autoPredict);
 
     // Sort change
     dom.selectSort.addEventListener('change', function () {

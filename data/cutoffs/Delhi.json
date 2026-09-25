@@ -1,16 +1,18 @@
 [
   {
-    "year": 2025,
+    "year": 2024,
     "authority": "Delhi",
     "counselling": "Delhi",
-    "round": "Round 1",
+    "round": "24 round 1",
     "collegeId": "CHACHA_NEHRU_BAL_CHIKITSALAYA__DELHI",
     "quotaCode": "Delhi State Quota",
     "course": "MD",
-    "specialty": "PAEDIATRICS",
+    "specialty": "Paediatrics",
     "seatCategory": "UR",
-    "closingRank": 1,
-    "numberOfAllotments": 1
+    "closingRank": 8055,
+    "numberOfAllotments": 1,
+    "fee": "₹35,000*",
+    "stipend": "₹1,10,652*"
   },
   {
     "year": 2025,
@@ -20,10 +22,27 @@
     "collegeId": "CHACHA_NEHRU_BAL_CHIKITSALAYA__DELHI",
     "quotaCode": "Delhi State Quota",
     "course": "MD",
-    "specialty": "PAEDIATRICS",
+    "specialty": "Paediatrics",
+    "seatCategory": "UR",
+    "closingRank": 5461,
+    "numberOfAllotments": 1,
+    "fee": "₹35,000*",
+    "stipend": "₹1,10,652*"
+  },
+  {
+    "year": 2025,
+    "authority": "Delhi",
+    "counselling": "Delhi",
+    "round": "Round 1",
+    "collegeId": "CHACHA_NEHRU_BAL_CHIKITSALAYA__DELHI",
+    "quotaCode": "Delhi State Quota",
+    "course": "MD",
+    "specialty": "Paediatrics",
     "seatCategory": "SC",
-    "closingRank": 2,
-    "numberOfAllotments": 1
+    "closingRank": 25601,
+    "numberOfAllotments": 1,
+    "fee": "₹35,000*",
+    "stipend": "₹1,10,652*"
   },
   {
     "year": 2025,
@@ -33,10 +52,27 @@
     "collegeId": "CHACHA_NEHRU_BAL_CHIKITSALAYA__DELHI",
     "quotaCode": "Delhi State Quota",
     "course": "MD",
-    "specialty": "PAEDIATRICS",
+    "specialty": "Paediatrics",
     "seatCategory": "ST",
-    "closingRank": 3,
-    "numberOfAllotments": 1
+    "closingRank": 68947,
+    "numberOfAllotments": 1,
+    "fee": "₹35,000*",
+    "stipend": "₹1,10,652*"
+  },
+  {
+    "year": 2024,
+    "authority": "Delhi",
+    "counselling": "Delhi",
+    "round": "24 round 1",
+    "collegeId": "CHACHA_NEHRU_BAL_CHIKITSALAYA__DELHI",
+    "quotaCode": "Delhi State Quota",
+    "course": "MD",
+    "specialty": "Paediatrics",
+    "seatCategory": "OBC",
+    "closingRank": 11442,
+    "numberOfAllotments": 1,
+    "fee": "₹35,000*",
+    "stipend": "₹1,10,652*"
   },
   {
     "year": 2025,
@@ -46,9 +82,11 @@
     "collegeId": "CHACHA_NEHRU_BAL_CHIKITSALAYA__DELHI",
     "quotaCode": "Delhi State Quota",
     "course": "MD",
-    "specialty": "PAEDIATRICS",
+    "specialty": "Paediatrics",
     "seatCategory": "OBC",
-    "closingRank": 4,
-    "numberOfAllotments": 1
+    "closingRank": 10240,
+    "numberOfAllotments": 1,
+    "fee": "₹35,000*",
+    "stipend": "₹1,10,652*"
   }
 ]

@@ -15545,5 +15545,1041 @@
     "city": "",
     "state": "Jharkhand",
     "collegeType": "Government"
+  },
+  {
+    "id": "DELHI_ESI_PGIMSR_ESI_HOSPITAL_BASAIDARAPUR_NEW_DELHI",
+    "name": "Esi Pgimsr Esi Hospital Basaidarapur New Delhi",
+    "city": "",
+    "state": "Delhi",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "DELHI_CENTER_FOR_CANCER_PATHOLOGY_INDIAN_COUNCIL_OF_MEDICAL_RESEARCH_DELHI_110029_PREV_NATIONAL_INSTITUTE_OF_PATHOLOGY_INDIAN_COUNCIL_OF_MEDICAL_RESEARCH",
+    "name": "Center For Cancer Pathology Indian Council Of Medical Research Delhi 110029 Prev National Institute Of Pathology Indian Council Of Medical Research",
+    "city": "",
+    "state": "Delhi",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "TAMIL_NADU_KG_HOSPITAL_AND_PG_MEDICAL_INSTITUTE_COIMBATORE_TAMIL_NADU_641018",
+    "name": "Kg Hospital And Pg Medical Institute Coimbatore Tamil Nadu 641018",
+    "city": "",
+    "state": "Tamil Nadu",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "LADAKH_SNM_HOSPITAL_OLD_LEH_ROAD_LEH_LADAKH_194101",
+    "name": "Snm Hospital Old Leh Road Leh Ladakh 194101",
+    "city": "",
+    "state": "Ladakh",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "MAHARASHTRA_SUSHIL_EYE_HOSPITAL_AND_BRAHMA_LASER_CENTRE_SATPUR_NASHIK_MAHARASHTRA_422007",
+    "name": "Sushil Eye Hospital And Brahma Laser Centre Satpur Nashik Maharashtra 422007",
+    "city": "",
+    "state": "Maharashtra",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "CHHATTISGARH_VY_INSTITUTE_OF_MEDICAL_SCIENCE_RAIPUR_CHHATTISGARH_492001",
+    "name": "Vy Institute Of Medical Science Raipur Chhattisgarh 492001",
+    "city": "",
+    "state": "Chhattisgarh",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "MAHARASHTRA_KEM_HOSPITAL_PUNE_MAHARASHTRA_411011",
+    "name": "Kem Hospital Pune Maharashtra 411011",
+    "city": "",
+    "state": "Maharashtra",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "GUJARAT_SBKS_MEDICAL_INSTITUTE_RESEARCH_CENTRE_VADODARA",
+    "name": "Sbks Medical Institute Research Centre Vadodara",
+    "city": "",
+    "state": "Gujarat",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "TAMIL_NADU_CHETTINAD_HOSPITAL_RESEARCH_INSTITUTE_KANCHIPURAM",
+    "name": "Chettinad Hospital Research Institute Kanchipuram",
+    "city": "",
+    "state": "Tamil Nadu",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "GUJARAT_SHRIMAD_RAJCHANDRA_HOSPITAL_RESEARCH_CENTRE_DHARAMPUR_BYPASS_ROAD_BILPUDI_GUJARAT_396050",
+    "name": "Shrimad Rajchandra Hospital Research Centre Dharampur Bypass Road Bilpudi Gujarat 396050",
+    "city": "",
+    "state": "Gujarat",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "MAHARASHTRA_HBP_PRABHAKAR_MALHARRAO_KUTE_MEMORIAL_HOSPITAL_AKURDI_PUNE_MAHARASHTRA_411035",
+    "name": "Hbp Prabhakar Malharrao Kute Memorial Hospital Akurdi Pune Maharashtra 411035",
+    "city": "",
+    "state": "Maharashtra",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "KERALA_KIMS_MULTISPECIALITY_HOSPITAL_INDIA_PVT_LTD_KOTTIYAM_PO_KOLLAM_KERALA_691571",
+    "name": "Kims Multispeciality Hospital India Pvt Ltd Kottiyam Po Kollam Kerala 691571",
+    "city": "",
+    "state": "Kerala",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "MAHARASHTRA_PD_HINDUJA_HOSPITAL_724_11TH_ROAD_KHAR_WEST_MUMBAI_MAHARASHTRA_400052",
+    "name": "Pd Hinduja Hospital 724 11th Road Khar West Mumbai Maharashtra 400052",
+    "city": "",
+    "state": "Maharashtra",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "GUJARAT_SMT_GR_DOSHI_AND_SMT_KM_MEHTA_INSTITUTE_OF_KIDNEY_DISEASES_AND_RESEARCH_CENTRE_AHMEDABAD",
+    "name": "Smt Gr Doshi And Smt Km Mehta Institute Of Kidney Diseases And Research Centre Ahmedabad",
+    "city": "",
+    "state": "Gujarat",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "DELHI_DR_BL_KAPUR_MEMORIAL_HOSPITAL_DELHI_110005",
+    "name": "Dr Bl Kapur Memorial Hospital Delhi 110005",
+    "city": "",
+    "state": "Delhi",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "KERALA_DR_CHANDRAKANTH_MALABAR_SUPERSPECIALITY_EYE_HOSPITAL_KOZHIKODE_KERALA_673004",
+    "name": "Dr Chandrakanth Malabar Superspeciality Eye Hospital Kozhikode Kerala 673004",
+    "city": "",
+    "state": "Kerala",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "TELANGANA_CC_SHROFF_MEMORIAL_HOSPITAL_BARKATPURA_KACHIGUDA_HYDERABAD_TELANGANA_500027",
+    "name": "Cc Shroff Memorial Hospital Barkatpura Kachiguda Hyderabad Telangana 500027",
+    "city": "",
+    "state": "Telangana",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "TAMIL_NADU_MGM_HEALTH_CARE_PVT_LTD_AMINJIKARAI_CHENNAI_TAMIL_NADU_600029",
+    "name": "Mgm Health Care Pvt Ltd Aminjikarai Chennai Tamil Nadu 600029",
+    "city": "",
+    "state": "Tamil Nadu",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "MAHARASHTRA_RP_HOSPITAL_AND_RESEARCH_INSTITUTE_PARBHANI_MAHARASHTRA_431537",
+    "name": "Rp Hospital And Research Institute Parbhani Maharashtra 431537",
+    "city": "",
+    "state": "Maharashtra",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "MAHARASHTRA_SL_RAHEJA_HOSPITAL_A_FORTIS_ASSOCIATE_MAHI_MUMBAI_MAHARASHTRA_400016",
+    "name": "Sl Raheja Hospital A Fortis Associate Mahi Mumbai Maharashtra 400016",
+    "city": "",
+    "state": "Maharashtra",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "ARUNACHAL_PRADESH_TOMO_RIBA_INSTITUTE_OF_HEALTH_MEDICAL_SCIENCES_NAHARLAGUN",
+    "name": "Tomo Riba Institute Of Health Medical Sciences Naharlagun",
+    "city": "",
+    "state": "Arunachal Pradesh",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "HARYANA_AARVY_HEALTHCARE_PVT_LTD_SECTOR_90_GURUGRAM_HARYANA_122505",
+    "name": "Aarvy Healthcare Pvt Ltd Sector 90 Gurugram Haryana 122505",
+    "city": "",
+    "state": "Haryana",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "PUNJAB_SGL_SUPER_SPECIALTY_CHARITABLE_HOSPITAL_JALANDHAR_PUNJAB_144022",
+    "name": "Sgl Super Specialty Charitable Hospital Jalandhar Punjab 144022",
+    "city": "",
+    "state": "Punjab",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "TAMIL_NADU_ESI_PGIMSR_ESI_HOSPITAL_KK_NAGAR_CHENNAI",
+    "name": "Esi Pgimsr Esi Hospital Kk Nagar Chennai",
+    "city": "",
+    "state": "Tamil Nadu",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "UTTAR_PRADESH_SUPER_SPECIALITY_PEDIATRIC_HOSPITAL_AND_POST_GRADUATE_TEACHING_INSTITUTE_NOIDA_UTTAR_PRADESH_201303",
+    "name": "Super Speciality Pediatric Hospital And Post Graduate Teaching Institute Noida Uttar Pradesh 201303",
+    "city": "",
+    "state": "Uttar Pradesh",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "MEGHALAYA_NORTH_EASTERN_INDIRA_GANDHI_REGIONAL_INSTITUTE_OF_HEALTH_AND_MEDICAL_SCIENCES_SHILLONG",
+    "name": "North Eastern Indira Gandhi Regional Institute Of Health And Medical Sciences Shillong",
+    "city": "",
+    "state": "Meghalaya",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "KARNATAKA_SORAKE_CHANDRASHEKAR_HOSPITAL_UPPER_BENDOOR_MANGALORE_KARNATAKA_575002",
+    "name": "Sorake Chandrashekar Hospital Upper Bendoor Mangalore Karnataka 575002",
+    "city": "",
+    "state": "Karnataka",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "DELHI_GB_PANT_INSTITUTE_OF_POSTGRADUATE_MEDICAL_EDUCATION_AND_RESEARCH_NEW_DELHI",
+    "name": "Gb Pant Institute Of Postgraduate Medical Education And Research New Delhi",
+    "city": "",
+    "state": "Delhi",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "UTTAR_PRADESH_NETRODAYA_THE_EYE_CITY_DAFI_TOLL_PLAZA_VARANASI_UTTAR_PRADESH_221008",
+    "name": "Netrodaya The Eye City Dafi Toll Plaza Varanasi Uttar Pradesh 221008",
+    "city": "",
+    "state": "Uttar Pradesh",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "UTTAR_PRADESH_MAX_SUPER_SPECIALITY_HOSPITAL_GOMTI_NAGAR_LUCKNOW_UTTAR_PRADESH_226010_A_UNIT_OF_STARLIT_MEDICAL_CENTRE_PVT_LTD_PREV_SAHARA_INDIA_MEDICAL_INSTITUTE_LIMITED_GOMTI_NAGAR_LUCKNOW",
+    "name": "Max Super Speciality Hospital Gomti Nagar Lucknow Uttar Pradesh 226010 A Unit Of Starlit Medical Centre Pvt Ltd Prev Sahara India Medical Institute Limited Gomti Nagar Lucknow",
+    "city": "",
+    "state": "Uttar Pradesh",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "KARNATAKA_RL_JALAPPA_HOSPITAL_AND_RESEARCH_CENTRE_SRI_DEVARAJ_URS_ACADEMY_OF_HIGHER_EDUCATION_AND_RESEARCH_TAMAKA_KOLAR_KARNATAKA_563103",
+    "name": "Rl Jalappa Hospital And Research Centre Sri Devaraj Urs Academy Of Higher Education And Research Tamaka Kolar Karnataka 563103",
+    "city": "",
+    "state": "Karnataka",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "ANDHRA_PRADESH_SANGHAMITRA_HOSPITALS_PVT_LTD_ONGOLE_ANDHRA_PRADESH_523002",
+    "name": "Sanghamitra Hospitals Pvt Ltd Ongole Andhra Pradesh 523002",
+    "city": "",
+    "state": "Andhra Pradesh",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "HARYANA_VIRK_HOSPITAL_PVT_LTD_KARNAL_HARYANA_132001",
+    "name": "Virk Hospital Pvt Ltd Karnal Haryana 132001",
+    "city": "",
+    "state": "Haryana",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "KARNATAKA_KS_HOSPITAL_KOPPAL_KARNATAKA_583231",
+    "name": "Ks Hospital Koppal Karnataka 583231",
+    "city": "",
+    "state": "Karnataka",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "UTTAR_PRADESH_ASHIRVAD_MULTI_SPECIALITY_HOSPITAL_BIRDOPUR_MAHMOORGANJ_VARANASI_UTTAR_PRADESH_221010",
+    "name": "Ashirvad Multi Speciality Hospital Birdopur Mahmoorganj Varanasi Uttar Pradesh 221010",
+    "city": "",
+    "state": "Uttar Pradesh",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "UTTAR_PRADESH_VARUN_TRAUMA_AND_BURN_CENTRE_PVT_LTD_ALIGARH_UTTAR_PRADESH_202001",
+    "name": "Varun Trauma And Burn Centre Pvt Ltd Aligarh Uttar Pradesh 202001",
+    "city": "",
+    "state": "Uttar Pradesh",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "RAJASTHAN_RAJ_JINDAL_HOSPITAL_RESEARCH_CENTRE_PVT_LTD_BHARATPUR_RAJASTHAN_321001",
+    "name": "Raj Jindal Hospital Research Centre Pvt Ltd Bharatpur Rajasthan 321001",
+    "city": "",
+    "state": "Rajasthan",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "WEST_BENGAL_DR_PH_SAHA_HOSPITAL_PRIVATE_HOSPITAL_LIMITED_BAIRAGI_DIGHI_BYLANE_COOCH_BEHAR_WEST_BENGAL_736101",
+    "name": "Dr Ph Saha Hospital Private Hospital Limited Bairagi Dighi Bylane Cooch Behar West Bengal 736101",
+    "city": "",
+    "state": "West Bengal",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "WEST_BENGAL_DISHARI_HEALTH_POINT_PVT_LTD_MOKDUMPUR_MALDA_WEST_BENGAL_732103",
+    "name": "Dishari Health Point Pvt Ltd Mokdumpur Malda West Bengal 732103",
+    "city": "",
+    "state": "West Bengal",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "DELHI_NATIONAL_INSTITUTE_OF_HEALTH_AND_FAMILY_WELFARE_NEW_DELHI",
+    "name": "National Institute Of Health And Family Welfare New Delhi",
+    "city": "",
+    "state": "Delhi",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "JHARKHAND_KASHYAP_MEMORIAL_EYE_HOSPITAL_RANCHI_JHARKHAND_834001",
+    "name": "Kashyap Memorial Eye Hospital Ranchi Jharkhand 834001",
+    "city": "",
+    "state": "Jharkhand",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "WEST_BENGAL_SECOND_SIGHT_SOUTHEND_EYE_CENTRE_SOUTH_24_PARGANAS_WEST_BENGAL_743610",
+    "name": "Second Sight Southend Eye Centre South 24 Parganas West Bengal 743610",
+    "city": "",
+    "state": "West Bengal",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "WEST_BENGAL_PEERLESS_HOSPITAL_AND_BK_ROY_RESEARCH_CENTRE_KOLKATA_WEST_BENGAL_700094",
+    "name": "Peerless Hospital And Bk Roy Research Centre Kolkata West Bengal 700094",
+    "city": "",
+    "state": "West Bengal",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "WEST_BENGAL_ESI_HOSPITAL_MANICKTALA_KOLKATA_WEST_BENGAL_700054",
+    "name": "Esi Hospital Manicktala Kolkata West Bengal 700054",
+    "city": "",
+    "state": "West Bengal",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "WEST_BENGAL_MAL_SSH_MAL_BAZAR_JALPAIGURI_WEST_BENGAL_735221",
+    "name": "Mal Ssh Mal Bazar Jalpaiguri West Bengal 735221",
+    "city": "",
+    "state": "West Bengal",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "WEST_BENGAL_BR_SINGH_HOSPITAL_AND_CENTRE_FOR_MEDICAL_EDUCATION_AND_RESEARCH_KOLKATA_WEST_BENGAL_700014",
+    "name": "Br Singh Hospital And Centre For Medical Education And Research Kolkata West Bengal 700014",
+    "city": "",
+    "state": "West Bengal",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "MAHARASHTRA_PD_HINDUJA_NATIONAL_HOSPITAL_AND_MEDICAL_RESEARCH_CENTRE_MUMBAI_MAHARASHTRA_400016",
+    "name": "Pd Hinduja National Hospital And Medical Research Centre Mumbai Maharashtra 400016",
+    "city": "",
+    "state": "Maharashtra",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "TAMIL_NADU_MIOT_HOSPITAL_CHENNAI_TAMIL_NADU_600089",
+    "name": "Miot Hospital Chennai Tamil Nadu 600089",
+    "city": "",
+    "state": "Tamil Nadu",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "HARYANA_OP_JINDAL_INSTITUTE_OF_CANCER_CARDIAC_RESEARCH_HISAR_HARYANA_125005",
+    "name": "Op Jindal Institute Of Cancer Cardiac Research Hisar Haryana 125005",
+    "city": "",
+    "state": "Haryana",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "UTTAR_PRADESH_KAILASH_HOSPITAL_HEART_INSTITUTE_SECTOR_27_NOIDA_UTTAR_PRADESH_201301",
+    "name": "Kailash Hospital Heart Institute Sector 27 Noida Uttar Pradesh 201301",
+    "city": "",
+    "state": "Uttar Pradesh",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "TELANGANA_YASHODA_HEALTH_CARE_SERVICES_PVT_LTD_KHANAMET_VILLAGE_SERILINGAMPALLY_M_HYDERABAD_TELANGANA_500084",
+    "name": "Yashoda Health Care Services Pvt Ltd Khanamet Village Serilingampally M Hyderabad Telangana 500084",
+    "city": "",
+    "state": "Telangana",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "TELANGANA_KIMS_SUNSHINE_HOSPITAL_BEGUMPET_HYDERABAD_TELANGANA_500016_PREV_SUNSHINE_HOSPITAL_BEGUMPET_HYDERABAD",
+    "name": "Kims Sunshine Hospital Begumpet Hyderabad Telangana 500016 Prev Sunshine Hospital Begumpet Hyderabad",
+    "city": "",
+    "state": "Telangana",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "CHHATTISGARH_VEDANTA_MEDICAL_RESEARCH_FOUNDATION_BALCO_MEDICAL_CENTRE_SECTOR_36_PO_UPARWARA_NEW_RAIPUR_CHHATTISGARH_493661",
+    "name": "Vedanta Medical Research Foundation Balco Medical Centre Sector 36 Po Uparwara New Raipur Chhattisgarh 493661",
+    "city": "",
+    "state": "Chhattisgarh",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "ODISHA_JAIPRAKASH_HOSPITAL_AND_RESEARCH_CENTRE_ROURKELA_ODISHA_769004",
+    "name": "Jaiprakash Hospital And Research Centre Rourkela Odisha 769004",
+    "city": "",
+    "state": "Odisha",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "KERALA_VALLUVANAD_HOSPITAL_COMPLEX_LTD_OTTAPALAM_KERALA_679104",
+    "name": "Valluvanad Hospital Complex Ltd Ottapalam Kerala 679104",
+    "city": "",
+    "state": "Kerala",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "DELHI_ESI_HOSPITAL_BASAIDARAPUR_DELHI_110015",
+    "name": "Esi Hospital Basaidarapur Delhi 110015",
+    "city": "",
+    "state": "Delhi",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "TAMIL_NADU_DR_RELA_INSTITUTE_MEDICAL_CENTRE_CHROMPET_CHENNAI_600044",
+    "name": "Dr Rela Institute Medical Centre Chrompet Chennai 600044",
+    "city": "",
+    "state": "Tamil Nadu",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "GUJARAT_HARIA_LG_ROTARY_HOSPITAL_VAPI_GUJARAT_396195",
+    "name": "Haria Lg Rotary Hospital Vapi Gujarat 396195",
+    "city": "",
+    "state": "Gujarat",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "KERALA_APOLLO_ADLUX_HOSPITAL_ANGAMALY_KERALA_683576",
+    "name": "Apollo Adlux Hospital Angamaly Kerala 683576",
+    "city": "",
+    "state": "Kerala",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "TAMIL_NADU_SRI_NARAYANI_HOSPITAL_AND_RESEARCH_CENTRE_VELLORE_TAMIL_NADU_632055",
+    "name": "Sri Narayani Hospital And Research Centre Vellore Tamil Nadu 632055",
+    "city": "",
+    "state": "Tamil Nadu",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "TAMIL_NADU_REVATHI_MEDICAL_CENTER_AVINASHI_ROAD_TIRUPUR_TAMIL_NADU_641603",
+    "name": "Revathi Medical Center Avinashi Road Tirupur Tamil Nadu 641603",
+    "city": "",
+    "state": "Tamil Nadu",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "TAMIL_NADU_SKS_HOSPITAL_SALEM_TAMIL_NADU_636004",
+    "name": "Sks Hospital Salem Tamil Nadu 636004",
+    "city": "",
+    "state": "Tamil Nadu",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "TAMIL_NADU_KONGUNAD_HOSPITALS_PVT_LTD_COIMBATORE_TAMIL_NADU_641012",
+    "name": "Kongunad Hospitals Pvt Ltd Coimbatore Tamil Nadu 641012",
+    "city": "",
+    "state": "Tamil Nadu",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "MADHYA_PRADESH_APOLLO_SAGE_HOSPITAL_BAWADIA_LALAN_BHOPAL_MADHYA_PRADESH_462026",
+    "name": "Apollo Sage Hospital Bawadia Lalan Bhopal Madhya Pradesh 462026",
+    "city": "",
+    "state": "Madhya Pradesh",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "TELANGANA_TSRTC_HOSPITAL_ABHILEKHAGARAM_AMBERPET_SECUNDERABAD_TELANGANA_500007",
+    "name": "Tsrtc Hospital Abhilekhagaram Amberpet Secunderabad Telangana 500007",
+    "city": "",
+    "state": "Telangana",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "RAJASTHAN_GOYAL_HOSPITAL_AND_RESEARCH_CENTRE_PVT_LTD_RAJASTHAN_342002",
+    "name": "Goyal Hospital And Research Centre Pvt Ltd Rajasthan 342002",
+    "city": "",
+    "state": "Rajasthan",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "HARYANA_ACCORD_SUPERSPECIALITY_HOSPITAL_SECTOR_86_FARIDABAD_HARYANA_121002",
+    "name": "Accord Superspeciality Hospital Sector 86 Faridabad Haryana 121002",
+    "city": "",
+    "state": "Haryana",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "DELHI_AYUSHMAN_HOSPITAL_HEALTH_SERVICES_DWARKA_DELHI_110075",
+    "name": "Ayushman Hospital Health Services Dwarka Delhi 110075",
+    "city": "",
+    "state": "Delhi",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "MAHARASHTRA_MUMBAI_PORT_AUTHORITY_HOSPITAL_MUMBAI_MAHARASHTRA_400037",
+    "name": "Mumbai Port Authority Hospital Mumbai Maharashtra 400037",
+    "city": "",
+    "state": "Maharashtra",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "MAHARASHTRA_SHREE_NARAYANI_HEALTHCARE_PVT_LTD_MUMBAI_NAKA_NASHIK_MAHARASHTRA_422008",
+    "name": "Shree Narayani Healthcare Pvt Ltd Mumbai Naka Nashik Maharashtra 422008",
+    "city": "",
+    "state": "Maharashtra",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "MAHARASHTRA_PARKAR_HOSPITAL_AND_RESEARCH_INSTITUTE_PVT_LTD_SHIVAJI_NAGAR_RATNAGIRI_MAHARASHTRA_415639",
+    "name": "Parkar Hospital And Research Institute Pvt Ltd Shivaji Nagar Ratnagiri Maharashtra 415639",
+    "city": "",
+    "state": "Maharashtra",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "GUJARAT_KG_PATEL_CHILDREN_HOSPITAL_AND_JAYODIA_RESEARCH_INSTITUTE_VADODARA_GUJARAT_390018",
+    "name": "Kg Patel Children Hospital And Jayodia Research Institute Vadodara Gujarat 390018",
+    "city": "",
+    "state": "Gujarat",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "KERALA_PAALANA_INSTITUTE_OF_MEDICAL_SCIENCE_KANNADI_PALAKKAD_KERALA_678701",
+    "name": "Paalana Institute Of Medical Science Kannadi Palakkad Kerala 678701",
+    "city": "",
+    "state": "Kerala",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "RAJASTHAN_CKS_HOSPITAL_F_98A_VKIA_ROAD_NO_6_SIKAR_ROAD_JAIPUR_RAJASTHAN_302013",
+    "name": "Cks Hospital F 98a Vkia Road No 6 Sikar Road Jaipur Rajasthan 302013",
+    "city": "",
+    "state": "Rajasthan",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "MAHARASHTRA_ALLIANCE_MULTISPECIALITY_HOSPITAL_ICHALKARANJI_MAHARASHTRA_416115",
+    "name": "Alliance Multispeciality Hospital Ichalkaranji Maharashtra 416115",
+    "city": "",
+    "state": "Maharashtra",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "KERALA_SMITA_MEMORIAL_HOSPITAL_AND_RESEARCH_CENTRE_VENGALLOOR_THODUPUZHA_KERALA_685608",
+    "name": "Smita Memorial Hospital And Research Centre Vengalloor Thodupuzha Kerala 685608",
+    "city": "",
+    "state": "Kerala",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "MAHARASHTRA_PBMA_S_HV_DESAI_EYE_HOSPITAL_PUNE_MAHARASHTRA_411060",
+    "name": "Pbma S Hv Desai Eye Hospital Pune Maharashtra 411060",
+    "city": "",
+    "state": "Maharashtra",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "KERALA_MGM_MUTHOOT_HOSPITAL_RING_ROAD_PATHANAMTHITTA_KERALA_689645",
+    "name": "Mgm Muthoot Hospital Ring Road Pathanamthitta Kerala 689645",
+    "city": "",
+    "state": "Kerala",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "ANDAMAN_AND_NICOBAR_ISLANDS_ANDAMAN_AND_NICOBAR_ISLANDS_INSTITUTE_OF_MEDICAL_SCIENCE_PORT_BLAIR_ANDAMAN_AND_NICOBAR_ISLANDS_744104",
+    "name": "Andaman And Nicobar Islands Institute Of Medical Science Port Blair Andaman And Nicobar Islands 744104",
+    "city": "",
+    "state": "Andaman And Nicobar Islands",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "WEST_BENGAL_KASTURI_DAS_MEMORIAL_SUPER_SPECIALITY_HOSPITAL_A_UNIT_OF_DISHARI_HEALTH_POINT_PVT_LTD_SOUTH_24_PARGANAS_WEST_BENGAL_700142",
+    "name": "Kasturi Das Memorial Super Speciality Hospital A Unit Of Dishari Health Point Pvt Ltd South 24 Parganas West Bengal 700142",
+    "city": "",
+    "state": "West Bengal",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "RAJASTHAN_NEO_CLINIC_CHILDREN_HOSPITAL_A_UNIT_OF_SATYA_HEALTHCARE_PVT_LTD_NIRMAN_NAGAR_JAIPUR_RAJASTHAN_302019",
+    "name": "Neo Clinic Children Hospital A Unit Of Satya Healthcare Pvt Ltd Nirman Nagar Jaipur Rajasthan 302019",
+    "city": "",
+    "state": "Rajasthan",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "TAMIL_NADU_RAINBOW_CHILDRENS_HOSPITAL_CHENNAI_TAMIL_NADU_600015",
+    "name": "Rainbow Childrens Hospital Chennai Tamil Nadu 600015",
+    "city": "",
+    "state": "Tamil Nadu",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "MADHYA_PRADESH_MITTAL_MEDICARE_AND_HOSPITAL_DHAR_MADHYA_PRADESH_454001",
+    "name": "Mittal Medicare And Hospital Dhar Madhya Pradesh 454001",
+    "city": "",
+    "state": "Madhya Pradesh",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "KARNATAKA_RAINBOW_CHILDRENS_HOSPITAL_MARATHAHALLI_BENGALURU_KARNATAKA_560037",
+    "name": "Rainbow Childrens Hospital Marathahalli Bengaluru Karnataka 560037",
+    "city": "",
+    "state": "Karnataka",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "TAMIL_NADU_RIO_CHILDRENS_HOSPITAL_MADURAI_TAMIL_NADU_625020",
+    "name": "Rio Childrens Hospital Madurai Tamil Nadu 625020",
+    "city": "",
+    "state": "Tamil Nadu",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "CHHATTISGARH_MGM_EYE_INSITUTE_RAIPUR_CHHATTISGARH_493111",
+    "name": "Mgm Eye Insitute Raipur Chhattisgarh 493111",
+    "city": "",
+    "state": "Chhattisgarh",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "BIHAR_MAHAVIR_VATSALYA_HOSPITAL_PATNA_BIHAR_800001",
+    "name": "Mahavir Vatsalya Hospital Patna Bihar 800001",
+    "city": "",
+    "state": "Bihar",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "GUJARAT_PRANAYAM_LUNG_HEART_INSTITUTE_LAKULESH_PARK_SOCIETY_NEW_VIP_ROAD_VADODARA_GUJARAT_390022",
+    "name": "Pranayam Lung Heart Institute Lakulesh Park Society New Vip Road Vadodara Gujarat 390022",
+    "city": "",
+    "state": "Gujarat",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "HARYANA_NC_JINDAL_INSTITUTE_OF_MEDICAL_CARE_AND_RESEARCH_MODEL_TOWN_HISAR_HARYANA_125005",
+    "name": "Nc Jindal Institute Of Medical Care And Research Model Town Hisar Haryana 125005",
+    "city": "",
+    "state": "Haryana",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "TELANGANA_ANKURA_MEDICAL_RESEARCH_CENTRE_UPPAL_HYDERABAD_TELANGANA_500039",
+    "name": "Ankura Medical Research Centre Uppal Hyderabad Telangana 500039",
+    "city": "",
+    "state": "Telangana",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "MAHARASHTRA_MASAI_CHILDREN_S_HOSPITAL_1837_SOMWARPETH_KOLHAPUR_MAHARASHTRA_416002",
+    "name": "Masai Children S Hospital 1837 Somwarpeth Kolhapur Maharashtra 416002",
+    "city": "",
+    "state": "Maharashtra",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "TAMIL_NADU_RAMALINGAM_HOSPITAL_MEYYANUR_SALEM_TAMIL_NADU_636004",
+    "name": "Ramalingam Hospital Meyyanur Salem Tamil Nadu 636004",
+    "city": "",
+    "state": "Tamil Nadu",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "ANDHRA_PRADESH_RAINBOW_CHILDRENS_HOSPITAL_VIJAYAWADA_ANDHRA_PRADESH_520008",
+    "name": "Rainbow Childrens Hospital Vijayawada Andhra Pradesh 520008",
+    "city": "",
+    "state": "Andhra Pradesh",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "MAHARASHTRA_WESTERN_INDIA_INSTITUTE_OF_NEUROSCIENCES_KOLHAPUR_MAHARASHTRA_416002",
+    "name": "Western India Institute Of Neurosciences Kolhapur Maharashtra 416002",
+    "city": "",
+    "state": "Maharashtra",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "UTTAR_PRADESH_METRO_HEART_INSTITUTE_NOIDA_UTTAR_PRADESH_201301",
+    "name": "Metro Heart Institute Noida Uttar Pradesh 201301",
+    "city": "",
+    "state": "Uttar Pradesh",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "WEST_BENGAL_WOODLANDS_MULTISPECIALITY_HOSPITAL_LTD_KOLKATA_WEST_BENGAL_700027",
+    "name": "Woodlands Multispeciality Hospital Ltd Kolkata West Bengal 700027",
+    "city": "",
+    "state": "West Bengal",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "TELANGANA_SRI_KRISHNA_CHILDREN_S_HOSPITAL_HANAMKONDA_TELANGANA_506001",
+    "name": "Sri Krishna Children S Hospital Hanamkonda Telangana 506001",
+    "city": "",
+    "state": "Telangana",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "TELANGANA_STAR_WOMEN_CHILDREN_HOSPITAL_TEEGALAGUTTA_PALLY_RAILWAY_STATION_KARIMNAGAR_TELANGANA_505001",
+    "name": "Star Women Children Hospital Teegalagutta Pally Railway Station Karimnagar Telangana 505001",
+    "city": "",
+    "state": "Telangana",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "UTTAR_PRADESH_NIRVAN_HOSPITAL_PRIVATE_LIMITED_1_1_KALYANPUR_RING_ROAD_LUCKNOW_UTTAR_PRADESH_226022",
+    "name": "Nirvan Hospital Private Limited 1 1 Kalyanpur Ring Road Lucknow Uttar Pradesh 226022",
+    "city": "",
+    "state": "Uttar Pradesh",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "KARNATAKA_MM_JOSHI_EYE_HOSPITAL_HUBLI_KARNATAKA_580021",
+    "name": "Mm Joshi Eye Hospital Hubli Karnataka 580021",
+    "city": "",
+    "state": "Karnataka",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "ODISHA_SHANTI_MEMORIAL_HOSPITAL_PRIVATE_LIMITED_PATNAIK_COLONY_THORIA_SAHI_CUTTACK_ODISHA_753001",
+    "name": "Shanti Memorial Hospital Private Limited Patnaik Colony Thoria Sahi Cuttack Odisha 753001",
+    "city": "",
+    "state": "Odisha",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "MADHYA_PRADESH_JAWAHAR_LAL_NEHRU_CANCER_HOSPITAL_AND_RESEARCH_CENTRE_BHOPAL_MADHYA_PRADESH_462001",
+    "name": "Jawahar Lal Nehru Cancer Hospital And Research Centre Bhopal Madhya Pradesh 462001",
+    "city": "",
+    "state": "Madhya Pradesh",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "KERALA_MK_HAJI_ORPHANAGE_HOSPITAL_TIRURANGADI_MALAPPURAM_KERALA_676303_PREV_MKH_CRESCENT_PAEDIATRIC_AND_NEONATOLOGY_CENTRE_TIRURANGADI",
+    "name": "Mk Haji Orphanage Hospital Tirurangadi Malappuram Kerala 676303 Prev Mkh Crescent Paediatric And Neonatology Centre Tirurangadi",
+    "city": "",
+    "state": "Kerala",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "UTTAR_PRADESH_SUSHRUT_INSTITUTE_OF_PLASTIC_SURGERY_29_SHAHMEENA_ROAD_LUCKNOW_UTTAR_PRADESH_226003",
+    "name": "Sushrut Institute Of Plastic Surgery 29 Shahmeena Road Lucknow Uttar Pradesh 226003",
+    "city": "",
+    "state": "Uttar Pradesh",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "DELHI_BM_GUPTA_HOSPITAL_UTTAM_NAGAR_DELHI_110059",
+    "name": "Bm Gupta Hospital Uttam Nagar Delhi 110059",
+    "city": "",
+    "state": "Delhi",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "PUNJAB_DR_OM_PARKASH_EYE_INSTITUTE_NOVELTY_CHOWK_AMRITSAR_PUNJAB_143001",
+    "name": "Dr Om Parkash Eye Institute Novelty Chowk Amritsar Punjab 143001",
+    "city": "",
+    "state": "Punjab",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "MAHARASHTRA_ANURADHA_SUPERSPECIALITY_EYE_HOSPITAL_SANGLI_MAHARASHTRA_416415",
+    "name": "Anuradha Superspeciality Eye Hospital Sangli Maharashtra 416415",
+    "city": "",
+    "state": "Maharashtra",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "TELANGANA_MAA_ENT_HOSPITALS_HYDERABAD_TELANGANA_500033",
+    "name": "Maa Ent Hospitals Hyderabad Telangana 500033",
+    "city": "",
+    "state": "Telangana",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "ANDHRA_PRADESH_DR_ANJI_REDDY_MULTI_SPECIALITY_HOSPITALS_PIDUGURALLA_ANDHRA_PRADESH_522413",
+    "name": "Dr Anji Reddy Multi Speciality Hospitals Piduguralla Andhra Pradesh 522413",
+    "city": "",
+    "state": "Andhra Pradesh",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "UTTAR_PRADESH_KK_HOSPITAL_RIVER_BANK_COLONY_LUCKNOW_UTTAR_PRADESH_226018",
+    "name": "Kk Hospital River Bank Colony Lucknow Uttar Pradesh 226018",
+    "city": "",
+    "state": "Uttar Pradesh",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "MAHARASHTRA_LOKMANYA_HOSPITAL_PRADHIKARAN_NIGDI_PUNE_MAHARASHTRA_411044",
+    "name": "Lokmanya Hospital Pradhikaran Nigdi Pune Maharashtra 411044",
+    "city": "",
+    "state": "Maharashtra",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "WEST_BENGAL_BM_BIRLA_HEART_RESEARCH_CENTRE_ALIPORE_KOLKATA_WEST_BENGAL_700027",
+    "name": "Bm Birla Heart Research Centre Alipore Kolkata West Bengal 700027",
+    "city": "",
+    "state": "West Bengal",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "TAMIL_NADU_DR_AGARWALS_EYE_HOSPITAL_TIRUNELVELI_TAMIL_NADU_627003",
+    "name": "Dr Agarwals Eye Hospital Tirunelveli Tamil Nadu 627003",
+    "city": "",
+    "state": "Tamil Nadu",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "MAHARASHTRA_ENDOWORLD_HOSPITAL_PVT_LTD_CHIKALTHANA_AURANGABAD_MAHARASHTRA_431006",
+    "name": "Endoworld Hospital Pvt Ltd Chikalthana Aurangabad Maharashtra 431006",
+    "city": "",
+    "state": "Maharashtra",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "UTTAR_PRADESH_DIVINE_HEART_MULTISPECIALTY_HOSPITAL_GOMTI_NAGAR_LUCKNOW_UTTAR_PRADESH_226010",
+    "name": "Divine Heart Multispecialty Hospital Gomti Nagar Lucknow Uttar Pradesh 226010",
+    "city": "",
+    "state": "Uttar Pradesh",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "TAMIL_NADU_COIMBATORE_CHILD_TRUST_HOSPITALS_COIMBATORE_TAMIL_NADU_641005",
+    "name": "Coimbatore Child Trust Hospitals Coimbatore Tamil Nadu 641005",
+    "city": "",
+    "state": "Tamil Nadu",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "WEST_BENGAL_GHATAL_SD_HOSPITAL_PASCHIM_MEDINIPUR_WEST_BENGAL_721212",
+    "name": "Ghatal Sd Hospital Paschim Medinipur West Bengal 721212",
+    "city": "",
+    "state": "West Bengal",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "ODISHA_JPM_ROTARY_EYE_HOSPITAL_AND_RESEARCH_INSTITUTE_CUTTACK_ODISHA_753014",
+    "name": "Jpm Rotary Eye Hospital And Research Institute Cuttack Odisha 753014",
+    "city": "",
+    "state": "Odisha",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "PONDICHERRY_AG_PADMAVATIS_HOSPITAL_LTD_ARUMPARTHAPURAM_PUDUCHERRY_605110",
+    "name": "Ag Padmavatis Hospital Ltd Arumparthapuram Puducherry 605110",
+    "city": "",
+    "state": "PONDICHERRY",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "ANDHRA_PRADESH_DR_RAMANA_RAJU_S_VISION_TREE_SUPERSPECIALITY_EYE_CARE_CENTER_VISAKHAPATNAM_ANDHRA_PRADESH_530043",
+    "name": "Dr Ramana Raju S Vision Tree Superspeciality Eye Care Center Visakhapatnam Andhra Pradesh 530043",
+    "city": "",
+    "state": "Andhra Pradesh",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "TAMIL_NADU_MN_EYE_HOSPITAL_CHENNAI_TAMIL_NADU_600021",
+    "name": "Mn Eye Hospital Chennai Tamil Nadu 600021",
+    "city": "",
+    "state": "Tamil Nadu",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "ANDHRA_PRADESH_AAYUSH_NRI_LEPL_HEALTHCARE_PVT_LTD_VIJAYAWADA_ANDHRA_PRADESH_520008",
+    "name": "Aayush Nri Lepl Healthcare Pvt Ltd Vijayawada Andhra Pradesh 520008",
+    "city": "",
+    "state": "Andhra Pradesh",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "TAMIL_NADU_CSI_MISSION_HOSPITAL_NEYYOOR_KANYAKUMARI_TAMIL_NADU_629802",
+    "name": "Csi Mission Hospital Neyyoor Kanyakumari Tamil Nadu 629802",
+    "city": "",
+    "state": "Tamil Nadu",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "TAMIL_NADU_PARVATHY_ORTHO_HOSPITAL_PVT_LTD_CHROMEPET_CHENNAI_TAMIL_NADU_600044",
+    "name": "Parvathy Ortho Hospital Pvt Ltd Chromepet Chennai Tamil Nadu 600044",
+    "city": "",
+    "state": "Tamil Nadu",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "UTTAR_PRADESH_VARDHMAN_TRAUMA_AND_LAPROSCOPY_CENTRE_MUZAFFARNAGAR_UTTAR_PRADESH_251001",
+    "name": "Vardhman Trauma And Laproscopy Centre Muzaffarnagar Uttar Pradesh 251001",
+    "city": "",
+    "state": "Uttar Pradesh",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "UTTAR_PRADESH_PRAKASH_HOSPITAL_PRIVATE_LIMITED_D_12_12A_12B_SEC_33_NOIDA_UTTAR_PRADESH_201301_JOINT_PROGRAMME_WITH_PRAKASH_HOSPITAL_PLOT_NO_9A_SECTOR_OMEGA_1_GREATER_NOIDA_AS_SECONDARY_HOSPITAL",
+    "name": "Prakash Hospital Private Limited D 12 12a 12b Sec 33 Noida Uttar Pradesh 201301 Joint Programme With Prakash Hospital Plot No 9a Sector Omega 1 Greater Noida As Secondary Hospital",
+    "city": "",
+    "state": "Uttar Pradesh",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "UTTAR_PRADESH_CHANDRA_MOTHER_EYE_CARE_PVT_LTD_GOMTI_NAGAR_LUCKNOW_UTTAR_PRADESH_226010",
+    "name": "Chandra Mother Eye Care Pvt Ltd Gomti Nagar Lucknow Uttar Pradesh 226010",
+    "city": "",
+    "state": "Uttar Pradesh",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "CHHATTISGARH_OP_JINDAL_HOSPITAL_AND_RESEARCH_CENTER_PATRAPALI_RAIGARH_CHHATTISGARH_496001",
+    "name": "Op Jindal Hospital And Research Center Patrapali Raigarh Chhattisgarh 496001",
+    "city": "",
+    "state": "Chhattisgarh",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "KARNATAKA_NEW_AMRUTHA_MEDICAL_RESEARCH_CENTRE_RAICHUR_KARNATAKA_584101",
+    "name": "New Amrutha Medical Research Centre Raichur Karnataka 584101",
+    "city": "",
+    "state": "Karnataka",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "HARYANA_ISHWAR_EYE_CENTRE_VIJAY_PARK_JHANG_COLONY_ROHTAK_HARYANA_124001",
+    "name": "Ishwar Eye Centre Vijay Park Jhang Colony Rohtak Haryana 124001",
+    "city": "",
+    "state": "Haryana",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "MEGHALAYA_THE_CHILDREN_S_HOSPITAL_POHKSEH_SHILLONG_MEGHALAYA_793006",
+    "name": "The Children S Hospital Pohkseh Shillong Meghalaya 793006",
+    "city": "",
+    "state": "Meghalaya",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "KERALA_I_VISION_EYE_HOSPITAL_A_UNIT_OF_JASM_EYE_HOSPITALS_PVT_LTD_KANIMANGALAM_THRISSUR_KERALA_680027",
+    "name": "I Vision Eye Hospital A Unit Of Jasm Eye Hospitals Pvt Ltd Kanimangalam Thrissur Kerala 680027",
+    "city": "",
+    "state": "Kerala",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "DELHI_ESI_HOSPITAL_JHILMIL_SHAHDARA_DELHI_DELHI_110095",
+    "name": "Esi Hospital Jhilmil Shahdara Delhi Delhi 110095",
+    "city": "",
+    "state": "Delhi",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "GUJARAT_METAS_ADVENTIST_HOSPITAL_SURAT_GUJARAT_395001",
+    "name": "Metas Adventist Hospital Surat Gujarat 395001",
+    "city": "",
+    "state": "Gujarat",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "KARNATAKA_SRI_SATHYA_SAI_SARLA_MEMORIAL_HOSPITAL_CHIKKABALLAPURA_KARNATAKA_562101",
+    "name": "Sri Sathya Sai Sarla Memorial Hospital Chikkaballapura Karnataka 562101",
+    "city": "",
+    "state": "Karnataka",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "ANDHRA_PRADESH_DR_ANJI_REDDY_SUPER_SPECIALITY_HOSPITAL_SATTENAPALLI_ROAD_GUNTUR_ANDHRA_PRADESH_500601",
+    "name": "Dr Anji Reddy Super Speciality Hospital Sattenapalli Road Guntur Andhra Pradesh 500601",
+    "city": "",
+    "state": "Andhra Pradesh",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "UTTARAKHAND_BRIJ_LAL_HOSPITAL_AND_RESEARCH_CENTRE_HALDWANI_UTTARAKHAND_263139",
+    "name": "Brij Lal Hospital And Research Centre Haldwani Uttarakhand 263139",
+    "city": "",
+    "state": "Uttarakhand",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "KARNATAKA_RAINBOW_CHILDRENS_HOSPITAL_BANNERGHATTA_BENGALURU_KARNATAKA_560076",
+    "name": "Rainbow Childrens Hospital Bannerghatta Bengaluru Karnataka 560076",
+    "city": "",
+    "state": "Karnataka",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "RAJASTHAN_KAMLA_NAGAR_HOSPITAL_A_UNIT_OF_KN_HOSPITAL_PVT_LTD_PAL_LINK_ROAD_JODHPUR_RAJASTHAN_342008",
+    "name": "Kamla Nagar Hospital A Unit Of Kn Hospital Pvt Ltd Pal Link Road Jodhpur Rajasthan 342008",
+    "city": "",
+    "state": "Rajasthan",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "TAMIL_NADU_APOLLO_FIRST_MED_HOSPITAL_KILPAUK_CHENNAI_TAMIL_NADU_600010",
+    "name": "Apollo First Med Hospital Kilpauk Chennai Tamil Nadu 600010",
+    "city": "",
+    "state": "Tamil Nadu",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "KERALA_MALABAR_EYE_HOSPITAL_NEAR_ERANHIPALAM_KOZHIKODE_KERALA_673006",
+    "name": "Malabar Eye Hospital Near Eranhipalam Kozhikode Kerala 673006",
+    "city": "",
+    "state": "Kerala",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "TAMIL_NADU_LOTUS_EYE_HOSPITAL_COIMBATORE_TAMIL_NADU_641014",
+    "name": "Lotus Eye Hospital Coimbatore Tamil Nadu 641014",
+    "city": "",
+    "state": "Tamil Nadu",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "JHARKHAND_ALAM_HOSPITAL_AND_RESEARCH_CENTRE_BOOTY_ROAD_BARIATU_RANCHI_JHARKHAND_834009",
+    "name": "Alam Hospital And Research Centre Booty Road Bariatu Ranchi Jharkhand 834009",
+    "city": "",
+    "state": "Jharkhand",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "RAJASTHAN_BHANDARI_HOSPITAL_AND_RESEARCH_CENTRE_JAIPUR_RAJASTHAN_302018",
+    "name": "Bhandari Hospital And Research Centre Jaipur Rajasthan 302018",
+    "city": "",
+    "state": "Rajasthan",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "MAHARASHTRA_PAEDIATRIC_SURGERY_CENTRE_PG_INSTITUTE_8750_VISHRAMBAG_SANGLI_MAHARASHTRA_416415",
+    "name": "Paediatric Surgery Centre Pg Institute 8750 Vishrambag Sangli Maharashtra 416415",
+    "city": "",
+    "state": "Maharashtra",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "ANDHRA_PRADESH_MJ_NAIDU_SUPER_SPECIALTY_HOSPITAL_BELLAPU_SOBHANADESWARAO_STREET_SURYARAOPET_VIJAYAWADA_ANDHRA_PRADESH_521002",
+    "name": "Mj Naidu Super Specialty Hospital Bellapu Sobhanadeswarao Street Suryaraopet Vijayawada Andhra Pradesh 521002",
+    "city": "",
+    "state": "Andhra Pradesh",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "UTTAR_PRADESH_SANJIVINI_HOSPITAL_AND_RESEARCH_CENTRE_GOMTI_NAGAR_LUCKNOW_UTTAR_PRADESH_226010",
+    "name": "Sanjivini Hospital And Research Centre Gomti Nagar Lucknow Uttar Pradesh 226010",
+    "city": "",
+    "state": "Uttar Pradesh",
+    "collegeType": "DNB/Other"
+  },
+  {
+    "id": "DELHI_LOK_NAYAK_JAI_PRAKASH_LNJP_HOSPITAL_DELHI_110002",
+    "name": "Lok Nayak Jai Prakash Lnjp Hospital Delhi 110002",
+    "city": "",
+    "state": "Delhi",
+    "collegeType": "DNB/Other"
   }
 ]
