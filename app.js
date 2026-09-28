@@ -169,9 +169,12 @@
 
       toggleStateFilter();
       updateStateDropdown();
+      updateCategoryDropdown();
       updateQuotaDropdown();
+      updateCourseDropdown();
       updateSpecialtyDropdown();
       updateCollegeTypeDropdown();
+      updateRoundDropdown();
       
       // Auto-run prediction on initial load
       runPrediction();
@@ -715,28 +718,84 @@
   }
 
   function updateCollegeTypeDropdown() {
-    var counselling = dom.selectCounselling.value;
-    var currentCollegeType = dom.selectCollegeType.value;
-
-    if (!counselling || counselling === '') {
-      populateSelect(dom.selectCollegeType, filtersData.collegeTypes);
-    } else {
-      var validCollegeTypes = new Set();
-      if (cutoffsData && collegesMap) {
-        cutoffsData.forEach(function (row) {
-          var rowCounselling = row.counselling || 'All India';
-          if (rowCounselling === counselling) {
-            var college = collegesMap.get(row.collegeId);
-            if (college && college.collegeType) {
-              validCollegeTypes.add(college.collegeType);
-            }
-          }
-        });
-      }
-      var validArray = Array.from(validCollegeTypes).sort();
-      if (validArray.length === 0) validArray = filtersData.collegeTypes;
-      populateSelect(dom.selectCollegeType, validArray);
+    var validCollegeTypes = new Set();
+    if (cutoffsData && collegesMap) {
+      cutoffsData.forEach(function (row) {
+        var college = collegesMap.get(row.collegeId);
+        if (college && college.collegeType) {
+          validCollegeTypes.add(college.collegeType);
+        }
+      });
     }
+
+    var filteredTypes = filtersData.collegeTypes.filter(function(t) {
+      var tVal = typeof t === 'object' ? (t.code || t.value) : t;
+      return validCollegeTypes.has(tVal);
+    });
+
+    if (filteredTypes.length === 0) {
+      filteredTypes = filtersData.collegeTypes;
+    }
+
+    populateSelect(dom.selectCollegeType, filteredTypes);
+  }
+
+  function updateCategoryDropdown() {
+    var validCategories = new Set();
+    if (cutoffsData) {
+      cutoffsData.forEach(function (row) {
+        if (row.seatCategory) {
+          validCategories.add(row.seatCategory);
+        }
+      });
+    }
+    var filteredCategories = USER_CATEGORIES.filter(function(cat) {
+      var eligible = getEligibleSeatCategories(cat.code);
+      return eligible.some(function(e) { return validCategories.has(e); });
+    });
+    if (filteredCategories.length === 0) {
+      filteredCategories = USER_CATEGORIES;
+    }
+    populateSelect(dom.selectCategory, filteredCategories);
+  }
+
+  function updateCourseDropdown() {
+    var validCourses = new Set();
+    if (cutoffsData) {
+      cutoffsData.forEach(function (row) {
+        if (row.course) {
+          validCourses.add(row.course);
+        }
+      });
+    }
+    var filteredCourses = filtersData.courses.filter(function(c) {
+      var courseVal = typeof c === 'object' ? (c.code || c.value) : c;
+      return validCourses.has(courseVal);
+    });
+    if (filteredCourses.length === 0) {
+      filteredCourses = filtersData.courses;
+    }
+    populateSelect(dom.selectCourse, filteredCourses);
+  }
+
+  function updateRoundDropdown() {
+    if (!dom.selectRound) return;
+    var validRounds = new Set();
+    if (cutoffsData) {
+      cutoffsData.forEach(function (row) {
+        if (row.round) {
+          validRounds.add(row.round);
+        }
+      });
+    }
+    var filteredRounds = filtersData.rounds ? filtersData.rounds.filter(function(r) {
+      var roundVal = typeof r === 'object' ? (r.code || r.value) : r;
+      return validRounds.has(roundVal);
+    }) : [];
+    if (filteredRounds.length === 0 && filtersData.rounds) {
+      filteredRounds = filtersData.rounds;
+    }
+    populateSelect(dom.selectRound, filteredRounds);
   }
 
 
@@ -844,12 +903,24 @@
       var counselling = dom.selectCounselling.value;
       if (!counselling) return; // Should not happen since we removed empty option
       
+      // Reset other filters when counselling changes
+      setSelectValue(dom.selectCategory, 'ALL', true);
+      setSelectValue(dom.selectQuota, '', true);
+      setSelectValue(dom.selectCourse, '', true);
+      setSelectValue(dom.selectSpecialty, '', true);
+      setSelectValue(dom.selectCollegeType, '', true);
+      if (dom.selectRound) setSelectValue(dom.selectRound, '', true);
+      setSelectValue(dom.selectState, '', true);
+
       fetchCutoffs(counselling).then(function() {
         toggleStateFilter();
         updateStateDropdown();
+        updateCategoryDropdown();
         updateQuotaDropdown();
+        updateCourseDropdown();
         updateSpecialtyDropdown();
         updateCollegeTypeDropdown();
+        updateRoundDropdown();
         autoPredict(); // Re-predict when counselling is switched completely
       }).catch(function(err) {
         console.error('Failed to load new counselling data:', err);

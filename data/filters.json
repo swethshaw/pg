@@ -1243,6 +1243,14 @@
     {
       "code": "Private",
       "label": "Private"
+    },
+    {
+      "code": "Deemed University",
+      "label": "Deemed University"
+    },
+    {
+      "code": "Central University",
+      "label": "Central University"
     }
   ],
   "rounds": [
