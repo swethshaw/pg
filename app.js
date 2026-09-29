@@ -156,7 +156,7 @@
       }
 
       populateFormDropdowns();
-      setSelectValue(dom.selectCategory, 'GN', true);
+      setSelectValue(dom.selectCategory, ['GN'], true);
       setSelectValue(dom.selectCounselling, 'All India', true); // default
       restoreFromUrl();
       
@@ -292,16 +292,25 @@
     return { band: band, ratio: ratio, rankGap: rankGap };
   }
 
-  function getEligibleSeatCategories(cat) {
-    var eligible = CATEGORY_ELIGIBILITY[cat] || [cat];
-    // Add open state categories
-    var openCategories = ['GEN', 'MNG', 'MQ', 'MQ1', 'OPN', 'S1A', 'UR', 'UR-GEN', 'UR-MNG', 'AGE'];
-    if (cat === 'GN' || cat === 'EW' || cat === 'BC' || cat === 'SC' || cat === 'ST') {
-      eligible = eligible.concat(openCategories);
-    }
-    if (cat === 'BC') eligible = eligible.concat(['OBC', 'OBC-Female']);
-    if (cat === 'SC') eligible = eligible.concat(['SC', 'SC-Female']);
-    if (cat === 'ST') eligible = eligible.concat(['ST', 'ST-Female']);
+  function getEligibleSeatCategories(categories) {
+    var eligible = [];
+    var catArray = Array.isArray(categories) ? categories : [categories];
+    catArray.forEach(function(cat) {
+      if (!cat || cat === 'ALL') return;
+      var catEligible = CATEGORY_ELIGIBILITY[cat] || [cat];
+      // Add open state categories
+      var openCategories = ['GEN', 'MNG', 'MQ', 'MQ1', 'OPN', 'S1A', 'UR', 'UR-GEN', 'UR-MNG', 'AGE'];
+      if (cat === 'GN' || cat === 'EW' || cat === 'BC' || cat === 'SC' || cat === 'ST') {
+        catEligible = catEligible.concat(openCategories);
+      }
+      if (cat === 'BC') catEligible = catEligible.concat(['OBC', 'OBC-Female']);
+      if (cat === 'SC') catEligible = catEligible.concat(['SC', 'SC-Female']);
+      if (cat === 'ST') catEligible = catEligible.concat(['ST', 'ST-Female']);
+      
+      catEligible.forEach(function(ec) {
+        if (eligible.indexOf(ec) === -1) eligible.push(ec);
+      });
+    });
     return eligible;
   }
 
@@ -314,14 +323,21 @@
   // ---- Filtering ----
   function applyFilters(userRank, userCategory, filters) {
     var eligible = getEligibleSeatCategories(userCategory);
+    var catArray = Array.isArray(userCategory) ? userCategory : [userCategory];
 
     return cutoffsData.filter(function (row) {
-      if (userCategory !== 'ALL' && eligible.indexOf(row.seatCategory) === -1) return false;
+      if (catArray.indexOf('ALL') === -1 && eligible.indexOf(row.seatCategory) === -1) return false;
       if (row.closingRank < userRank) return false;
 
       // Form/sidebar filters
-      if (filters.quota && row.quotaCode !== filters.quota) return false;
-      if (filters.course && row.course !== filters.course) return false;
+      if (filters.quota && filters.quota.length > 0) {
+        var quotaArray = Array.isArray(filters.quota) ? filters.quota : [filters.quota];
+        if (quotaArray.indexOf(row.quotaCode) === -1) return false;
+      }
+      if (filters.course && filters.course.length > 0) {
+        var courseArray = Array.isArray(filters.course) ? filters.course : [filters.course];
+        if (courseArray.indexOf(row.course) === -1) return false;
+      }
       if (filters.specialties && filters.specialties.length > 0) {
         var specArray = Array.isArray(filters.specialties) ? filters.specialties : [filters.specialties];
         if (specArray.indexOf(row.specialty) === -1) return false;
@@ -337,7 +353,10 @@
       // College-level filters
       if (!collegesMap.has(row.collegeId)) return false;
       var college = collegesMap.get(row.collegeId);
-      if (filters.collegeType && college.collegeType !== filters.collegeType) return false;
+      if (filters.collegeType && filters.collegeType.length > 0) {
+        var ctArray = Array.isArray(filters.collegeType) ? filters.collegeType : [filters.collegeType];
+        if (ctArray.indexOf(college.collegeType) === -1) return false;
+      }
       if (filters.state && college.state !== filters.state) return false;
 
       return true;
@@ -499,7 +518,7 @@
   function runPrediction() {
     // Validate
     var rank = parseInt(dom.inputRank.value, 10);
-    var category = dom.selectCategory.value;
+    var category = tomSelectInstances['select-category'] ? tomSelectInstances['select-category'].getValue() : dom.selectCategory.value;
     var valid = true;
 
     clearErrors();
@@ -510,8 +529,8 @@
       dom.inputRank.scrollIntoView({ behavior: 'smooth', block: 'center' });
       valid = false;
     }
-    if (!category) {
-      showError('fg-category', 'err-category', 'Select a category.');
+    if (!category || (Array.isArray(category) && category.length === 0)) {
+      showError('fg-category', 'err-category', 'Select at least one category.');
       valid = false;
     }
     if (!valid) return;
@@ -524,10 +543,10 @@
     var filters = {
       counselling: dom.selectCounselling.value,
       state: dom.selectState.value,
-      quota: dom.selectQuota.value,
-      course: dom.selectCourse.value,
+      quota: tomSelectInstances['select-quota'] ? tomSelectInstances['select-quota'].getValue() : [],
+      course: tomSelectInstances['select-course'] ? tomSelectInstances['select-course'].getValue() : [],
       specialties: tomSelectInstances['select-specialty'] ? tomSelectInstances['select-specialty'].getValue() : [],
-      collegeType: dom.selectCollegeType.value,
+      collegeType: tomSelectInstances['select-college-type'] ? tomSelectInstances['select-college-type'].getValue() : [],
       round: dom.selectRound ? dom.selectRound.value : "",
     };
 
@@ -807,11 +826,11 @@
     for (var id in tomSelectInstances) {
       if (tomSelectInstances.hasOwnProperty(id) && tomSelectInstances[id]) {
         if (id === 'select-category') {
-           tomSelectInstances[id].setValue('GN', true);
-        } else if (id === 'select-counselling') {
-           tomSelectInstances[id].setValue('All India', true);
+           tomSelectInstances[id].setValue(['GN'], true);
+        } else if (id === 'select-counselling' || id === 'select-state' || id === 'select-round') {
+           tomSelectInstances[id].setValue(id === 'select-counselling' ? 'All India' : '', true);
         } else {
-           tomSelectInstances[id].setValue('', true);
+           tomSelectInstances[id].setValue([], true);
         }
       }
     }
@@ -827,21 +846,35 @@
   }
 
   // ---- URL Sync ----
+  function getMultiValue(selectId) {
+    var val = tomSelectInstances[selectId] ? tomSelectInstances[selectId].getValue() : document.getElementById(selectId).value;
+    if (Array.isArray(val) && val.length > 0) return val.join(',');
+    if (typeof val === 'string' && val !== '') return val;
+    return null;
+  }
+
   function updateUrl() {
     var params = new URLSearchParams();
     if (currentUserRank) params.set('rank', currentUserRank);
-    if (currentCategory) params.set('category', currentCategory);
+    
+    var catVal = getMultiValue('select-category');
+    if (catVal) params.set('category', catVal);
+
     if (dom.selectCounselling.value) params.set('counselling', dom.selectCounselling.value);
     if (dom.selectState.value) params.set('state', dom.selectState.value);
-    if (dom.selectQuota.value) params.set('quota', dom.selectQuota.value);
-    if (dom.selectCourse.value) params.set('course', dom.selectCourse.value);
-    var specVal = tomSelectInstances['select-specialty'] ? tomSelectInstances['select-specialty'].getValue() : dom.selectSpecialty.value;
-    if (Array.isArray(specVal) && specVal.length > 0) {
-      params.set('specialty', specVal.join(','));
-    } else if (typeof specVal === 'string' && specVal !== '') {
-      params.set('specialty', specVal);
-    }
-    if (dom.selectCollegeType.value) params.set('collegeType', dom.selectCollegeType.value);
+
+    var quotaVal = getMultiValue('select-quota');
+    if (quotaVal) params.set('quota', quotaVal);
+
+    var courseVal = getMultiValue('select-course');
+    if (courseVal) params.set('course', courseVal);
+
+    var specVal = getMultiValue('select-specialty');
+    if (specVal) params.set('specialty', specVal);
+
+    var typeVal = getMultiValue('select-college-type');
+    if (typeVal) params.set('collegeType', typeVal);
+
     if (dom.selectRound && dom.selectRound.value) params.set('round', dom.selectRound.value);
 
     var qs = params.toString();
@@ -859,15 +892,17 @@
     if (isNaN(rankVal) || rankVal < 1) return;
 
     dom.inputRank.value = rankVal;
-    setSelectValue(dom.selectCategory, params.get('category'), true);
-
-    if (params.has('quota')) setSelectValue(dom.selectQuota, params.get('quota'), true);
-    if (params.has('course')) setSelectValue(dom.selectCourse, params.get('course'), true);
-    if (params.has('specialty')) {
-      var specs = params.get('specialty').split(',');
-      setSelectValue(dom.selectSpecialty, specs, true);
+    
+    if (params.has('category')) {
+      var cats = params.get('category').split(',');
+      setSelectValue(dom.selectCategory, cats, true);
     }
-    if (params.has('collegeType')) setSelectValue(dom.selectCollegeType, params.get('collegeType'), true);
+
+    if (params.has('quota')) setSelectValue(dom.selectQuota, params.get('quota').split(','), true);
+    if (params.has('course')) setSelectValue(dom.selectCourse, params.get('course').split(','), true);
+    if (params.has('specialty')) setSelectValue(dom.selectSpecialty, params.get('specialty').split(','), true);
+    if (params.has('collegeType')) setSelectValue(dom.selectCollegeType, params.get('collegeType').split(','), true);
+    
     if (params.has('counselling')) setSelectValue(dom.selectCounselling, params.get('counselling'), true);
     if (params.has('state')) setSelectValue(dom.selectState, params.get('state'), true);
     if (params.has('round') && dom.selectRound) setSelectValue(dom.selectRound, params.get('round'), true);
@@ -904,11 +939,11 @@
       if (!counselling) return; // Should not happen since we removed empty option
       
       // Reset other filters when counselling changes
-      setSelectValue(dom.selectCategory, 'ALL', true);
-      setSelectValue(dom.selectQuota, '', true);
-      setSelectValue(dom.selectCourse, '', true);
-      setSelectValue(dom.selectSpecialty, '', true);
-      setSelectValue(dom.selectCollegeType, '', true);
+      setSelectValue(dom.selectCategory, ['GN'], true);
+      setSelectValue(dom.selectQuota, [], true);
+      setSelectValue(dom.selectCourse, [], true);
+      setSelectValue(dom.selectSpecialty, [], true);
+      setSelectValue(dom.selectCollegeType, [], true);
       if (dom.selectRound) setSelectValue(dom.selectRound, '', true);
       setSelectValue(dom.selectState, '', true);
 

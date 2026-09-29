@@ -193,19 +193,17 @@
 
             <div class="form-group form-group--required" id="fg-category">
               <label for="select-category">Category <span class="required-mark" aria-hidden="true">*</span></label>
-              <select id="select-category" name="category" required>
-                <option value="ALL">All Categories</option>
-              </select>
+              <select id="select-category" name="category" multiple placeholder="Select Categories" required></select>
               <div class="form-error" id="err-category" role="alert" aria-live="polite"></div>
             </div>
 
             <div class="sidebar-group">
               <label for="select-quota">Quota</label>
-              <select id="select-quota"><option value="">All Quotas</option></select>
+              <select id="select-quota" multiple placeholder="All Quotas"></select>
             </div>
             <div class="sidebar-group">
               <label for="select-course">Course</label>
-              <select id="select-course"><option value="">All Courses</option></select>
+              <select id="select-course" multiple placeholder="All Courses"></select>
             </div>
             <div class="sidebar-group">
               <label for="select-specialty">Specialty</label>
@@ -213,7 +211,7 @@
             </div>
             <div class="sidebar-group">
               <label for="select-college-type">College Type</label>
-              <select id="select-college-type"><option value="">All Types</option></select>
+              <select id="select-college-type" multiple placeholder="All Types"></select>
             </div>
             <div class="sidebar-group">
               <label for="select-round">Round</label>

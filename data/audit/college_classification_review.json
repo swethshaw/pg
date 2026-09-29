@@ -1,0 +1,895 @@
+[
+  {
+    "collegeId": "JH_BOKARO_GENERAL_HOSPITAL_BOKARO_JHARKHAND_827004",
+    "name": "Bokaro General Hospital, Bokaro, Jharkhand-827004",
+    "state": "Jharkhand",
+    "existingType": "Government",
+    "inferredType": "DNB Hospital",
+    "courseTypes": [
+      "DNB"
+    ],
+    "quotaNames": [
+      "DNB Post MBBS"
+    ],
+    "masterQuotas": [
+      "DNB"
+    ],
+    "resolution": "Using inferred type (re-evaluated with full evidence)"
+  },
+  {
+    "collegeId": "HP_SHRI_LAL_BAHADUR_SHASTRI_GOVERNMENT_MEDICAL_COLLEGE_AND_HOSPITAL_MANDI_HIMACHAL_PRADESH_175021",
+    "name": "Shri Lal Bahadur Shastri Government Medical College and Hospital, Mandi, Himachal Pradesh-175021",
+    "state": "Himachal Pradesh",
+    "existingType": "Government",
+    "inferredType": "DNB Hospital",
+    "courseTypes": [
+      "DNB"
+    ],
+    "quotaNames": [
+      "DNB Post MBBS",
+      "HP DNB Inservice Seats"
+    ],
+    "masterQuotas": [
+      "DNB",
+      "HP DNB Inservice Seats"
+    ],
+    "resolution": "Using inferred type (re-evaluated with full evidence)"
+  },
+  {
+    "collegeId": "JK_ASSOCIATED_HOSPITAL_GOVERNMENT_MEDICAL_COLLEGE_DODA_JAMMU_AND_KASHMIR_182202",
+    "name": "Associated Hospital Government Medical College, Doda, Jammu and Kashmir-182202",
+    "state": "Jammu and Kashmir",
+    "existingType": "Government",
+    "inferredType": "DNB Hospital",
+    "courseTypes": [
+      "DNB"
+    ],
+    "quotaNames": [
+      "DNB Post MBBS"
+    ],
+    "masterQuotas": [
+      "DNB"
+    ],
+    "resolution": "Using inferred type (re-evaluated with full evidence)"
+  },
+  {
+    "collegeId": "MH_GOVERNMENT_MEDICAL_COLLEGE_AND_HOSPITAL_AKOLA_MAHARASHTRA_444001",
+    "name": "Government Medical College and Hospital, Akola, Maharashtra-444001",
+    "state": "Maharashtra",
+    "existingType": "Government",
+    "inferredType": "DNB Hospital",
+    "courseTypes": [
+      "DNB"
+    ],
+    "quotaNames": [
+      "DNB Post MBBS"
+    ],
+    "masterQuotas": [
+      "DNB"
+    ],
+    "resolution": "Using inferred type (re-evaluated with full evidence)"
+  },
+  {
+    "collegeId": "RJ_GOVERNMENT_RDBP_JAIPURIA_HOSPITAL_JAIPUR_RAJASTHAN_302018",
+    "name": "Government RDBP Jaipuria Hospital, Jaipur, Rajasthan-302018",
+    "state": "Rajasthan",
+    "existingType": "Government",
+    "inferredType": "DNB Hospital",
+    "courseTypes": [
+      "DNB"
+    ],
+    "quotaNames": [
+      "DNB Post MBBS",
+      "Rajasthan DNB Inservice Seats"
+    ],
+    "masterQuotas": [
+      "DNB",
+      "Rajasthan DNB Inservice Seats"
+    ],
+    "resolution": "Using inferred type (re-evaluated with full evidence)"
+  },
+  {
+    "collegeId": "TG_GENERAL_HOSPITAL_KHAMMAM_TELANGANA_507002_PREV_DISTRICT_HEAD_QUARTERS_HOSPITAL_KHAMMAM",
+    "name": "General Hospital, Khammam, Telangana-507002 (Prev. District Head Quarters Hospital, Khammam)",
+    "state": "Telangana",
+    "existingType": "Government",
+    "inferredType": "DNB Hospital",
+    "courseTypes": [
+      "DNB"
+    ],
+    "quotaNames": [
+      "DNB Post MBBS"
+    ],
+    "masterQuotas": [
+      "DNB"
+    ],
+    "resolution": "Using inferred type (re-evaluated with full evidence)"
+  },
+  {
+    "collegeId": "KA_WENLOCK_DISTRICT_HOSPITAL_MANGALORE_KARNATAKA_575001",
+    "name": "Wenlock District Hospital, Mangalore, Karnataka-575001",
+    "state": "Karnataka",
+    "existingType": "Government",
+    "inferredType": "DNB Hospital",
+    "courseTypes": [
+      "DNB"
+    ],
+    "quotaNames": [
+      "DNB Post MBBS"
+    ],
+    "masterQuotas": [
+      "DNB"
+    ],
+    "resolution": "Using inferred type (re-evaluated with full evidence)"
+  },
+  {
+    "collegeId": "GJ_GMERS_MEDICAL_COLLEGE_AND_HOSPITAL_NAVASARI_GUJARAT_396445_PREV_MGG_GENERAL_HOSPITAL_NAVASARI",
+    "name": "GMERS Medical College and Hospital, Navasari, Gujarat-396445 (Prev. MGG General Hospital, Navasari)",
+    "state": "Gujarat",
+    "existingType": "Government",
+    "inferredType": "DNB Hospital",
+    "courseTypes": [
+      "DNB"
+    ],
+    "quotaNames": [
+      "DNB Post MBBS"
+    ],
+    "masterQuotas": [
+      "DNB"
+    ],
+    "resolution": "Using inferred type (re-evaluated with full evidence)"
+  },
+  {
+    "collegeId": "JK_GOVERNMENT_MEDICAL_COLLEGE_KARAN_NAGAR_SRINAGAR_JAMMU_AND_KASHMIR_190010",
+    "name": "Government Medical College, Karan Nagar, Srinagar, Jammu and Kashmir-190010",
+    "state": "Jammu and Kashmir",
+    "existingType": "Government",
+    "inferredType": "DNB Hospital",
+    "courseTypes": [
+      "DNB"
+    ],
+    "quotaNames": [
+      "DNB Post MBBS"
+    ],
+    "masterQuotas": [
+      "DNB"
+    ],
+    "resolution": "Using inferred type (re-evaluated with full evidence)"
+  },
+  {
+    "collegeId": "UP_PANDIT_DEEN_DAYAL_UPADHYAY_GOVERNMENT_HOSPITAL_PANDEYPUR_VARANASI_UTTAR_PRADESH_221002",
+    "name": "Pandit Deen Dayal Upadhyay Government Hospital, Pandeypur, Varanasi, Uttar Pradesh-221002",
+    "state": "Uttar Pradesh",
+    "existingType": "Government",
+    "inferredType": "DNB Hospital",
+    "courseTypes": [
+      "DNB"
+    ],
+    "quotaNames": [
+      "DNB Post MBBS",
+      "Uttar Pradesh DNB Inservice Seats"
+    ],
+    "masterQuotas": [
+      "DNB",
+      "Uttar Pradesh DNB Inservice Seats"
+    ],
+    "resolution": "Using inferred type (re-evaluated with full evidence)"
+  },
+  {
+    "collegeId": "UP_KALYAN_SINGH_GOVERNMENT_MEDICAL_COLLEGE_BULANDSHAHR_UTTAR_PRADESH_203001",
+    "name": "Kalyan Singh Government Medical College, Bulandshahr, Uttar Pradesh-203001",
+    "state": "Uttar Pradesh",
+    "existingType": "Government",
+    "inferredType": "DNB Hospital",
+    "courseTypes": [
+      "DNB"
+    ],
+    "quotaNames": [
+      "DNB Post MBBS",
+      "Uttar Pradesh DNB Inservice Seats"
+    ],
+    "masterQuotas": [
+      "DNB",
+      "Uttar Pradesh DNB Inservice Seats"
+    ],
+    "resolution": "Using inferred type (re-evaluated with full evidence)"
+  },
+  {
+    "collegeId": "JK_GOVERNMENT_MEDICAL_COLLEGE_MEDICAL_ENCLAVE_JAMMU_JAMMU_AND_KASHMIR_180001",
+    "name": "Government Medical College, Medical Enclave, Jammu, Jammu and Kashmir-180001",
+    "state": "Jammu and Kashmir",
+    "existingType": "Government",
+    "inferredType": "DNB Hospital",
+    "courseTypes": [
+      "DNB"
+    ],
+    "quotaNames": [
+      "DNB Post MBBS"
+    ],
+    "masterQuotas": [
+      "DNB"
+    ],
+    "resolution": "Using inferred type (re-evaluated with full evidence)"
+  },
+  {
+    "collegeId": "MH_BHARATRATNA_DR_BABASAHEB_AMBEDKAR_MUNICIPAL_GENERAL_HOSPITAL_KANDIVALI_WEST_MUMBAI_MAHARASHTRA_400067",
+    "name": "BharatRatna Dr Babasaheb Ambedkar Municipal General Hospital, Kandivali (West), Mumbai, Maharashtra-400067",
+    "state": "Maharashtra",
+    "existingType": "Government",
+    "inferredType": "DNB Hospital",
+    "courseTypes": [
+      "DNB"
+    ],
+    "quotaNames": [
+      "DNB Post MBBS"
+    ],
+    "masterQuotas": [
+      "DNB"
+    ],
+    "resolution": "Using inferred type (re-evaluated with full evidence)"
+  },
+  {
+    "collegeId": "BR_GOVERNMENT_MEDICAL_COLLEGE_BETTIAH_BIHAR_845438",
+    "name": "Government Medical College, Bettiah, Bihar-845438",
+    "state": "Bihar",
+    "existingType": "Government",
+    "inferredType": "DNB Hospital",
+    "courseTypes": [
+      "DNB"
+    ],
+    "quotaNames": [
+      "DNB Post MBBS",
+      "Bihar DNB Seats"
+    ],
+    "masterQuotas": [
+      "DNB",
+      "Bihar DNB Seats"
+    ],
+    "resolution": "Using inferred type (re-evaluated with full evidence)"
+  },
+  {
+    "collegeId": "KL_GOVERNMENT_GENERAL_HOSPITAL_THYCAUD_THIRUVANANTHAPURAM_KERALA_695035",
+    "name": "Government General Hospital, Thycaud, Thiruvananthapuram, Kerala-695035",
+    "state": "Kerala",
+    "existingType": "Government",
+    "inferredType": "DNB Hospital",
+    "courseTypes": [
+      "DNB"
+    ],
+    "quotaNames": [
+      "DNB Post MBBS"
+    ],
+    "masterQuotas": [
+      "DNB"
+    ],
+    "resolution": "Using inferred type (re-evaluated with full evidence)"
+  },
+  {
+    "collegeId": "GJ_GMERS_MEDICAL_COLLEGE_AND_GENERAL_HOSPITAL_RAJPIPLA_NARMADA_GUJARAT_393145_PREV_GENERAL_HOSPITAL_RAJPIPLA",
+    "name": "GMERS Medical College and General Hospital, Rajpipla, Narmada, Gujarat-393145 (Prev. General Hospital, Rajpipla)",
+    "state": "Gujarat",
+    "existingType": "Government",
+    "inferredType": "DNB Hospital",
+    "courseTypes": [
+      "DNB"
+    ],
+    "quotaNames": [
+      "DNB Post MBBS"
+    ],
+    "masterQuotas": [
+      "DNB"
+    ],
+    "resolution": "Using inferred type (re-evaluated with full evidence)"
+  },
+  {
+    "collegeId": "MH_GOVERNMENT_MEDICAL_COLLEGE_AND_HOSPITAL_NANDURBAR_CIVIL_HOSPITAL_CAMPUS_SAKRI_ROAD_NANDURBAR_MAHARASHTRA_425412",
+    "name": "Government Medical College and Hospital, Nandurbar Civil Hospital Campus, Sakri Road, Nandurbar, Maharashtra-425412",
+    "state": "Maharashtra",
+    "existingType": "Government",
+    "inferredType": "DNB Hospital",
+    "courseTypes": [
+      "DNB"
+    ],
+    "quotaNames": [
+      "DNB Post MBBS"
+    ],
+    "masterQuotas": [
+      "DNB"
+    ],
+    "resolution": "Using inferred type (re-evaluated with full evidence)"
+  },
+  {
+    "collegeId": "GJ_MP_SHAH_GOVERNMENT_MEDICAL_COLLEGE_JAMNAGAR_GUJARAT_361008",
+    "name": "MP Shah Government Medical College, Jamnagar, Gujarat-361008",
+    "state": "Gujarat",
+    "existingType": "Government",
+    "inferredType": "DNB Hospital",
+    "courseTypes": [
+      "DNB"
+    ],
+    "quotaNames": [
+      "DNB Post MBBS"
+    ],
+    "masterQuotas": [
+      "DNB"
+    ],
+    "resolution": "Using inferred type (re-evaluated with full evidence)"
+  },
+  {
+    "collegeId": "TG_GENERAL_HOSPITAL_KARIMNAGAR_TELANGANA_505001_PREV_DISTRICT_HEAD_QUARTERS_HOSPITAL_KARIMNAGAR",
+    "name": "General Hospital, Karimnagar, Telangana-505001 (Prev. District Head Quarters Hospital, Karimnagar)",
+    "state": "Telangana",
+    "existingType": "Government",
+    "inferredType": "DNB Hospital",
+    "courseTypes": [
+      "DNB"
+    ],
+    "quotaNames": [
+      "DNB Post MBBS"
+    ],
+    "masterQuotas": [
+      "DNB"
+    ],
+    "resolution": "Using inferred type (re-evaluated with full evidence)"
+  },
+  {
+    "collegeId": "WB_INFECTIOUS_DISEASES_AND_BELIAGHATA_GENERAL_HOSPITAL_57_BELIAGHATA_MAIN_ROAD_KOLKATA_WEST_BENGAL_700010",
+    "name": "Infectious Diseases & Beliaghata General Hospital, 57 Beliaghata Main Road, Kolkata, West Bengal-700010",
+    "state": "West Bengal",
+    "existingType": "Government",
+    "inferredType": "DNB Hospital",
+    "courseTypes": [
+      "DNB"
+    ],
+    "quotaNames": [
+      "DNB Post MBBS",
+      "West Bengal DNB Inservice Seats"
+    ],
+    "masterQuotas": [
+      "DNB",
+      "West Bengal DNB Inservice Seats"
+    ],
+    "resolution": "Using inferred type (re-evaluated with full evidence)"
+  },
+  {
+    "collegeId": "JK_ASSOCIATED_HOSPITAL_GOVERNMENT_MEDICAL_COLLEGE_KATHUA_JAMMU_AND_KASHMIR_184101",
+    "name": "Associated Hospital Government Medical College, Kathua, Jammu and Kashmir-184101",
+    "state": "Jammu and Kashmir",
+    "existingType": "Government",
+    "inferredType": "DNB Hospital",
+    "courseTypes": [
+      "DNB"
+    ],
+    "quotaNames": [
+      "DNB Post MBBS"
+    ],
+    "masterQuotas": [
+      "DNB"
+    ],
+    "resolution": "Using inferred type (re-evaluated with full evidence)"
+  },
+  {
+    "collegeId": "HP_DR_RAJENDRA_PRASAD_GOVERNMENT_MEDICAL_COLLEGE_TANDA_HIMACHAL_PRADESH_176002",
+    "name": "Dr Rajendra Prasad Government Medical College, Tanda, Himachal Pradesh-176002",
+    "state": "Himachal Pradesh",
+    "existingType": "Government",
+    "inferredType": "DNB Hospital",
+    "courseTypes": [
+      "DNB"
+    ],
+    "quotaNames": [
+      "DNB Post MBBS"
+    ],
+    "masterQuotas": [
+      "DNB"
+    ],
+    "resolution": "Using inferred type (re-evaluated with full evidence)"
+  },
+  {
+    "collegeId": "KL_DISTRICT_HOSPITAL_PALAKKAD_KERALA_678001",
+    "name": "District Hospital, Palakkad, Kerala-678001",
+    "state": "Kerala",
+    "existingType": "Government",
+    "inferredType": "DNB Hospital",
+    "courseTypes": [
+      "DNB"
+    ],
+    "quotaNames": [
+      "DNB Post MBBS"
+    ],
+    "masterQuotas": [
+      "DNB"
+    ],
+    "resolution": "Using inferred type (re-evaluated with full evidence)"
+  },
+  {
+    "collegeId": "TG_DISTRICT_HOSPITAL_GOLLAGUDA_TELANGANA_508001",
+    "name": "District Hospital, Gollaguda, Telangana-508001",
+    "state": "Telangana",
+    "existingType": "Government",
+    "inferredType": "DNB Hospital",
+    "courseTypes": [
+      "DNB"
+    ],
+    "quotaNames": [
+      "DNB Post MBBS"
+    ],
+    "masterQuotas": [
+      "DNB"
+    ],
+    "resolution": "Using inferred type (re-evaluated with full evidence)"
+  },
+  {
+    "collegeId": "UP_GOVERNMENT_INSTITUTE_OF_MEDICAL_SCIENCES_GREATER_NOIDA_UTTAR_PRADESH_201310",
+    "name": "Government Institute of Medical Sciences, Greater Noida, Uttar Pradesh-201310",
+    "state": "Uttar Pradesh",
+    "existingType": "Government",
+    "inferredType": "DNB Hospital",
+    "courseTypes": [
+      "DNB"
+    ],
+    "quotaNames": [
+      "DNB Post MBBS",
+      "Uttar Pradesh DNB Inservice Seats"
+    ],
+    "masterQuotas": [
+      "DNB",
+      "Uttar Pradesh DNB Inservice Seats"
+    ],
+    "resolution": "Using inferred type (re-evaluated with full evidence)"
+  },
+  {
+    "collegeId": "MH_SHRI_VASANT_RAO_NAIK_GOVERNMENT_MEDICAL_COLLEGE_YAVATMAL_MAHARASHTRA_445001",
+    "name": "Shri Vasant Rao Naik Government Medical College, Yavatmal, Maharashtra-445001",
+    "state": "Maharashtra",
+    "existingType": "Government",
+    "inferredType": "DNB Hospital",
+    "courseTypes": [
+      "DNB"
+    ],
+    "quotaNames": [
+      "DNB Post MBBS"
+    ],
+    "masterQuotas": [
+      "DNB"
+    ],
+    "resolution": "Using inferred type (re-evaluated with full evidence)"
+  },
+  {
+    "collegeId": "KL_GOVERNMENT_GENERAL_HOSPITAL_KOCHI_KERALA_682011",
+    "name": "Government General Hospital, Kochi, Kerala-682011",
+    "state": "Kerala",
+    "existingType": "Government",
+    "inferredType": "DNB Hospital",
+    "courseTypes": [
+      "DNB"
+    ],
+    "quotaNames": [
+      "DNB Post MBBS"
+    ],
+    "masterQuotas": [
+      "DNB"
+    ],
+    "resolution": "Using inferred type (re-evaluated with full evidence)"
+  },
+  {
+    "collegeId": "WB_RUBY_GENERAL_HOSPITAL_KOLKATA_WEST_BENGAL_700107",
+    "name": "Ruby General Hospital, Kolkata, West Bengal-700107",
+    "state": "West Bengal",
+    "existingType": "Government",
+    "inferredType": "DNB Hospital",
+    "courseTypes": [
+      "DNB"
+    ],
+    "quotaNames": [
+      "DNB Post MBBS"
+    ],
+    "masterQuotas": [
+      "DNB"
+    ],
+    "resolution": "Using inferred type (re-evaluated with full evidence)"
+  },
+  {
+    "collegeId": "GJ_GMERS_MEDICAL_COLLEGE_PANCHMAHAL_GODHRA_GUJARAT_389120_PREV_GENERAL_HOSPITAL_GODHRA",
+    "name": "GMERS Medical College, Panchmahal, Godhra, Gujarat-389120 (Prev. General Hospital, Godhra)",
+    "state": "Gujarat",
+    "existingType": "Government",
+    "inferredType": "DNB Hospital",
+    "courseTypes": [
+      "DNB"
+    ],
+    "quotaNames": [
+      "DNB Post MBBS"
+    ],
+    "masterQuotas": [
+      "DNB"
+    ],
+    "resolution": "Using inferred type (re-evaluated with full evidence)"
+  },
+  {
+    "collegeId": "MH_GOVERNMENT_MEDICAL_COLLEGE_GONDIA_MAHARASHTRA_441601",
+    "name": "Government Medical College, Gondia, Maharashtra-441601",
+    "state": "Maharashtra",
+    "existingType": "Government",
+    "inferredType": "DNB Hospital",
+    "courseTypes": [
+      "DNB"
+    ],
+    "quotaNames": [
+      "DNB Post MBBS"
+    ],
+    "masterQuotas": [
+      "DNB"
+    ],
+    "resolution": "Using inferred type (re-evaluated with full evidence)"
+  },
+  {
+    "collegeId": "HP_DR_RADHAKRISHNAN_GOVERNMENT_MEDICAL_COLLEGE_HAMIRPUR_HIMACHAL_PRADESH_177001",
+    "name": "Dr Radhakrishnan Government Medical College, Hamirpur, Himachal Pradesh-177001",
+    "state": "Himachal Pradesh",
+    "existingType": "Government",
+    "inferredType": "DNB Hospital",
+    "courseTypes": [
+      "DNB"
+    ],
+    "quotaNames": [
+      "DNB Post MBBS",
+      "HP DNB Inservice Seats"
+    ],
+    "masterQuotas": [
+      "DNB",
+      "HP DNB Inservice Seats"
+    ],
+    "resolution": "Using inferred type (re-evaluated with full evidence)"
+  },
+  {
+    "collegeId": "WB_RAIGANJ_GOVERNMENT_MEDICAL_COLLEGE_AND_HOSPITAL_UTTAR_DINAJPUR_WEST_BENGAL_733130",
+    "name": "Raiganj Government Medical College and Hospital, Uttar Dinajpur, West Bengal-733130",
+    "state": "West Bengal",
+    "existingType": "Government",
+    "inferredType": "DNB Hospital",
+    "courseTypes": [
+      "DNB"
+    ],
+    "quotaNames": [
+      "DNB Post MBBS",
+      "West Bengal DNB Inservice Seats"
+    ],
+    "masterQuotas": [
+      "DNB",
+      "West Bengal DNB Inservice Seats"
+    ],
+    "resolution": "Using inferred type (re-evaluated with full evidence)"
+  },
+  {
+    "collegeId": "UP_SWAMI_KALYAN_DEV_DISTRICT_HOSPITAL_MUZAFFARNAGAR_UTTAR_PRADESH_251001_JOINT_PROGRAMME_WITH_DISTRICT_COMBINED_HOSPITAL_BHAGPAT_UTTAR_PRADESH_AS_SECONDARY_HOSPITAL",
+    "name": "Swami Kalyan Dev District Hospital, Muzaffarnagar, Uttar Pradesh-251001 (Joint Programme with District Combined Hospital, Bhagpat, Uttar Pradesh (as Secondary Hospital)",
+    "state": "Uttar Pradesh",
+    "existingType": "Government",
+    "inferredType": "DNB Hospital",
+    "courseTypes": [
+      "DNB"
+    ],
+    "quotaNames": [
+      "DNB Post MBBS"
+    ],
+    "masterQuotas": [
+      "DNB"
+    ],
+    "resolution": "Using inferred type (re-evaluated with full evidence)"
+  },
+  {
+    "collegeId": "KL_GOVERNMENT_MENTAL_HEALTH_CENTRE_KOZHIKODE_KERALA_673016",
+    "name": "Government Mental Health Centre, Kozhikode, Kerala-673016",
+    "state": "Kerala",
+    "existingType": "Government",
+    "inferredType": "DNB Hospital",
+    "courseTypes": [
+      "DNB"
+    ],
+    "quotaNames": [
+      "DNB Post MBBS"
+    ],
+    "masterQuotas": [
+      "DNB"
+    ],
+    "resolution": "Using inferred type (re-evaluated with full evidence)"
+  },
+  {
+    "collegeId": "JK_RAJA_SUKHDEV_SINGH_DISTRICT_HOSPITAL_POONCH_JAMMU_AND_KASHMIR_185101",
+    "name": "Raja Sukhdev Singh District Hospital, Poonch, Jammu & Kashmir-185101",
+    "state": "Jammu and Kashmir",
+    "existingType": "Government",
+    "inferredType": "DNB Hospital",
+    "courseTypes": [
+      "DNB"
+    ],
+    "quotaNames": [
+      "DNB Post MBBS"
+    ],
+    "masterQuotas": [
+      "DNB"
+    ],
+    "resolution": "Using inferred type (re-evaluated with full evidence)"
+  },
+  {
+    "collegeId": "BR_GOVERNMENT_MEDICAL_COLLEGE_PURNEA_BIHAR_854301",
+    "name": "Government Medical College, Purnea, Bihar-854301",
+    "state": "Bihar",
+    "existingType": "Government",
+    "inferredType": "DNB Hospital",
+    "courseTypes": [
+      "DNB"
+    ],
+    "quotaNames": [
+      "DNB Post MBBS",
+      "Bihar DNB Seats"
+    ],
+    "masterQuotas": [
+      "DNB",
+      "Bihar DNB Seats"
+    ],
+    "resolution": "Using inferred type (re-evaluated with full evidence)"
+  },
+  {
+    "collegeId": "MH_GOVERNMENT_MEDICAL_COLLEGE_OSMANABAD_MAHARASHTRA_413501",
+    "name": "Government Medical College, Osmanabad, Maharashtra-413501",
+    "state": "Maharashtra",
+    "existingType": "Government",
+    "inferredType": "DNB Hospital",
+    "courseTypes": [
+      "DNB"
+    ],
+    "quotaNames": [
+      "DNB Post MBBS"
+    ],
+    "masterQuotas": [
+      "DNB"
+    ],
+    "resolution": "Using inferred type (re-evaluated with full evidence)"
+  },
+  {
+    "collegeId": "JK_DISTRICT_HOSPITAL_AGHAR_BALLIAN_REASI_JAMMU_AND_KASHMIR_182311",
+    "name": "District Hospital, Aghar Ballian, Reasi, Jammu and Kashmir-182311",
+    "state": "Jammu and Kashmir",
+    "existingType": "Government",
+    "inferredType": "DNB Hospital",
+    "courseTypes": [
+      "DNB"
+    ],
+    "quotaNames": [
+      "DNB Post MBBS"
+    ],
+    "masterQuotas": [
+      "DNB"
+    ],
+    "resolution": "Using inferred type (re-evaluated with full evidence)"
+  },
+  {
+    "collegeId": "JK_ASYM_DISTRICT_HOSPITAL_BUDGAM_JAMMU_AND_KASHMIR_191111",
+    "name": "ASYM District Hospital, Budgam, Jammu And Kashmir-191111",
+    "state": "Jammu and Kashmir",
+    "existingType": "Government",
+    "inferredType": "DNB Hospital",
+    "courseTypes": [
+      "DNB"
+    ],
+    "quotaNames": [
+      "DNB Post MBBS"
+    ],
+    "masterQuotas": [
+      "DNB"
+    ],
+    "resolution": "Using inferred type (re-evaluated with full evidence)"
+  },
+  {
+    "collegeId": "TN_GOVERNMENT_HEADQUARTERS_HOSPITAL_THUCKALAY_KANYAKUMARI_TAMIL_NADU_629175",
+    "name": "Government Headquarters Hospital, Thuckalay, Kanyakumari, Tamil Nadu-629175",
+    "state": "Tamil Nadu",
+    "existingType": "Government",
+    "inferredType": "DNB Hospital",
+    "courseTypes": [
+      "DNB"
+    ],
+    "quotaNames": [
+      "DNB Post MBBS"
+    ],
+    "masterQuotas": [
+      "DNB"
+    ],
+    "resolution": "Using inferred type (re-evaluated with full evidence)"
+  },
+  {
+    "collegeId": "PB_CIVIL_HOSPITAL_SULTANPUR_ROAD_KAPURTHALA_PUNJAB_144601",
+    "name": "Civil Hospital, Sultanpur Road, Kapurthala, Punjab-144601",
+    "state": "Punjab",
+    "existingType": "Government",
+    "inferredType": "DNB Hospital",
+    "courseTypes": [
+      "DNB"
+    ],
+    "quotaNames": [
+      "DNB Post MBBS"
+    ],
+    "masterQuotas": [
+      "DNB"
+    ],
+    "resolution": "Using inferred type (re-evaluated with full evidence)"
+  },
+  {
+    "collegeId": "UP_SHRI_SHIV_PRASAD_GUPTA_DIVISIONAL_DISTRICT_HOSPITAL_KABIRCHAURA_VARANASI_UTTAR_PRADESH_221001_JOINT_PROGRAMME_WITH_LAL_BAHADUR_SHASTRI_HOSPITAL_RAMNAGAR_VARANASI_AS_SECONDARY_HOSPITAL",
+    "name": "Shri Shiv Prasad Gupta Divisional District Hospital, Kabirchaura, Varanasi, Uttar Pradesh-221001 (Joint Programme with Lal Bahadur Shastri Hospital, Ramnagar, Varanasi as Secondary Hospital)",
+    "state": "Uttar Pradesh",
+    "existingType": "Government",
+    "inferredType": "DNB Hospital",
+    "courseTypes": [
+      "DNB"
+    ],
+    "quotaNames": [
+      "DNB Post MBBS"
+    ],
+    "masterQuotas": [
+      "DNB"
+    ],
+    "resolution": "Using inferred type (re-evaluated with full evidence)"
+  },
+  {
+    "collegeId": "KA_GOVERNMENT_DISTRICT_HOSPITAL_AJJARKADU_UDUPI_KARNATAKA_576101",
+    "name": "Government District Hospital, Ajjarkadu, Udupi, Karnataka-576101",
+    "state": "Karnataka",
+    "existingType": "Government",
+    "inferredType": "DNB Hospital",
+    "courseTypes": [
+      "DNB"
+    ],
+    "quotaNames": [
+      "DNB Post MBBS"
+    ],
+    "masterQuotas": [
+      "DNB"
+    ],
+    "resolution": "Using inferred type (re-evaluated with full evidence)"
+  },
+  {
+    "collegeId": "AP_SRI_SATHYA_SAI_GENERAL_HOSPITAL_ANANTAPUR_ANDHRA_PRADESH_515134",
+    "name": "Sri Sathya Sai General Hospital, Anantapur, Andhra Pradesh-515134",
+    "state": "Andhra Pradesh",
+    "existingType": "Government",
+    "inferredType": "DNB Hospital",
+    "courseTypes": [
+      "DNB"
+    ],
+    "quotaNames": [
+      "DNB Post MBBS"
+    ],
+    "masterQuotas": [
+      "DNB"
+    ],
+    "resolution": "Using inferred type (re-evaluated with full evidence)"
+  },
+  {
+    "collegeId": "HR_DISTRICT_CIVIL_HOSPITAL_AMBALA_CITY_HARYANA_134003",
+    "name": "District Civil Hospital, Ambala City, Haryana-134003",
+    "state": "Haryana",
+    "existingType": "Government",
+    "inferredType": "DNB Hospital",
+    "courseTypes": [
+      "DNB"
+    ],
+    "quotaNames": [
+      "DNB Post MBBS",
+      "Haryana DNB Inservice Seats"
+    ],
+    "masterQuotas": [
+      "DNB",
+      "Haryana DNB Inservice Seats"
+    ],
+    "resolution": "Using inferred type (re-evaluated with full evidence)"
+  },
+  {
+    "collegeId": "UP_GOVERNMENT_TB_HOSPITAL_TELIYARGANJ_PRAYAGRAJ_UTTAR_PRADESH_211004_JOINT_PROGRAMME_WITH_MOTI_LAL_NEHRU_MEDICAL_COLLEGE_GEORGE_TOWN_PRAYAGRAJ_AS_SECONDARY_HOSPITAL",
+    "name": "Government TB Hospital, Teliyarganj, Prayagraj, Uttar Pradesh-211004 (Joint Programme with Moti Lal Nehru Medical College, George Town, Prayagraj as Secondary Hospital)",
+    "state": "Uttar Pradesh",
+    "existingType": "Government",
+    "inferredType": "DNB Hospital",
+    "courseTypes": [
+      "DNB"
+    ],
+    "quotaNames": [
+      "DNB Post MBBS",
+      "Uttar Pradesh DNB Inservice Seats"
+    ],
+    "masterQuotas": [
+      "DNB",
+      "Uttar Pradesh DNB Inservice Seats"
+    ],
+    "resolution": "Using inferred type (re-evaluated with full evidence)"
+  },
+  {
+    "collegeId": "GJ_GENERAL_HOSPITAL_MEHSANA_GUJARAT_384001",
+    "name": "General Hospital, Mehsana, Gujarat-384001",
+    "state": "Gujarat",
+    "existingType": "Government",
+    "inferredType": "DNB Hospital",
+    "courseTypes": [
+      "DNB"
+    ],
+    "quotaNames": [
+      "DNB Post MBBS"
+    ],
+    "masterQuotas": [
+      "DNB"
+    ],
+    "resolution": "Using inferred type (re-evaluated with full evidence)"
+  },
+  {
+    "collegeId": "UP_DISTRICT_HOSPITAL_BUDAUN_UTTAR_PRADESH_243601",
+    "name": "District Hospital, Budaun, Uttar Pradesh-243601",
+    "state": "Uttar Pradesh",
+    "existingType": "Government",
+    "inferredType": "DNB Hospital",
+    "courseTypes": [
+      "DNB"
+    ],
+    "quotaNames": [
+      "DNB Post MBBS",
+      "Uttar Pradesh DNB Inservice Seats"
+    ],
+    "masterQuotas": [
+      "DNB",
+      "Uttar Pradesh DNB Inservice Seats"
+    ],
+    "resolution": "Using inferred type (re-evaluated with full evidence)"
+  },
+  {
+    "collegeId": "PB_DISTRICT_HOSPITAL_FATEHGARH_SAHIB_PUNJAB_140406",
+    "name": "District Hospital, Fatehgarh Sahib, Punjab-140406",
+    "state": "Punjab",
+    "existingType": "Government",
+    "inferredType": "DNB Hospital",
+    "courseTypes": [
+      "DNB"
+    ],
+    "quotaNames": [
+      "DNB Post MBBS"
+    ],
+    "masterQuotas": [
+      "DNB"
+    ],
+    "resolution": "Using inferred type (re-evaluated with full evidence)"
+  },
+  {
+    "collegeId": "GJ_GENERAL_HOSPITAL_TAPI_GUJARAT_394650",
+    "name": "General Hospital, Tapi, Gujarat-394650",
+    "state": "Gujarat",
+    "existingType": "Government",
+    "inferredType": "DNB Hospital",
+    "courseTypes": [
+      "DNB"
+    ],
+    "quotaNames": [
+      "DNB Post MBBS"
+    ],
+    "masterQuotas": [
+      "DNB"
+    ],
+    "resolution": "Using inferred type (re-evaluated with full evidence)"
+  },
+  {
+    "collegeId": "HP_DR_YASHWANT_SINGH_PARMAR_GOVERNMENT_MEDICAL_COLLEGE_NAHAN_HIMACHAL_PRADESH_173001",
+    "name": "Dr Yashwant Singh Parmar Government Medical College, Nahan, Himachal Pradesh-173001",
+    "state": "Himachal Pradesh",
+    "existingType": "Government",
+    "inferredType": "DNB Hospital",
+    "courseTypes": [
+      "DNB"
+    ],
+    "quotaNames": [
+      "HP DNB Inservice Seats"
+    ],
+    "masterQuotas": [
+      "HP DNB Inservice Seats"
+    ],
+    "resolution": "Using inferred type (re-evaluated with full evidence)"
+  }
+]

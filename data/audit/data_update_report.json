@@ -1,0 +1,65 @@
+{
+  "timestamp": "2026-09-29T12:43:54.251Z",
+  "summary": {
+    "totalSourceRecords": 41206,
+    "totalOutputRecords": 175049,
+    "recordsRejected": 0,
+    "rejectionReasons": {},
+    "uniqueColleges": 2165,
+    "uniqueCourseTypes": [
+      "DNB",
+      "Diploma",
+      "MCh",
+      "MD",
+      "MS",
+      "Master"
+    ],
+    "uniqueSpecialties": 69,
+    "uniqueCollegeTypes": [
+      "DNB Hospital",
+      "Government",
+      "Private",
+      "Deemed University",
+      "Central University"
+    ],
+    "uniqueQuotas": 79,
+    "uniqueStates": 35,
+    "uniqueRounds": 17,
+    "years": [
+      2024,
+      2025
+    ]
+  },
+  "distributions": {
+    "collegeTypes": {
+      "DNB Hospital": 770,
+      "Government": 1180,
+      "Private": 138,
+      "Deemed University": 54,
+      "Central University": 23
+    },
+    "courseTypes": {
+      "DNB": 21463,
+      "MD": 95605,
+      "MS": 45018,
+      "Diploma": 12926,
+      "MCh": 10,
+      "Master": 27
+    },
+    "years": {
+      "2024": 79272,
+      "2025": 95777
+    }
+  },
+  "validation": {
+    "overallPass": true,
+    "brokenForeignKeys": 0,
+    "duplicateColleges": 0,
+    "invalidCourseTypes": [],
+    "invalidCollegeTypes": [],
+    "invalidRanks": 0,
+    "collegesWithoutState": 0,
+    "errors": []
+  },
+  "ambiguousClassifications": 0
+}

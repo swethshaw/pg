@@ -905,6 +905,101 @@
       "label": "VJ-PH"
     }
   ],
+  "counsellings": [
+    "All India",
+    "Open States",
+    "Bihar",
+    "Delhi",
+    "Haryana",
+    "Himachal Pradesh",
+    "Jharkhand",
+    "Karnataka",
+    "Madhya Pradesh",
+    "Maharashtra",
+    "Rajasthan",
+    "Uttar Pradesh",
+    "Uttarakhand",
+    "West Bengal"
+  ],
+  "courses": [
+    "DNB",
+    "Diploma",
+    "MCh",
+    "MD",
+    "MS",
+    "Master"
+  ],
+  "specialties": [
+    "Anaesthesia",
+    "Anaesthesiology",
+    "Anatomy",
+    "Aviation Medicine/Aerospace Medicine",
+    "Bio-Chemistry",
+    "Biochemistry",
+    "Cardio Thoracic Surgery (6 years)",
+    "Child Health",
+    "Clinical Pathology",
+    "Community Health Administration",
+    "Dermatology & Venereology",
+    "Dermatology, Venereology & Leprosy",
+    "Dermatology, Venereology and Leprosy",
+    "Diabetology",
+    "ENT",
+    "Emergency Medicine",
+    "Family Medicine",
+    "Forensic Medicine",
+    "General Medicine",
+    "General Surgery",
+    "Geriatric Medicine",
+    "Geriatrics",
+    "Health Administration",
+    "Health Administration including Hospital Administration",
+    "Hospital Administration",
+    "Immuno Haematology & Blood Transfusion",
+    "Immuno Hematology & Transfusion Medicine",
+    "Immuno-Haematology and Blood Transfusion",
+    "Lab Medicine",
+    "Master of Public Health (Epidemiology)",
+    "Microbiology",
+    "Neuro Surgery (6 years)",
+    "Neurosurgery (6 years)",
+    "Nuclear Medicine",
+    "Obstetrics & Gynaecology",
+    "Ophthalmology",
+    "Orthopaedics",
+    "Orthopedics Surgery",
+    "Oto-Rhino-Laryngology",
+    "Paediatric Surgery (6 years)",
+    "Paediatrics",
+    "Palliative Medicine",
+    "Pathology",
+    "Pharmacology",
+    "Physical Medicine & Rehabilitation",
+    "Physiology",
+    "Plastic Surgery (6 years)",
+    "Psychiatry",
+    "Psychological Medicine",
+    "Public Health",
+    "Radiation Medicine",
+    "Radiation Oncology",
+    "Radio Diagnosis",
+    "Radio Therapy",
+    "Radio-Diagnosis",
+    "Respiratory Diseases",
+    "Social & Preventive Medicine",
+    "Sports Medicine",
+    "Traumatology and Surgery",
+    "Tropical Medicine",
+    "Tuberculosis & Chest Diseases",
+    "Tuberculosis & Respiratory Diseases",
+    "in Anaesthesia-NBE",
+    "in Child Health-NBE",
+    "in Emergency Medicine-NBE",
+    "in Obstetrics & Gynaecology-NBE",
+    "in Oto-Rhino-Laryngology-NBE",
+    "in Radio-Diagnosis-NBE",
+    "in Tuberculosis & Chest Diseases-NBE"
+  ],
   "quotas": [
     {
       "code": "AFMS",
@@ -951,16 +1046,16 @@
       "label": "Bihar Private Seats - Open Quota"
     },
     {
-      "code": "Delhi State Quota",
-      "label": "Delhi State Quota"
-    },
-    {
       "code": "DNB Post MBBS",
       "label": "DNB Post MBBS"
     },
     {
       "code": "DU",
       "label": "DU"
+    },
+    {
+      "code": "Delhi State Quota",
+      "label": "Delhi State Quota"
     },
     {
       "code": "HAR Govt-All",
@@ -983,18 +1078,6 @@
       "label": "Haryana Private Seats - Minority Quota"
     },
     {
-      "code": "Haryana DNB Serv",
-      "label": "Haryana DNB Inservice Seats"
-    },
-    {
-      "code": "Haryana Priv IP",
-      "label": "Haryana Private Seats - Institutional Preference"
-    },
-    {
-      "code": "Haryana Priv NRI",
-      "label": "Haryana Private Seats - NRI Quota"
-    },
-    {
       "code": "HP DNB Serv",
       "label": "HP DNB Inservice Seats"
     },
@@ -1013,6 +1096,18 @@
     {
       "code": "HP Private-StateQuota",
       "label": "HP Private Seats - State Quota"
+    },
+    {
+      "code": "Haryana DNB Serv",
+      "label": "Haryana DNB Inservice Seats"
+    },
+    {
+      "code": "Haryana Priv IP",
+      "label": "Haryana Private Seats - Institutional Preference"
+    },
+    {
+      "code": "Haryana Priv NRI",
+      "label": "Haryana Private Seats - NRI Quota"
     },
     {
       "code": "IP",
@@ -1091,16 +1186,16 @@
       "label": "MP Govt Quota - Non Domicile"
     },
     {
-      "code": "MP Priv-NonDomicile",
-      "label": "MP Private Seats - Non Domicile"
-    },
-    {
       "code": "MP Priv-NRI",
       "label": "MP Private Seats - NRI Quota"
     },
     {
       "code": "MP Priv-NRINonDomicil",
       "label": "MP Private Seats - NRI Non Domicile"
+    },
+    {
+      "code": "MP Priv-NonDomicile",
+      "label": "MP Private Seats - Non Domicile"
     },
     {
       "code": "MP Priv-Open",
@@ -1119,20 +1214,16 @@
       "label": "Chhattisgarh Other State"
     },
     {
+      "code": "PY Mgmt-Open",
+      "label": "Pondicherry Management Quota"
+    },
+    {
       "code": "Punjab Open Quota (AI Basis)",
       "label": "Punjab Open Quota (All India Basis)"
     },
     {
       "code": "Punjab Open Quota (AI Basis)-Converted",
       "label": "Punjab Open Quota (All India Basis)-Converted"
-    },
-    {
-      "code": "PY Mgmt-Open",
-      "label": "Pondicherry Management Quota"
-    },
-    {
-      "code": "Raj DNB Serv",
-      "label": "Rajasthan DNB Inservice Seats"
     },
     {
       "code": "RAJ Govt - Govt Quota",
@@ -1153,6 +1244,10 @@
     {
       "code": "RAJ Priv-Mgmt Quota",
       "label": "Rajasthan Private Seats - Management Quota"
+    },
+    {
+      "code": "Raj DNB Serv",
+      "label": "Rajasthan DNB Inservice Seats"
     },
     {
       "code": "Sikkim Gen Quota",
@@ -1223,55 +1318,6 @@
       "label": "West Bengal NRI Quota"
     }
   ],
-  "courses": [
-    "DNB",
-    "Diploma",
-    "MCh",
-    "MD",
-    "MS",
-    "Master"
-  ],
-  "collegeTypes": [
-    {
-      "code": "DNB Hospital",
-      "label": "DNB Hospital"
-    },
-    {
-      "code": "Government",
-      "label": "Government"
-    },
-    {
-      "code": "Private",
-      "label": "Private"
-    },
-    {
-      "code": "Deemed University",
-      "label": "Deemed University"
-    },
-    {
-      "code": "Central University",
-      "label": "Central University"
-    }
-  ],
-  "rounds": [
-    "24 round 0",
-    "24 round 1",
-    "24 round 2",
-    "24 round 3",
-    "24 round 3.5",
-    "24 round 4",
-    "24 round 5",
-    "24 round 6",
-    "Round 0.1",
-    "Round 0.2",
-    "Round 1",
-    "Round 2",
-    "Round 3",
-    "Round 3.5",
-    "Round 4",
-    "Round 4.5",
-    "Round 5"
-  ],
   "states": [
     "Andaman and Nicobar Islands",
     "Andhra Pradesh",
@@ -1309,101 +1355,45 @@
     "Uttarakhand",
     "West Bengal"
   ],
-  "counsellings": [
-    "All India",
-    "Open States",
-    "Bihar",
-    "Delhi",
-    "Haryana",
-    "Himachal Pradesh",
-    "Jharkhand",
-    "Karnataka",
-    "Madhya Pradesh",
-    "Maharashtra",
-    "Rajasthan",
-    "Uttar Pradesh",
-    "Uttarakhand",
-    "West Bengal"
+  "collegeTypes": [
+    {
+      "code": "Government",
+      "label": "Government"
+    },
+    {
+      "code": "Private",
+      "label": "Private"
+    },
+    {
+      "code": "Deemed University",
+      "label": "Deemed University"
+    },
+    {
+      "code": "Central University",
+      "label": "Central University"
+    },
+    {
+      "code": "DNB Hospital",
+      "label": "DNB Hospital"
+    }
   ],
-  "specialties": [
-    "Anaesthesiology",
-    "Anatomy",
-    "Aviation Medicine/Aerospace Medicine",
-    "Bio-Chemistry",
-    "Biochemistry",
-    "Cardio Thoracic Surgery (6 years)",
-    "Community Health Administration",
-    "Dermatology & Venereology",
-    "Dermatology, Venereology & Leprosy",
-    "ENT",
-    "Emergency Medicine",
-    "Family Medicine",
-    "Forensic Medicine",
-    "General Medicine",
-    "General Surgery",
-    "Geriatric Medicine",
-    "Geriatrics",
-    "Health Administration including Hospital Administration",
-    "Hospital Administration",
-    "Immuno Haematology & Blood Transfusion",
-    "Immuno Hematology & Transfusion Medicine",
-    "Lab Medicine",
-    "Microbiology",
-    "Neuro Surgery (6 years)",
-    "Neurosurgery (6 years)",
-    "Nuclear Medicine",
-    "Obstetrics & Gynaecology",
-    "Ophthalmology",
-    "Orthopaedics",
-    "Orthopedics Surgery",
-    "Paediatric Surgery (6 years)",
-    "Paediatrics",
-    "Palliative Medicine",
-    "Pathology",
-    "Pharmacology",
-    "Physical Medicine & Rehabilitation",
-    "Physiology",
-    "Plastic Surgery (6 years)",
-    "Psychiatry",
-    "Radiation Oncology",
-    "Radio Diagnosis",
-    "Radio Therapy",
-    "Respiratory Diseases",
-    "Social & Preventive Medicine",
-    "Sports Medicine",
-    "Traumatology and Surgery",
-    "Tropical Medicine",
-    "Tuberculosis & Respiratory Diseases",
-    "in Anaesthesia",
-    "in Anaesthesia-NBE",
-    "in Child Health",
-    "in Child Health-NBE",
-    "in Clinical Pathology",
-    "in Dermatology, Venereology and Leprosy",
-    "in Diabetology",
-    "in Emergency Medicine-NBE",
-    "in Family Medicine-NBE",
-    "in Forensic Medicine",
-    "in Health Administration",
-    "in Immuno-Haematology and Blood Transfusion",
-    "in Microbiology",
-    "in Obstetrics & Gynaecology",
-    "in Obstetrics & Gynaecology-NBE",
-    "in Ophthalmology",
-    "in Ophthalmology-NBE",
-    "in Orthopaedics",
-    "in Oto-Rhino-Laryngology",
-    "in Oto-Rhino-Laryngology-NBE",
-    "in Physical Medicine & Rehabilitation",
-    "in Psychological Medicine",
-    "in Public Health",
-    "in Radiation Medicine",
-    "in Radio Therapy",
-    "in Radio-Diagnosis",
-    "in Radio-Diagnosis-NBE",
-    "in Sports Medicine",
-    "in Tuberculosis & Chest Diseases",
-    "in Tuberculosis & Chest Diseases-NBE",
-    "of Public Health (Epidemiology)"
+  "rounds": [
+    "24 round 0",
+    "24 round 1",
+    "24 round 2",
+    "24 round 3",
+    "24 round 3.5",
+    "24 round 4",
+    "24 round 5",
+    "24 round 6",
+    "Round 0.1",
+    "Round 0.2",
+    "Round 1",
+    "Round 2",
+    "Round 3",
+    "Round 3.5",
+    "Round 4",
+    "Round 4.5",
+    "Round 5"
   ]
 }
