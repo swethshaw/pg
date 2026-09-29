@@ -38,6 +38,21 @@
     { code: 'ST PwD', label: 'ST PwD' }
   ];
 
+  var PRE_PARA_CLINICAL = [
+    'Anatomy', 'Aviation Medicine/Aerospace Medicine', 'Bio-Chemistry', 'Biochemistry',
+    'Clinical Pathology', 'Community Health Administration', 'Forensic Medicine',
+    'Health Administration', 'Health Administration including Hospital Administration', 'Hospital Administration',
+    'Immuno Haematology & Blood Transfusion', 'Immuno Hematology & Transfusion Medicine', 'Immuno-Haematology and Blood Transfusion',
+    'Lab Medicine', 'Master of Public Health (Epidemiology)', 'Microbiology', 'Nuclear Medicine',
+    'Pathology', 'Pharmacology', 'Physiology', 'Public Health', 'Social & Preventive Medicine'
+  ];
+
+  function getBranchType(specialty) {
+    if (!specialty) return 'Other';
+    if (PRE_PARA_CLINICAL.indexOf(specialty) !== -1) return 'Non-Clinical';
+    return 'Clinical';
+  }
+
   // ---- Application State ----
   var filtersData = null;
   var collegesMap = null;     // Map: collegeId → college object
@@ -84,6 +99,7 @@
     dom.selectState = document.getElementById('select-state');
     dom.selectQuota = document.getElementById('select-quota');
     dom.selectCourse = document.getElementById('select-course');
+    dom.selectBranchType = document.getElementById('select-branch-type');
     dom.selectSpecialty = document.getElementById('select-specialty');
     dom.selectCollegeType = document.getElementById('select-college-type');
     dom.selectRound = document.getElementById('select-round');
@@ -272,6 +288,8 @@
     populateSelect(dom.selectQuota, filtersData.quotas);
     // Courses
     populateSelect(dom.selectCourse, filtersData.courses);
+    // Branch Types
+    if (dom.selectBranchType) populateSelect(dom.selectBranchType, ['Clinical', 'Non-Clinical']);
     // Specialties
     populateSelect(dom.selectSpecialty, filtersData.specialties);
     // College types
@@ -337,6 +355,11 @@
       if (filters.course && filters.course.length > 0) {
         var courseArray = Array.isArray(filters.course) ? filters.course : [filters.course];
         if (courseArray.indexOf(row.course) === -1) return false;
+      }
+      if (filters.branchType && filters.branchType.length > 0) {
+        var btArray = Array.isArray(filters.branchType) ? filters.branchType : [filters.branchType];
+        var bType = getBranchType(row.specialty);
+        if (btArray.indexOf(bType) === -1) return false;
       }
       if (filters.specialties && filters.specialties.length > 0) {
         var specArray = Array.isArray(filters.specialties) ? filters.specialties : [filters.specialties];
@@ -545,6 +568,7 @@
       state: dom.selectState.value,
       quota: tomSelectInstances['select-quota'] ? tomSelectInstances['select-quota'].getValue() : [],
       course: tomSelectInstances['select-course'] ? tomSelectInstances['select-course'].getValue() : [],
+      branchType: tomSelectInstances['select-branch-type'] ? tomSelectInstances['select-branch-type'].getValue() : [],
       specialties: tomSelectInstances['select-specialty'] ? tomSelectInstances['select-specialty'].getValue() : [],
       collegeType: tomSelectInstances['select-college-type'] ? tomSelectInstances['select-college-type'].getValue() : [],
       round: dom.selectRound ? dom.selectRound.value : "",
@@ -709,16 +733,23 @@
   }
 
   function updateSpecialtyDropdown() {
-    var course = dom.selectCourse.value;
-    var currentSpecialty = tomSelectInstances['select-specialty'] ? tomSelectInstances['select-specialty'].getValue() : dom.selectSpecialty.value;
+    var courses = tomSelectInstances['select-course'] ? tomSelectInstances['select-course'].getValue() : [];
+    if (typeof courses === 'string' && courses) courses = [courses];
+    
+    var branchTypes = tomSelectInstances['select-branch-type'] ? tomSelectInstances['select-branch-type'].getValue() : [];
+    if (typeof branchTypes === 'string' && branchTypes) branchTypes = [branchTypes];
 
-    if (!course || course === '') {
+    if ((!courses || courses.length === 0) && (!branchTypes || branchTypes.length === 0)) {
       populateSelect(dom.selectSpecialty, filtersData.specialties);
     } else {
       var validSpecialties = new Set();
       if (cutoffsData) {
         cutoffsData.forEach(function (row) {
-          if (row.course === course && row.specialty) {
+          if (!row.specialty) return;
+          var courseMatch = (!courses || courses.length === 0) || courses.indexOf(row.course) !== -1;
+          var btMatch = (!branchTypes || branchTypes.length === 0) || branchTypes.indexOf(getBranchType(row.specialty)) !== -1;
+          
+          if (courseMatch && btMatch) {
             validSpecialties.add(row.specialty);
           }
         });
@@ -869,6 +900,9 @@
     var courseVal = getMultiValue('select-course');
     if (courseVal) params.set('course', courseVal);
 
+    var branchTypeVal = getMultiValue('select-branch-type');
+    if (branchTypeVal) params.set('branchType', branchTypeVal);
+
     var specVal = getMultiValue('select-specialty');
     if (specVal) params.set('specialty', specVal);
 
@@ -900,6 +934,7 @@
 
     if (params.has('quota')) setSelectValue(dom.selectQuota, params.get('quota').split(','), true);
     if (params.has('course')) setSelectValue(dom.selectCourse, params.get('course').split(','), true);
+    if (params.has('branchType')) setSelectValue(dom.selectBranchType, params.get('branchType').split(','), true);
     if (params.has('specialty')) setSelectValue(dom.selectSpecialty, params.get('specialty').split(','), true);
     if (params.has('collegeType')) setSelectValue(dom.selectCollegeType, params.get('collegeType').split(','), true);
     
@@ -942,6 +977,7 @@
       setSelectValue(dom.selectCategory, ['GN'], true);
       setSelectValue(dom.selectQuota, [], true);
       setSelectValue(dom.selectCourse, [], true);
+      if (dom.selectBranchType) setSelectValue(dom.selectBranchType, [], true);
       setSelectValue(dom.selectSpecialty, [], true);
       setSelectValue(dom.selectCollegeType, [], true);
       if (dom.selectRound) setSelectValue(dom.selectRound, '', true);
@@ -968,6 +1004,13 @@
       updateSpecialtyDropdown();
       autoPredict();
     });
+
+    if (dom.selectBranchType) {
+      dom.selectBranchType.addEventListener('change', function() {
+        updateSpecialtyDropdown();
+        autoPredict();
+      });
+    }
 
     dom.selectSpecialty.addEventListener('change', autoPredict);
     dom.selectCategory.addEventListener('change', autoPredict);
