@@ -154,9 +154,10 @@
     dom.loadingState.classList.add('is-visible');
     dom.btnPredict.disabled = true;
 
+    var v = '?v=' + Date.now();
     Promise.all([
-      fetch('data/filters.json').then(function (r) { if (!r.ok) throw new Error('filters.json'); return r.json(); }),
-      fetch('data/colleges.json').then(function (r) { if (!r.ok) throw new Error('colleges.json'); return r.json(); })
+      fetch('data/filters.json' + v).then(function (r) { if (!r.ok) throw new Error('filters.json'); return r.json(); }),
+      fetch('data/colleges.json' + v).then(function (r) { if (!r.ok) throw new Error('colleges.json'); return r.json(); })
     ]).then(function (results) {
       filtersData = results[0];
       
@@ -172,7 +173,7 @@
       }
 
       populateFormDropdowns();
-      setSelectValue(dom.selectCategory, ['GN'], true);
+      setSelectValue(dom.selectCategory, [], true);
       setSelectValue(dom.selectCounselling, 'All India', true); // default
       restoreFromUrl();
       
@@ -231,6 +232,14 @@
     if (firstOpt && !selectEl.multiple) {
       selectEl.appendChild(firstOpt);
     }
+
+    if (selectEl.multiple) {
+      var allOpt = document.createElement('option');
+      allOpt.value = 'ALL';
+      allOpt.textContent = 'All';
+      selectEl.appendChild(allOpt);
+    }
+
     items.forEach(function (item) {
       var opt = document.createElement('option');
       if (typeof item === 'object') {
@@ -291,7 +300,7 @@
     // Branch Types
     if (dom.selectBranchType) populateSelect(dom.selectBranchType, ['Clinical', 'Non-Clinical']);
     // Specialties
-    populateSelect(dom.selectSpecialty, filtersData.specialties);
+    populateSelect(dom.selectSpecialty, filtersData.specialties || []);
     // College types
     populateSelect(dom.selectCollegeType, filtersData.collegeTypes);
     // Rounds
@@ -350,20 +359,20 @@
       // Form/sidebar filters
       if (filters.quota && filters.quota.length > 0) {
         var quotaArray = Array.isArray(filters.quota) ? filters.quota : [filters.quota];
-        if (quotaArray.indexOf(row.quotaCode) === -1) return false;
+        if (quotaArray.indexOf('ALL') === -1 && quotaArray.indexOf(row.quotaCode) === -1) return false;
       }
       if (filters.course && filters.course.length > 0) {
         var courseArray = Array.isArray(filters.course) ? filters.course : [filters.course];
-        if (courseArray.indexOf(row.course) === -1) return false;
+        if (courseArray.indexOf('ALL') === -1 && courseArray.indexOf(row.course) === -1) return false;
       }
       if (filters.branchType && filters.branchType.length > 0) {
         var btArray = Array.isArray(filters.branchType) ? filters.branchType : [filters.branchType];
         var bType = getBranchType(row.specialty);
-        if (btArray.indexOf(bType) === -1) return false;
+        if (btArray.indexOf('ALL') === -1 && btArray.indexOf(bType) === -1) return false;
       }
       if (filters.specialties && filters.specialties.length > 0) {
         var specArray = Array.isArray(filters.specialties) ? filters.specialties : [filters.specialties];
-        if (specArray.indexOf(row.specialty) === -1) return false;
+        if (specArray.indexOf('ALL') === -1 && specArray.indexOf(row.specialty) === -1) return false;
       }
       if (filters.round) {
         if (getRoundNumber(row.round) < getRoundNumber(filters.round)) return false;
@@ -378,7 +387,7 @@
       var college = collegesMap.get(row.collegeId);
       if (filters.collegeType && filters.collegeType.length > 0) {
         var ctArray = Array.isArray(filters.collegeType) ? filters.collegeType : [filters.collegeType];
-        if (ctArray.indexOf(college.collegeType) === -1) return false;
+        if (ctArray.indexOf('ALL') === -1 && ctArray.indexOf(college.collegeType) === -1) return false;
       }
       if (filters.state && college.state !== filters.state) return false;
 
@@ -426,11 +435,17 @@
           return a.cutoff.specialty.localeCompare(b.cutoff.specialty);
         case 'specialty':
           return a.cutoff.specialty.localeCompare(b.cutoff.specialty);
-        case 'rank':
+        case 'rank-asc':
           return a.cutoff.closingRank - b.cutoff.closingRank;
-        case 'fee':
+        case 'rank-desc':
+          return b.cutoff.closingRank - a.cutoff.closingRank;
+        case 'fee-asc':
           return parseCurrency(a.cutoff.fee) - parseCurrency(b.cutoff.fee);
-        case 'stipend':
+        case 'fee-desc':
+          return parseCurrency(b.cutoff.fee) - parseCurrency(a.cutoff.fee);
+        case 'stipend-asc':
+          return parseCurrency(a.cutoff.stipend) - parseCurrency(b.cutoff.stipend);
+        case 'stipend-desc':
           return parseCurrency(b.cutoff.stipend) - parseCurrency(a.cutoff.stipend);
         default:
           return 0;
@@ -553,8 +568,7 @@
       valid = false;
     }
     if (!category || (Array.isArray(category) && category.length === 0)) {
-      showError('fg-category', 'err-category', 'Select at least one category.');
-      valid = false;
+      category = ['ALL'];
     }
     if (!valid) return;
 
@@ -857,7 +871,7 @@
     for (var id in tomSelectInstances) {
       if (tomSelectInstances.hasOwnProperty(id) && tomSelectInstances[id]) {
         if (id === 'select-category') {
-           tomSelectInstances[id].setValue(['GN'], true);
+           tomSelectInstances[id].setValue([], true);
         } else if (id === 'select-counselling' || id === 'select-state' || id === 'select-round') {
            tomSelectInstances[id].setValue(id === 'select-counselling' ? 'All India' : '', true);
         } else {
@@ -974,7 +988,7 @@
       if (!counselling) return; // Should not happen since we removed empty option
       
       // Reset other filters when counselling changes
-      setSelectValue(dom.selectCategory, ['GN'], true);
+      setSelectValue(dom.selectCategory, [], true);
       setSelectValue(dom.selectQuota, [], true);
       setSelectValue(dom.selectCourse, [], true);
       if (dom.selectBranchType) setSelectValue(dom.selectBranchType, [], true);

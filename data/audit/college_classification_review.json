@@ -1,895 +1,1738 @@
 [
   {
-    "collegeId": "JH_BOKARO_GENERAL_HOSPITAL_BOKARO_JHARKHAND_827004",
-    "name": "Bokaro General Hospital, Bokaro, Jharkhand-827004",
-    "state": "Jharkhand",
-    "existingType": "Government",
-    "inferredType": "DNB Hospital",
-    "courseTypes": [
+    "id": "DL_CENTER_FOR_CANCER_PATHOLOGY_INDIAN_COUNCIL_OF_MEDICAL_RESEARCH_DELHI_110029_PREV_NATIONAL_INSTITUTE_OF_PATHOLOGY_INDIAN_COUNCIL_OF_MEDICAL_RESEARCH",
+    "name": "Center for Cancer Pathology (Indian Council of Medical Research), Delhi-110029 (Prev. National Institute of Pathology (Indian Council of Medical Research))",
+    "state": "Delhi",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
       "DNB"
     ],
-    "quotaNames": [
-      "DNB Post MBBS"
-    ],
-    "masterQuotas": [
-      "DNB"
-    ],
-    "resolution": "Using inferred type (re-evaluated with full evidence)"
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
   },
   {
-    "collegeId": "HP_SHRI_LAL_BAHADUR_SHASTRI_GOVERNMENT_MEDICAL_COLLEGE_AND_HOSPITAL_MANDI_HIMACHAL_PRADESH_175021",
-    "name": "Shri Lal Bahadur Shastri Government Medical College and Hospital, Mandi, Himachal Pradesh-175021",
-    "state": "Himachal Pradesh",
-    "existingType": "Government",
-    "inferredType": "DNB Hospital",
-    "courseTypes": [
-      "DNB"
-    ],
-    "quotaNames": [
-      "DNB Post MBBS",
-      "HP DNB Inservice Seats"
-    ],
-    "masterQuotas": [
-      "DNB",
-      "HP DNB Inservice Seats"
-    ],
-    "resolution": "Using inferred type (re-evaluated with full evidence)"
-  },
-  {
-    "collegeId": "JK_ASSOCIATED_HOSPITAL_GOVERNMENT_MEDICAL_COLLEGE_DODA_JAMMU_AND_KASHMIR_182202",
-    "name": "Associated Hospital Government Medical College, Doda, Jammu and Kashmir-182202",
-    "state": "Jammu and Kashmir",
-    "existingType": "Government",
-    "inferredType": "DNB Hospital",
-    "courseTypes": [
-      "DNB"
-    ],
-    "quotaNames": [
-      "DNB Post MBBS"
-    ],
-    "masterQuotas": [
-      "DNB"
-    ],
-    "resolution": "Using inferred type (re-evaluated with full evidence)"
-  },
-  {
-    "collegeId": "MH_GOVERNMENT_MEDICAL_COLLEGE_AND_HOSPITAL_AKOLA_MAHARASHTRA_444001",
-    "name": "Government Medical College and Hospital, Akola, Maharashtra-444001",
-    "state": "Maharashtra",
-    "existingType": "Government",
-    "inferredType": "DNB Hospital",
-    "courseTypes": [
-      "DNB"
-    ],
-    "quotaNames": [
-      "DNB Post MBBS"
-    ],
-    "masterQuotas": [
-      "DNB"
-    ],
-    "resolution": "Using inferred type (re-evaluated with full evidence)"
-  },
-  {
-    "collegeId": "RJ_GOVERNMENT_RDBP_JAIPURIA_HOSPITAL_JAIPUR_RAJASTHAN_302018",
-    "name": "Government RDBP Jaipuria Hospital, Jaipur, Rajasthan-302018",
-    "state": "Rajasthan",
-    "existingType": "Government",
-    "inferredType": "DNB Hospital",
-    "courseTypes": [
-      "DNB"
-    ],
-    "quotaNames": [
-      "DNB Post MBBS",
-      "Rajasthan DNB Inservice Seats"
-    ],
-    "masterQuotas": [
-      "DNB",
-      "Rajasthan DNB Inservice Seats"
-    ],
-    "resolution": "Using inferred type (re-evaluated with full evidence)"
-  },
-  {
-    "collegeId": "TG_GENERAL_HOSPITAL_KHAMMAM_TELANGANA_507002_PREV_DISTRICT_HEAD_QUARTERS_HOSPITAL_KHAMMAM",
-    "name": "General Hospital, Khammam, Telangana-507002 (Prev. District Head Quarters Hospital, Khammam)",
-    "state": "Telangana",
-    "existingType": "Government",
-    "inferredType": "DNB Hospital",
-    "courseTypes": [
-      "DNB"
-    ],
-    "quotaNames": [
-      "DNB Post MBBS"
-    ],
-    "masterQuotas": [
-      "DNB"
-    ],
-    "resolution": "Using inferred type (re-evaluated with full evidence)"
-  },
-  {
-    "collegeId": "KA_WENLOCK_DISTRICT_HOSPITAL_MANGALORE_KARNATAKA_575001",
-    "name": "Wenlock District Hospital, Mangalore, Karnataka-575001",
-    "state": "Karnataka",
-    "existingType": "Government",
-    "inferredType": "DNB Hospital",
-    "courseTypes": [
-      "DNB"
-    ],
-    "quotaNames": [
-      "DNB Post MBBS"
-    ],
-    "masterQuotas": [
-      "DNB"
-    ],
-    "resolution": "Using inferred type (re-evaluated with full evidence)"
-  },
-  {
-    "collegeId": "GJ_GMERS_MEDICAL_COLLEGE_AND_HOSPITAL_NAVASARI_GUJARAT_396445_PREV_MGG_GENERAL_HOSPITAL_NAVASARI",
-    "name": "GMERS Medical College and Hospital, Navasari, Gujarat-396445 (Prev. MGG General Hospital, Navasari)",
-    "state": "Gujarat",
-    "existingType": "Government",
-    "inferredType": "DNB Hospital",
-    "courseTypes": [
-      "DNB"
-    ],
-    "quotaNames": [
-      "DNB Post MBBS"
-    ],
-    "masterQuotas": [
-      "DNB"
-    ],
-    "resolution": "Using inferred type (re-evaluated with full evidence)"
-  },
-  {
-    "collegeId": "JK_GOVERNMENT_MEDICAL_COLLEGE_KARAN_NAGAR_SRINAGAR_JAMMU_AND_KASHMIR_190010",
-    "name": "Government Medical College, Karan Nagar, Srinagar, Jammu and Kashmir-190010",
-    "state": "Jammu and Kashmir",
-    "existingType": "Government",
-    "inferredType": "DNB Hospital",
-    "courseTypes": [
-      "DNB"
-    ],
-    "quotaNames": [
-      "DNB Post MBBS"
-    ],
-    "masterQuotas": [
-      "DNB"
-    ],
-    "resolution": "Using inferred type (re-evaluated with full evidence)"
-  },
-  {
-    "collegeId": "UP_PANDIT_DEEN_DAYAL_UPADHYAY_GOVERNMENT_HOSPITAL_PANDEYPUR_VARANASI_UTTAR_PRADESH_221002",
-    "name": "Pandit Deen Dayal Upadhyay Government Hospital, Pandeypur, Varanasi, Uttar Pradesh-221002",
-    "state": "Uttar Pradesh",
-    "existingType": "Government",
-    "inferredType": "DNB Hospital",
-    "courseTypes": [
-      "DNB"
-    ],
-    "quotaNames": [
-      "DNB Post MBBS",
-      "Uttar Pradesh DNB Inservice Seats"
-    ],
-    "masterQuotas": [
-      "DNB",
-      "Uttar Pradesh DNB Inservice Seats"
-    ],
-    "resolution": "Using inferred type (re-evaluated with full evidence)"
-  },
-  {
-    "collegeId": "UP_KALYAN_SINGH_GOVERNMENT_MEDICAL_COLLEGE_BULANDSHAHR_UTTAR_PRADESH_203001",
-    "name": "Kalyan Singh Government Medical College, Bulandshahr, Uttar Pradesh-203001",
-    "state": "Uttar Pradesh",
-    "existingType": "Government",
-    "inferredType": "DNB Hospital",
-    "courseTypes": [
-      "DNB"
-    ],
-    "quotaNames": [
-      "DNB Post MBBS",
-      "Uttar Pradesh DNB Inservice Seats"
-    ],
-    "masterQuotas": [
-      "DNB",
-      "Uttar Pradesh DNB Inservice Seats"
-    ],
-    "resolution": "Using inferred type (re-evaluated with full evidence)"
-  },
-  {
-    "collegeId": "JK_GOVERNMENT_MEDICAL_COLLEGE_MEDICAL_ENCLAVE_JAMMU_JAMMU_AND_KASHMIR_180001",
-    "name": "Government Medical College, Medical Enclave, Jammu, Jammu and Kashmir-180001",
-    "state": "Jammu and Kashmir",
-    "existingType": "Government",
-    "inferredType": "DNB Hospital",
-    "courseTypes": [
-      "DNB"
-    ],
-    "quotaNames": [
-      "DNB Post MBBS"
-    ],
-    "masterQuotas": [
-      "DNB"
-    ],
-    "resolution": "Using inferred type (re-evaluated with full evidence)"
-  },
-  {
-    "collegeId": "MH_BHARATRATNA_DR_BABASAHEB_AMBEDKAR_MUNICIPAL_GENERAL_HOSPITAL_KANDIVALI_WEST_MUMBAI_MAHARASHTRA_400067",
-    "name": "BharatRatna Dr Babasaheb Ambedkar Municipal General Hospital, Kandivali (West), Mumbai, Maharashtra-400067",
-    "state": "Maharashtra",
-    "existingType": "Government",
-    "inferredType": "DNB Hospital",
-    "courseTypes": [
-      "DNB"
-    ],
-    "quotaNames": [
-      "DNB Post MBBS"
-    ],
-    "masterQuotas": [
-      "DNB"
-    ],
-    "resolution": "Using inferred type (re-evaluated with full evidence)"
-  },
-  {
-    "collegeId": "BR_GOVERNMENT_MEDICAL_COLLEGE_BETTIAH_BIHAR_845438",
-    "name": "Government Medical College, Bettiah, Bihar-845438",
-    "state": "Bihar",
-    "existingType": "Government",
-    "inferredType": "DNB Hospital",
-    "courseTypes": [
-      "DNB"
-    ],
-    "quotaNames": [
-      "DNB Post MBBS",
-      "Bihar DNB Seats"
-    ],
-    "masterQuotas": [
-      "DNB",
-      "Bihar DNB Seats"
-    ],
-    "resolution": "Using inferred type (re-evaluated with full evidence)"
-  },
-  {
-    "collegeId": "KL_GOVERNMENT_GENERAL_HOSPITAL_THYCAUD_THIRUVANANTHAPURAM_KERALA_695035",
-    "name": "Government General Hospital, Thycaud, Thiruvananthapuram, Kerala-695035",
-    "state": "Kerala",
-    "existingType": "Government",
-    "inferredType": "DNB Hospital",
-    "courseTypes": [
-      "DNB"
-    ],
-    "quotaNames": [
-      "DNB Post MBBS"
-    ],
-    "masterQuotas": [
-      "DNB"
-    ],
-    "resolution": "Using inferred type (re-evaluated with full evidence)"
-  },
-  {
-    "collegeId": "GJ_GMERS_MEDICAL_COLLEGE_AND_GENERAL_HOSPITAL_RAJPIPLA_NARMADA_GUJARAT_393145_PREV_GENERAL_HOSPITAL_RAJPIPLA",
-    "name": "GMERS Medical College and General Hospital, Rajpipla, Narmada, Gujarat-393145 (Prev. General Hospital, Rajpipla)",
-    "state": "Gujarat",
-    "existingType": "Government",
-    "inferredType": "DNB Hospital",
-    "courseTypes": [
-      "DNB"
-    ],
-    "quotaNames": [
-      "DNB Post MBBS"
-    ],
-    "masterQuotas": [
-      "DNB"
-    ],
-    "resolution": "Using inferred type (re-evaluated with full evidence)"
-  },
-  {
-    "collegeId": "MH_GOVERNMENT_MEDICAL_COLLEGE_AND_HOSPITAL_NANDURBAR_CIVIL_HOSPITAL_CAMPUS_SAKRI_ROAD_NANDURBAR_MAHARASHTRA_425412",
-    "name": "Government Medical College and Hospital, Nandurbar Civil Hospital Campus, Sakri Road, Nandurbar, Maharashtra-425412",
-    "state": "Maharashtra",
-    "existingType": "Government",
-    "inferredType": "DNB Hospital",
-    "courseTypes": [
-      "DNB"
-    ],
-    "quotaNames": [
-      "DNB Post MBBS"
-    ],
-    "masterQuotas": [
-      "DNB"
-    ],
-    "resolution": "Using inferred type (re-evaluated with full evidence)"
-  },
-  {
-    "collegeId": "GJ_MP_SHAH_GOVERNMENT_MEDICAL_COLLEGE_JAMNAGAR_GUJARAT_361008",
-    "name": "MP Shah Government Medical College, Jamnagar, Gujarat-361008",
-    "state": "Gujarat",
-    "existingType": "Government",
-    "inferredType": "DNB Hospital",
-    "courseTypes": [
-      "DNB"
-    ],
-    "quotaNames": [
-      "DNB Post MBBS"
-    ],
-    "masterQuotas": [
-      "DNB"
-    ],
-    "resolution": "Using inferred type (re-evaluated with full evidence)"
-  },
-  {
-    "collegeId": "TG_GENERAL_HOSPITAL_KARIMNAGAR_TELANGANA_505001_PREV_DISTRICT_HEAD_QUARTERS_HOSPITAL_KARIMNAGAR",
-    "name": "General Hospital, Karimnagar, Telangana-505001 (Prev. District Head Quarters Hospital, Karimnagar)",
-    "state": "Telangana",
-    "existingType": "Government",
-    "inferredType": "DNB Hospital",
-    "courseTypes": [
-      "DNB"
-    ],
-    "quotaNames": [
-      "DNB Post MBBS"
-    ],
-    "masterQuotas": [
-      "DNB"
-    ],
-    "resolution": "Using inferred type (re-evaluated with full evidence)"
-  },
-  {
-    "collegeId": "WB_INFECTIOUS_DISEASES_AND_BELIAGHATA_GENERAL_HOSPITAL_57_BELIAGHATA_MAIN_ROAD_KOLKATA_WEST_BENGAL_700010",
-    "name": "Infectious Diseases & Beliaghata General Hospital, 57 Beliaghata Main Road, Kolkata, West Bengal-700010",
-    "state": "West Bengal",
-    "existingType": "Government",
-    "inferredType": "DNB Hospital",
-    "courseTypes": [
-      "DNB"
-    ],
-    "quotaNames": [
-      "DNB Post MBBS",
-      "West Bengal DNB Inservice Seats"
-    ],
-    "masterQuotas": [
-      "DNB",
-      "West Bengal DNB Inservice Seats"
-    ],
-    "resolution": "Using inferred type (re-evaluated with full evidence)"
-  },
-  {
-    "collegeId": "JK_ASSOCIATED_HOSPITAL_GOVERNMENT_MEDICAL_COLLEGE_KATHUA_JAMMU_AND_KASHMIR_184101",
-    "name": "Associated Hospital Government Medical College, Kathua, Jammu and Kashmir-184101",
-    "state": "Jammu and Kashmir",
-    "existingType": "Government",
-    "inferredType": "DNB Hospital",
-    "courseTypes": [
-      "DNB"
-    ],
-    "quotaNames": [
-      "DNB Post MBBS"
-    ],
-    "masterQuotas": [
-      "DNB"
-    ],
-    "resolution": "Using inferred type (re-evaluated with full evidence)"
-  },
-  {
-    "collegeId": "HP_DR_RAJENDRA_PRASAD_GOVERNMENT_MEDICAL_COLLEGE_TANDA_HIMACHAL_PRADESH_176002",
-    "name": "Dr Rajendra Prasad Government Medical College, Tanda, Himachal Pradesh-176002",
-    "state": "Himachal Pradesh",
-    "existingType": "Government",
-    "inferredType": "DNB Hospital",
-    "courseTypes": [
-      "DNB"
-    ],
-    "quotaNames": [
-      "DNB Post MBBS"
-    ],
-    "masterQuotas": [
-      "DNB"
-    ],
-    "resolution": "Using inferred type (re-evaluated with full evidence)"
-  },
-  {
-    "collegeId": "KL_DISTRICT_HOSPITAL_PALAKKAD_KERALA_678001",
-    "name": "District Hospital, Palakkad, Kerala-678001",
-    "state": "Kerala",
-    "existingType": "Government",
-    "inferredType": "DNB Hospital",
-    "courseTypes": [
-      "DNB"
-    ],
-    "quotaNames": [
-      "DNB Post MBBS"
-    ],
-    "masterQuotas": [
-      "DNB"
-    ],
-    "resolution": "Using inferred type (re-evaluated with full evidence)"
-  },
-  {
-    "collegeId": "TG_DISTRICT_HOSPITAL_GOLLAGUDA_TELANGANA_508001",
-    "name": "District Hospital, Gollaguda, Telangana-508001",
-    "state": "Telangana",
-    "existingType": "Government",
-    "inferredType": "DNB Hospital",
-    "courseTypes": [
-      "DNB"
-    ],
-    "quotaNames": [
-      "DNB Post MBBS"
-    ],
-    "masterQuotas": [
-      "DNB"
-    ],
-    "resolution": "Using inferred type (re-evaluated with full evidence)"
-  },
-  {
-    "collegeId": "UP_GOVERNMENT_INSTITUTE_OF_MEDICAL_SCIENCES_GREATER_NOIDA_UTTAR_PRADESH_201310",
-    "name": "Government Institute of Medical Sciences, Greater Noida, Uttar Pradesh-201310",
-    "state": "Uttar Pradesh",
-    "existingType": "Government",
-    "inferredType": "DNB Hospital",
-    "courseTypes": [
-      "DNB"
-    ],
-    "quotaNames": [
-      "DNB Post MBBS",
-      "Uttar Pradesh DNB Inservice Seats"
-    ],
-    "masterQuotas": [
-      "DNB",
-      "Uttar Pradesh DNB Inservice Seats"
-    ],
-    "resolution": "Using inferred type (re-evaluated with full evidence)"
-  },
-  {
-    "collegeId": "MH_SHRI_VASANT_RAO_NAIK_GOVERNMENT_MEDICAL_COLLEGE_YAVATMAL_MAHARASHTRA_445001",
-    "name": "Shri Vasant Rao Naik Government Medical College, Yavatmal, Maharashtra-445001",
-    "state": "Maharashtra",
-    "existingType": "Government",
-    "inferredType": "DNB Hospital",
-    "courseTypes": [
-      "DNB"
-    ],
-    "quotaNames": [
-      "DNB Post MBBS"
-    ],
-    "masterQuotas": [
-      "DNB"
-    ],
-    "resolution": "Using inferred type (re-evaluated with full evidence)"
-  },
-  {
-    "collegeId": "KL_GOVERNMENT_GENERAL_HOSPITAL_KOCHI_KERALA_682011",
-    "name": "Government General Hospital, Kochi, Kerala-682011",
-    "state": "Kerala",
-    "existingType": "Government",
-    "inferredType": "DNB Hospital",
-    "courseTypes": [
-      "DNB"
-    ],
-    "quotaNames": [
-      "DNB Post MBBS"
-    ],
-    "masterQuotas": [
-      "DNB"
-    ],
-    "resolution": "Using inferred type (re-evaluated with full evidence)"
-  },
-  {
-    "collegeId": "WB_RUBY_GENERAL_HOSPITAL_KOLKATA_WEST_BENGAL_700107",
-    "name": "Ruby General Hospital, Kolkata, West Bengal-700107",
-    "state": "West Bengal",
-    "existingType": "Government",
-    "inferredType": "DNB Hospital",
-    "courseTypes": [
-      "DNB"
-    ],
-    "quotaNames": [
-      "DNB Post MBBS"
-    ],
-    "masterQuotas": [
-      "DNB"
-    ],
-    "resolution": "Using inferred type (re-evaluated with full evidence)"
-  },
-  {
-    "collegeId": "GJ_GMERS_MEDICAL_COLLEGE_PANCHMAHAL_GODHRA_GUJARAT_389120_PREV_GENERAL_HOSPITAL_GODHRA",
-    "name": "GMERS Medical College, Panchmahal, Godhra, Gujarat-389120 (Prev. General Hospital, Godhra)",
-    "state": "Gujarat",
-    "existingType": "Government",
-    "inferredType": "DNB Hospital",
-    "courseTypes": [
-      "DNB"
-    ],
-    "quotaNames": [
-      "DNB Post MBBS"
-    ],
-    "masterQuotas": [
-      "DNB"
-    ],
-    "resolution": "Using inferred type (re-evaluated with full evidence)"
-  },
-  {
-    "collegeId": "MH_GOVERNMENT_MEDICAL_COLLEGE_GONDIA_MAHARASHTRA_441601",
-    "name": "Government Medical College, Gondia, Maharashtra-441601",
-    "state": "Maharashtra",
-    "existingType": "Government",
-    "inferredType": "DNB Hospital",
-    "courseTypes": [
-      "DNB"
-    ],
-    "quotaNames": [
-      "DNB Post MBBS"
-    ],
-    "masterQuotas": [
-      "DNB"
-    ],
-    "resolution": "Using inferred type (re-evaluated with full evidence)"
-  },
-  {
-    "collegeId": "HP_DR_RADHAKRISHNAN_GOVERNMENT_MEDICAL_COLLEGE_HAMIRPUR_HIMACHAL_PRADESH_177001",
-    "name": "Dr Radhakrishnan Government Medical College, Hamirpur, Himachal Pradesh-177001",
-    "state": "Himachal Pradesh",
-    "existingType": "Government",
-    "inferredType": "DNB Hospital",
-    "courseTypes": [
-      "DNB"
-    ],
-    "quotaNames": [
-      "DNB Post MBBS",
-      "HP DNB Inservice Seats"
-    ],
-    "masterQuotas": [
-      "DNB",
-      "HP DNB Inservice Seats"
-    ],
-    "resolution": "Using inferred type (re-evaluated with full evidence)"
-  },
-  {
-    "collegeId": "WB_RAIGANJ_GOVERNMENT_MEDICAL_COLLEGE_AND_HOSPITAL_UTTAR_DINAJPUR_WEST_BENGAL_733130",
-    "name": "Raiganj Government Medical College and Hospital, Uttar Dinajpur, West Bengal-733130",
-    "state": "West Bengal",
-    "existingType": "Government",
-    "inferredType": "DNB Hospital",
-    "courseTypes": [
-      "DNB"
-    ],
-    "quotaNames": [
-      "DNB Post MBBS",
-      "West Bengal DNB Inservice Seats"
-    ],
-    "masterQuotas": [
-      "DNB",
-      "West Bengal DNB Inservice Seats"
-    ],
-    "resolution": "Using inferred type (re-evaluated with full evidence)"
-  },
-  {
-    "collegeId": "UP_SWAMI_KALYAN_DEV_DISTRICT_HOSPITAL_MUZAFFARNAGAR_UTTAR_PRADESH_251001_JOINT_PROGRAMME_WITH_DISTRICT_COMBINED_HOSPITAL_BHAGPAT_UTTAR_PRADESH_AS_SECONDARY_HOSPITAL",
-    "name": "Swami Kalyan Dev District Hospital, Muzaffarnagar, Uttar Pradesh-251001 (Joint Programme with District Combined Hospital, Bhagpat, Uttar Pradesh (as Secondary Hospital)",
-    "state": "Uttar Pradesh",
-    "existingType": "Government",
-    "inferredType": "DNB Hospital",
-    "courseTypes": [
-      "DNB"
-    ],
-    "quotaNames": [
-      "DNB Post MBBS"
-    ],
-    "masterQuotas": [
-      "DNB"
-    ],
-    "resolution": "Using inferred type (re-evaluated with full evidence)"
-  },
-  {
-    "collegeId": "KL_GOVERNMENT_MENTAL_HEALTH_CENTRE_KOZHIKODE_KERALA_673016",
-    "name": "Government Mental Health Centre, Kozhikode, Kerala-673016",
-    "state": "Kerala",
-    "existingType": "Government",
-    "inferredType": "DNB Hospital",
-    "courseTypes": [
-      "DNB"
-    ],
-    "quotaNames": [
-      "DNB Post MBBS"
-    ],
-    "masterQuotas": [
-      "DNB"
-    ],
-    "resolution": "Using inferred type (re-evaluated with full evidence)"
-  },
-  {
-    "collegeId": "JK_RAJA_SUKHDEV_SINGH_DISTRICT_HOSPITAL_POONCH_JAMMU_AND_KASHMIR_185101",
-    "name": "Raja Sukhdev Singh District Hospital, Poonch, Jammu & Kashmir-185101",
-    "state": "Jammu and Kashmir",
-    "existingType": "Government",
-    "inferredType": "DNB Hospital",
-    "courseTypes": [
-      "DNB"
-    ],
-    "quotaNames": [
-      "DNB Post MBBS"
-    ],
-    "masterQuotas": [
-      "DNB"
-    ],
-    "resolution": "Using inferred type (re-evaluated with full evidence)"
-  },
-  {
-    "collegeId": "BR_GOVERNMENT_MEDICAL_COLLEGE_PURNEA_BIHAR_854301",
-    "name": "Government Medical College, Purnea, Bihar-854301",
-    "state": "Bihar",
-    "existingType": "Government",
-    "inferredType": "DNB Hospital",
-    "courseTypes": [
-      "DNB"
-    ],
-    "quotaNames": [
-      "DNB Post MBBS",
-      "Bihar DNB Seats"
-    ],
-    "masterQuotas": [
-      "DNB",
-      "Bihar DNB Seats"
-    ],
-    "resolution": "Using inferred type (re-evaluated with full evidence)"
-  },
-  {
-    "collegeId": "MH_GOVERNMENT_MEDICAL_COLLEGE_OSMANABAD_MAHARASHTRA_413501",
-    "name": "Government Medical College, Osmanabad, Maharashtra-413501",
-    "state": "Maharashtra",
-    "existingType": "Government",
-    "inferredType": "DNB Hospital",
-    "courseTypes": [
-      "DNB"
-    ],
-    "quotaNames": [
-      "DNB Post MBBS"
-    ],
-    "masterQuotas": [
-      "DNB"
-    ],
-    "resolution": "Using inferred type (re-evaluated with full evidence)"
-  },
-  {
-    "collegeId": "JK_DISTRICT_HOSPITAL_AGHAR_BALLIAN_REASI_JAMMU_AND_KASHMIR_182311",
-    "name": "District Hospital, Aghar Ballian, Reasi, Jammu and Kashmir-182311",
-    "state": "Jammu and Kashmir",
-    "existingType": "Government",
-    "inferredType": "DNB Hospital",
-    "courseTypes": [
-      "DNB"
-    ],
-    "quotaNames": [
-      "DNB Post MBBS"
-    ],
-    "masterQuotas": [
-      "DNB"
-    ],
-    "resolution": "Using inferred type (re-evaluated with full evidence)"
-  },
-  {
-    "collegeId": "JK_ASYM_DISTRICT_HOSPITAL_BUDGAM_JAMMU_AND_KASHMIR_191111",
-    "name": "ASYM District Hospital, Budgam, Jammu And Kashmir-191111",
-    "state": "Jammu and Kashmir",
-    "existingType": "Government",
-    "inferredType": "DNB Hospital",
-    "courseTypes": [
-      "DNB"
-    ],
-    "quotaNames": [
-      "DNB Post MBBS"
-    ],
-    "masterQuotas": [
-      "DNB"
-    ],
-    "resolution": "Using inferred type (re-evaluated with full evidence)"
-  },
-  {
-    "collegeId": "TN_GOVERNMENT_HEADQUARTERS_HOSPITAL_THUCKALAY_KANYAKUMARI_TAMIL_NADU_629175",
-    "name": "Government Headquarters Hospital, Thuckalay, Kanyakumari, Tamil Nadu-629175",
-    "state": "Tamil Nadu",
-    "existingType": "Government",
-    "inferredType": "DNB Hospital",
-    "courseTypes": [
-      "DNB"
-    ],
-    "quotaNames": [
-      "DNB Post MBBS"
-    ],
-    "masterQuotas": [
-      "DNB"
-    ],
-    "resolution": "Using inferred type (re-evaluated with full evidence)"
-  },
-  {
-    "collegeId": "PB_CIVIL_HOSPITAL_SULTANPUR_ROAD_KAPURTHALA_PUNJAB_144601",
-    "name": "Civil Hospital, Sultanpur Road, Kapurthala, Punjab-144601",
-    "state": "Punjab",
-    "existingType": "Government",
-    "inferredType": "DNB Hospital",
-    "courseTypes": [
-      "DNB"
-    ],
-    "quotaNames": [
-      "DNB Post MBBS"
-    ],
-    "masterQuotas": [
-      "DNB"
-    ],
-    "resolution": "Using inferred type (re-evaluated with full evidence)"
-  },
-  {
-    "collegeId": "UP_SHRI_SHIV_PRASAD_GUPTA_DIVISIONAL_DISTRICT_HOSPITAL_KABIRCHAURA_VARANASI_UTTAR_PRADESH_221001_JOINT_PROGRAMME_WITH_LAL_BAHADUR_SHASTRI_HOSPITAL_RAMNAGAR_VARANASI_AS_SECONDARY_HOSPITAL",
-    "name": "Shri Shiv Prasad Gupta Divisional District Hospital, Kabirchaura, Varanasi, Uttar Pradesh-221001 (Joint Programme with Lal Bahadur Shastri Hospital, Ramnagar, Varanasi as Secondary Hospital)",
-    "state": "Uttar Pradesh",
-    "existingType": "Government",
-    "inferredType": "DNB Hospital",
-    "courseTypes": [
-      "DNB"
-    ],
-    "quotaNames": [
-      "DNB Post MBBS"
-    ],
-    "masterQuotas": [
-      "DNB"
-    ],
-    "resolution": "Using inferred type (re-evaluated with full evidence)"
-  },
-  {
-    "collegeId": "KA_GOVERNMENT_DISTRICT_HOSPITAL_AJJARKADU_UDUPI_KARNATAKA_576101",
-    "name": "Government District Hospital, Ajjarkadu, Udupi, Karnataka-576101",
-    "state": "Karnataka",
-    "existingType": "Government",
-    "inferredType": "DNB Hospital",
-    "courseTypes": [
-      "DNB"
-    ],
-    "quotaNames": [
-      "DNB Post MBBS"
-    ],
-    "masterQuotas": [
-      "DNB"
-    ],
-    "resolution": "Using inferred type (re-evaluated with full evidence)"
-  },
-  {
-    "collegeId": "AP_SRI_SATHYA_SAI_GENERAL_HOSPITAL_ANANTAPUR_ANDHRA_PRADESH_515134",
-    "name": "Sri Sathya Sai General Hospital, Anantapur, Andhra Pradesh-515134",
-    "state": "Andhra Pradesh",
-    "existingType": "Government",
-    "inferredType": "DNB Hospital",
-    "courseTypes": [
-      "DNB"
-    ],
-    "quotaNames": [
-      "DNB Post MBBS"
-    ],
-    "masterQuotas": [
-      "DNB"
-    ],
-    "resolution": "Using inferred type (re-evaluated with full evidence)"
-  },
-  {
-    "collegeId": "HR_DISTRICT_CIVIL_HOSPITAL_AMBALA_CITY_HARYANA_134003",
-    "name": "District Civil Hospital, Ambala City, Haryana-134003",
+    "id": "HR_MEDANTA_THE_MEDICITY_GURGAON_HARYANA_122001",
+    "name": "Medanta The Medicity, Gurgaon, Haryana-122001",
     "state": "Haryana",
-    "existingType": "Government",
-    "inferredType": "DNB Hospital",
-    "courseTypes": [
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
       "DNB"
     ],
-    "quotaNames": [
-      "DNB Post MBBS",
-      "Haryana DNB Inservice Seats"
-    ],
-    "masterQuotas": [
-      "DNB",
-      "Haryana DNB Inservice Seats"
-    ],
-    "resolution": "Using inferred type (re-evaluated with full evidence)"
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
   },
   {
-    "collegeId": "UP_GOVERNMENT_TB_HOSPITAL_TELIYARGANJ_PRAYAGRAJ_UTTAR_PRADESH_211004_JOINT_PROGRAMME_WITH_MOTI_LAL_NEHRU_MEDICAL_COLLEGE_GEORGE_TOWN_PRAYAGRAJ_AS_SECONDARY_HOSPITAL",
-    "name": "Government TB Hospital, Teliyarganj, Prayagraj, Uttar Pradesh-211004 (Joint Programme with Moti Lal Nehru Medical College, George Town, Prayagraj as Secondary Hospital)",
+    "id": "TG_MNJ_INSTITUTE_OF_ONCOLOGY_AND_CANCER_REGIONAL_CENTER_LAKDI_KA_OIL_HYDERABAD_TELANGANA_500004",
+    "name": "MNJ Institute of Oncology and Cancer Regional Center, Lakdi Ka Oil, Hyderabad, Telangana-500004",
+    "state": "Telangana",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "KL_REGIONAL_CANCER_CENTRE_MEDICAL_COLLEGE_CAMPUS_THIRUVANANTHAPURAM_KERALA_695011",
+    "name": "Regional Cancer Centre, Medical College Campus, Thiruvananthapuram, Kerala-695011",
+    "state": "Kerala",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "KL_ASTER_MEDCITY_KOCHI_KERALA_682027",
+    "name": "Aster Medcity, Kochi, Kerala-682027",
+    "state": "Kerala",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "KL_MENTAL_HEALTH_CENTRE_THIRUVANANTHAPURAM_KERALA_695005",
+    "name": "Mental Health Centre, Thiruvananthapuram, Kerala-695005",
+    "state": "Kerala",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "UP_AUTONOMOUS_STATE_MEDICAL_COLLEGE_ASMC_PILIBHIT_BITHORA_KALAN_UTTAR_PRADESH_262001",
+    "name": "Autonomous State Medical College (ASMC), Pilibhit, Bithora Kalan, Uttar Pradesh-262001",
     "state": "Uttar Pradesh",
-    "existingType": "Government",
-    "inferredType": "DNB Hospital",
-    "courseTypes": [
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
       "DNB"
     ],
-    "quotaNames": [
-      "DNB Post MBBS",
-      "Uttar Pradesh DNB Inservice Seats"
-    ],
-    "masterQuotas": [
-      "DNB",
-      "Uttar Pradesh DNB Inservice Seats"
-    ],
-    "resolution": "Using inferred type (re-evaluated with full evidence)"
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
   },
   {
-    "collegeId": "GJ_GENERAL_HOSPITAL_MEHSANA_GUJARAT_384001",
-    "name": "General Hospital, Mehsana, Gujarat-384001",
+    "id": "OR_SWAMI_VIVEKANAND_NATIONAL_INSTITUTE_OF_REHABILITATION_TRAINING_AND_RESEARCH_BAIROI_ODISHA_754010",
+    "name": "Swami Vivekanand National Institute of Rehabilitation Training and Research, Bairoi, Odisha-754010",
+    "state": "Odisha",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "UP_RAJKIYA_MEDICAL_COLLEGE_ORAI_KALPI_ROAD_JALAUN_UTTAR_PRADESH_285001",
+    "name": "Rajkiya Medical College, Orai, Kalpi Road, Jalaun, Uttar Pradesh-285001",
+    "state": "Uttar Pradesh",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "DL_NATIONAL_INSTITUTE_OF_TUBERCULOSIS_AND_RESPIRATORY_DISEASES_DELHI_110030",
+    "name": "National Institute of Tuberculosis and Respiratory Diseases, Delhi-110030",
+    "state": "Delhi",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "DL_SHRI_BALAJI_ACTION_MEDICAL_INSTITUTE_DELHI_110063",
+    "name": "Shri Balaji Action Medical Institute, Delhi-110063",
+    "state": "Delhi",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "TG_INDO_AMERICAN_CANCER_INSTITUTE_AND_RESEARCH_CENTRE_HYDERABAD_TELANGANA_500034",
+    "name": "Indo-American Cancer Institute and Research Centre, Hyderabad, Telangana-500034",
+    "state": "Telangana",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "HR_ARTEMIS_HEALTH_INSTITUTE_GURGAON_HARYANA_122001",
+    "name": "Artemis Health Institute, Gurgaon, Haryana-122001",
+    "state": "Haryana",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "WB_TATA_MEDICAL_CENTER_KOLKATA_WEST_BENGAL_700160",
+    "name": "Tata Medical Center, Kolkata, West Bengal-700160",
+    "state": "West Bengal",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "WB_MEDICAL_COLLEGE_KOLKATA_WEST_BENGAL_700073",
+    "name": "Medical College, Kolkata, West Bengal-700073",
+    "state": "West Bengal",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "BR_ANUGRAH_NARAYAN_MAGDH_MEDICAL_COLLEGE_GAYA_BIHAR_823001",
+    "name": "Anugrah Narayan Magdh Medical College, Gaya, Bihar-823001",
+    "state": "Bihar",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "UP_UP_RURAL_INSTIUTE_OF_MEDICAL_SCIENCES_AND_RESEARCH_ETAWAH_UTTAR_PRADESH_206130",
+    "name": "UP Rural Instiute of Medical Sciences and Research, Etawah, Uttar Pradesh-206130",
+    "state": "Uttar Pradesh",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "WB_CHITTARANJAN_NATIONAL_CANCER_INSTITUTE_KOLKATA_WEST_BENGAL_700026",
+    "name": "Chittaranjan National Cancer Institute, Kolkata, West Bengal-700026",
+    "state": "West Bengal",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "TN_KOVAI_MEDICAL_CENTRE_COIMBATORE_TAMIL_NADU_641014",
+    "name": "Kovai Medical Centre, Coimbatore, Tamil Nadu-641014",
+    "state": "Tamil Nadu",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "OR_SUM_ULTIMATE_MEDICARE_KALINGA_NAGAR_GHATIKIA_BHUBANESWAR_ODISHA_751003",
+    "name": "SUM Ultimate Medicare, Kalinga Nagar, Ghatikia, Bhubaneswar, Odisha-751003",
+    "state": "Odisha",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "HR_METRO_HEART_INSTITUTE_WITH_MULTISPECIALTY_FARIDABAD_HARYANA_121002",
+    "name": "Metro Heart Institute with Multispecialty, Faridabad, Haryana-121002",
+    "state": "Haryana",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "KL_LISIE_MEDICAL_INSTITUTION_KOCHI_KERALA_682018",
+    "name": "Lisie Medical Institution, Kochi, Kerala-682018",
+    "state": "Kerala",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "DL_RAJIV_GANDHI_CANCER_INSTITUTE_AND_RESEARCH_CENTRE_DELHI_110085",
+    "name": "Rajiv Gandhi Cancer Institute and Research Centre, Delhi-110085",
+    "state": "Delhi",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "RJ_ETERNAL_HEART_CARE_CENTRE_AND_RESEARCH_INSTITUTE_JAIPUR_RAJASTHAN_302017",
+    "name": "Eternal Heart Care Centre and Research Institute, Jaipur, Rajasthan-302017",
+    "state": "Rajasthan",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "HR_AADHAR_HEALTH_INSTITUTE_HISAR_HARYANA_125001",
+    "name": "Aadhar Health Institute, Hisar, Haryana-125001",
+    "state": "Haryana",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "HR_OP_JINDAL_INSTITUTE_OF_CANCER_AND_CARDIAC_RESEARCH_HISAR_HARYANA_125005",
+    "name": "OP Jindal Institute of Cancer & Cardiac Research, Hisar, Haryana-125005",
+    "state": "Haryana",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "GJ_GUJARAT_MRI_CENTRE_AHMEDABAD_GUJARAT_380009",
+    "name": "Gujarat MRI Centre, Ahmedabad, Gujarat-380009",
     "state": "Gujarat",
-    "existingType": "Government",
-    "inferredType": "DNB Hospital",
-    "courseTypes": [
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
       "DNB"
     ],
-    "quotaNames": [
-      "DNB Post MBBS"
-    ],
-    "masterQuotas": [
-      "DNB"
-    ],
-    "resolution": "Using inferred type (re-evaluated with full evidence)"
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
   },
   {
-    "collegeId": "UP_DISTRICT_HOSPITAL_BUDAUN_UTTAR_PRADESH_243601",
-    "name": "District Hospital, Budaun, Uttar Pradesh-243601",
+    "id": "KL_MAR_SLEEVA_MEDICITY_PALAI_CHERPUNKAL_KOTTAYAM_KERALA_686584",
+    "name": "Mar Sleeva Medicity Palai, Cherpunkal, Kottayam, Kerala-686584",
+    "state": "Kerala",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "TN_SRM_INSTITUTES_FOR_MEDICAL_SCIENCES_CHENNAI_TAMIL_NADU_600026",
+    "name": "SRM Institutes for Medical Sciences, Chennai, Tamil Nadu-600026",
+    "state": "Tamil Nadu",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "KL_MVR_CANCER_CENTRE_AND_RESEARCH_INSTITUTE_KOZHIKODE_KERALA_673601",
+    "name": "MVR Cancer Centre and Research Institute, Kozhikode, Kerala-673601",
+    "state": "Kerala",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "DL_FORTIS_ESCORTS_HEART_INSTITUTE_OKHLA_ROAD_DELHI_110025",
+    "name": "Fortis Escorts Heart Institute, Okhla Road, Delhi-110025",
+    "state": "Delhi",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "TN_DR_RELA_INSTITUTE_AND_MEDICAL_CENTRE_CHROMPET_CHENNAI_600044",
+    "name": "Dr Rela Institute & Medical Centre, Chrompet, Chennai-600044",
+    "state": "Tamil Nadu",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "KL_ERNAKULAM_MEDICAL_CENTRE_KOCHI_KERALA_682028",
+    "name": "Ernakulam Medical Centre, Kochi, Kerala-682028",
+    "state": "Kerala",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "TN_CANCER_INSTITUTE_WIA_ADYAR_CHENNAI_TAMIL_NADU_600036",
+    "name": "Cancer Institute (WIA), Adyar, Chennai, Tamil Nadu-600036",
+    "state": "Tamil Nadu",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "TN_REVATHI_MEDICAL_CENTER_AVINASHI_ROAD_TIRUPUR_TAMIL_NADU_641603",
+    "name": "Revathi Medical Center, Avinashi Road, Tirupur, Tamil Nadu-641603",
+    "state": "Tamil Nadu",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "HR_QRG_MEDICARE_FARIDABAD_HARYANA_121002",
+    "name": "QRG Medicare, Faridabad, Haryana-121002",
+    "state": "Haryana",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "DL_INSTITUTE_OF_LIVER_AND_BILIARY_SCIENCES_DELHI_110070",
+    "name": "Institute of Liver and Biliary Sciences, Delhi-110070",
+    "state": "Delhi",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "TN_SANKARA_NETHRALAYA_NO_21_PYCROFTS_GARDEN_ROAD_OFF_HADDOWS_ROAD_CHENNAI_600006",
+    "name": "Sankara Nethralaya, No 21 Pycrofts Garden Road, Off Haddows Road, Chennai-600006",
+    "state": "Tamil Nadu",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "GJ_HCG_AASTHA_CANCER_CENTRE_SG_HIGHWAY_AHMEDABAD_GUJARAT_380060_PREV_HCG_CANCER_CENTRE_SG_HIGHWAY_AHMEDABAD",
+    "name": "HCG Aastha Cancer Centre, SG Highway, Ahmedabad, Gujarat-380060 (Prev. HCG Cancer Centre, SG Highway, Ahmedabad)",
+    "state": "Gujarat",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "KL_TIRUVALLA_MEDICAL_MISSION_TIRUVALLA_KERALA_689101",
+    "name": "Tiruvalla Medical Mission, Tiruvalla, Kerala-689101",
+    "state": "Kerala",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "UP_MAHATMA_VIDUR_AUTONOMOUS_STATE_MEDICAL_COLLEGE_MADHUSUDANPUR_DEVIDAS_NAJIBABAD_BIJNOR_UTTAR_PRADESH_246731",
+    "name": "Mahatma Vidur Autonomous State Medical College, Madhusudanpur Devidas, Najibabad, Bijnor, Uttar Pradesh-246731",
     "state": "Uttar Pradesh",
-    "existingType": "Government",
-    "inferredType": "DNB Hospital",
-    "courseTypes": [
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
       "DNB"
     ],
-    "quotaNames": [
-      "DNB Post MBBS",
-      "Uttar Pradesh DNB Inservice Seats"
-    ],
-    "masterQuotas": [
-      "DNB",
-      "Uttar Pradesh DNB Inservice Seats"
-    ],
-    "resolution": "Using inferred type (re-evaluated with full evidence)"
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
   },
   {
-    "collegeId": "PB_DISTRICT_HOSPITAL_FATEHGARH_SAHIB_PUNJAB_140406",
-    "name": "District Hospital, Fatehgarh Sahib, Punjab-140406",
+    "id": "KL_PAALANA_INSTITUTE_OF_MEDICAL_SCIENCE_KANNADI_PALAKKAD_KERALA_678701",
+    "name": "Paalana Institute of Medical Science, Kannadi, Palakkad, Kerala-678701",
+    "state": "Kerala",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "RJ_KOTHARI_MEDICAL_AND_RESEARCH_INSTITUTE_BIKANER_RAJASTHAN_334004",
+    "name": "Kothari Medical and Research Institute, Bikaner, Rajasthan-334004",
+    "state": "Rajasthan",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "MH_SRCC_CHILDRENS_HOAPITAL_MUMBAI_MAHARASHTRA_400034",
+    "name": "SRCC Children`s Hoapital, Mumbai, Maharashtra-400034",
+    "state": "Maharashtra",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "PB_INSTITUTE_OF_MENTAL_HEALTH_AMRITSAR_PUNJAB_143001",
+    "name": "Institute of Mental Health, Amritsar, Punjab-143001",
     "state": "Punjab",
-    "existingType": "Government",
-    "inferredType": "DNB Hospital",
-    "courseTypes": [
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
       "DNB"
     ],
-    "quotaNames": [
-      "DNB Post MBBS"
-    ],
-    "masterQuotas": [
-      "DNB"
-    ],
-    "resolution": "Using inferred type (re-evaluated with full evidence)"
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
   },
   {
-    "collegeId": "GJ_GENERAL_HOSPITAL_TAPI_GUJARAT_394650",
-    "name": "General Hospital, Tapi, Gujarat-394650",
+    "id": "DL_RAJAN_BABU_INSTITUTE_OF_PULMONARY_MEDICINE_AND_TUBERCULOSIS_DELHI_110009",
+    "name": "Rajan Babu Institute of Pulmonary Medicine and Tuberculosis, Delhi-110009",
+    "state": "Delhi",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "DL_LADY_HARDINGE_MEDICAL_COLLEGE_NEW_DELHI_110001",
+    "name": "Lady Hardinge Medical College, New Delhi-110001",
+    "state": "Delhi",
+    "inferredCollegeType": "Central University",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "Central University",
+    "confidence": "LOW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "MP_BHAGYODAY_TIRTH_CHIKITSALAY_SAGAR_MADHYA_PRADESH_470002",
+    "name": "Bhagyoday Tirth Chikitsalay, Sagar, Madhya Pradesh-470002",
+    "state": "Madhya Pradesh",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "TG_ROHINI_MEDICARE_HANAMKONDA_TELANGANA_506001",
+    "name": "Rohini Medicare, Hanamkonda, Telangana-506001",
+    "state": "Telangana",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "KL_KARUNA_MEDICAL_COLLEGE_VILAYODI_CHITTUR_PALAKKAD_KERALA_678103",
+    "name": "Karuna Medical College, Vilayodi, Chittur, Palakkad, Kerala-678103",
+    "state": "Kerala",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "AA_ANDAMAN_AND_NICOBAR_ISLANDS_INSTITUTE_OF_MEDICAL_SCIENCE_PORT_BLAIR_ANDAMAN_AND_NICOBAR_ISLANDS_744104",
+    "name": "Andaman and Nicobar Islands Institute of Medical Science, Port Blair, Andaman And Nicobar Islands-744104",
+    "state": "Andaman and Nicobar Islands",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "KA_METROUNITED_HEALTHCARE_LLP_SHIVAMOGGA_KARNATAKA_577201",
+    "name": "Metrounited Healthcare LLP, Shivamogga, Karnataka-577201",
+    "state": "Karnataka",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "MH_SURYA_CHILDRENS_MEDICARE_MUMBAI_MAHARASHTRA_400054",
+    "name": "Surya Children`s Medicare, Mumbai, Maharashtra-400054",
+    "state": "Maharashtra",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "AP_KAMINENI_HEALTH_CARE_NEW_AUTONAGAR_PORANKI_VIJAYAWADA_ANDHRA_PRADESH_521137",
+    "name": "Kamineni Health Care, New Autonagar, Poranki, Vijayawada, Andhra Pradesh-521137",
+    "state": "Andhra Pradesh",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "TN_KRISHNA_MATERNITY_HOME_AND_PEDIATRIC_CENTRE_PALAYAMKOTTAI_TAMIL_NADU_627002",
+    "name": "Krishna Maternity Home and Pediatric Centre, Palayamkottai, Tamil Nadu-627002",
+    "state": "Tamil Nadu",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "GJ_PRANAYAM_LUNG_AND_HEART_INSTITUTE_LAKULESH_PARK_SOCIETY_NEW_VIP_ROAD_VADODARA_GUJARAT_390022",
+    "name": "Pranayam Lung & Heart Institute, Lakulesh Park Society, New VIP Road, Vadodara, Gujarat-390022",
     "state": "Gujarat",
-    "existingType": "Government",
-    "inferredType": "DNB Hospital",
-    "courseTypes": [
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
       "DNB"
     ],
-    "quotaNames": [
-      "DNB Post MBBS"
-    ],
-    "masterQuotas": [
-      "DNB"
-    ],
-    "resolution": "Using inferred type (re-evaluated with full evidence)"
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
   },
   {
-    "collegeId": "HP_DR_YASHWANT_SINGH_PARMAR_GOVERNMENT_MEDICAL_COLLEGE_NAHAN_HIMACHAL_PRADESH_173001",
-    "name": "Dr Yashwant Singh Parmar Government Medical College, Nahan, Himachal Pradesh-173001",
-    "state": "Himachal Pradesh",
-    "existingType": "Government",
-    "inferredType": "DNB Hospital",
-    "courseTypes": [
+    "id": "CG_EKTA_INSTITUTE_OF_CHILD_HEALTH_CHHATTISGARH_CHHATTISGARH_492001",
+    "name": "Ekta Institute of Child Health, Chhattisgarh, Chhattisgarh-492001",
+    "state": "Chhattisgarh",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
       "DNB"
     ],
-    "quotaNames": [
-      "HP DNB Inservice Seats"
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "HR_NC_JINDAL_INSTITUTE_OF_MEDICAL_CARE_AND_RESEARCH_MODEL_TOWN_HISAR_HARYANA_125005",
+    "name": "NC Jindal Institute of Medical Care and Research, Model Town, Hisar, Haryana-125005",
+    "state": "Haryana",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
     ],
-    "masterQuotas": [
-      "HP DNB Inservice Seats"
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "MP_SADGURU_NETHRA_CHIKITSALAYA_SATNA_MADHYA_PRADESH_210204",
+    "name": "Sadguru Nethra Chikitsalaya, Satna, Madhya Pradesh-210204",
+    "state": "Madhya Pradesh",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
     ],
-    "resolution": "Using inferred type (re-evaluated with full evidence)"
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "MH_SHRI_GANAPATI_NETHRALAYA_JALNA_MAHARASHTRA_431203",
+    "name": "Shri Ganapati Nethralaya, Jalna, Maharashtra-431203",
+    "state": "Maharashtra",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "TG_ANKURA_MEDICAL_AND_RESEARCH_CENTRE_UPPAL_HYDERABAD_TELANGANA_500039",
+    "name": "Ankura Medical & Research Centre, Uppal, Hyderabad, Telangana-500039",
+    "state": "Telangana",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "WB_INSTITUTE_OF_CHILD_HEALTH_KOLKATA_WEST_BENGAL_700017",
+    "name": "Institute of Child Health, Kolkata, West Bengal-700017",
+    "state": "West Bengal",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "MH_HCG_CANCER_CENTRE_BORIVALI_WEST_MUMBAI_MAHARASHTRA_400092",
+    "name": "HCG Cancer Centre, Borivali West, Mumbai, Maharashtra-400092",
+    "state": "Maharashtra",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "KA_NARAYANA_NETRALAYA_BOMMASANDRA_BANGALORE_KARNATAKA_560099",
+    "name": "Narayana Netralaya, Bommasandra, Bangalore, Karnataka-560099",
+    "state": "Karnataka",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "DL_SHROFF_EYE_CENTRE_DELHI_110048",
+    "name": "Shroff Eye Centre, Delhi-110048",
+    "state": "Delhi",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "MH_WESTERN_INDIA_INSTITUTE_OF_NEUROSCIENCES_KOLHAPUR_MAHARASHTRA_416002",
+    "name": "Western India Institute of Neurosciences, Kolhapur, Maharashtra-416002",
+    "state": "Maharashtra",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "UP_METRO_HEART_INSTITUTE_NOIDA_UTTAR_PRADESH_201301",
+    "name": "Metro Heart Institute, Noida, Uttar Pradesh-201301",
+    "state": "Uttar Pradesh",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "DL_CENTRE_FOR_SIGHT_DELHI_110029",
+    "name": "Centre for Sight, Delhi-110029",
+    "state": "Delhi",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "DL_INDIAN_SPINAL_INJURIES_CENTRE_DELHI_DELHI_110070",
+    "name": "Indian Spinal Injuries Centre, Delhi, Delhi-110070",
+    "state": "Delhi",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "PB_NASA_BRAIN_AND_SPINE_CENTRE_GURUNANAK_PURA_KAPURTHALA_ROAD_JALANDHAR_PUNJAB_144001",
+    "name": "Nasa Brain and Spine Centre, Gurunanak Pura, Kapurthala Road, Jalandhar, Punjab-144001",
+    "state": "Punjab",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "OR_ASHWINI_TRAUMA_CENTRE_CUTTACK_ODISHA_753014",
+    "name": "Ashwini Trauma Centre, Cuttack, Odisha-753014",
+    "state": "Odisha",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "MH_NATIONAL_CANCER_INSTITUTE_MOUZA_JAMTHA_NAGPUR_MAHARASHTRA_441108",
+    "name": "National Cancer Institute, Mouza Jamtha, Nagpur, Maharashtra-441108",
+    "state": "Maharashtra",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "KA_MANASA_NURSING_HOME_SHIVAMOGGA_KARNATAKA_577201",
+    "name": "Manasa Nursing Home, Shivamogga, Karnataka-577201",
+    "state": "Karnataka",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "KA_PRABHA_EYE_CLINIC_AND_RESEARCH_CENTRE_BANGALORE_KARNATAKA_560070",
+    "name": "Prabha Eye Clinic and Research Centre, Bangalore, Karnataka-560070",
+    "state": "Karnataka",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "KL_DR_SREEKANTH_EYECARE_AND_RESEARCH_CENTRE_KOTOOLI_MAVOOR_ROAD_KERALA_673016",
+    "name": "Dr Sreekanth Eyecare and Research Centre, Kotooli Mavoor Road, Kerala-673016",
+    "state": "Kerala",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "TG_PUSHPAGIRI_EYE_INSTITUTE_SECUNDERABAD_TELANGANA_500026",
+    "name": "Pushpagiri Eye Institute, Secunderabad, Telangana-500026",
+    "state": "Telangana",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "GJ_DRASHTI_NETHRALAYA_DAHOD_GUJARAT_389151",
+    "name": "Drashti Nethralaya, Dahod, Gujarat-389151",
+    "state": "Gujarat",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "GJ_RAJKOT_CANCER_SOCIETY_TIRUPATI_NAGAR_RAJKOT_GUJARAT_360007",
+    "name": "Rajkot Cancer Society, Tirupati Nagar, Rajkot, Gujarat-360007",
+    "state": "Gujarat",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "DL_CENTRE_FOR_SIGHT_PLOT_NO_9_SECTOR_9_DWARKA_DELHI_110075",
+    "name": "Centre for Sight, Plot No 9, Sector 9, Dwarka, Delhi-110075",
+    "state": "Delhi",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "AP_SRI_SATHYA_SAI_INSTITUTE_OF_HIGHER_MEDICAL_SCIENCES_ANANTAPUR_ANDHRA_PRADESH_515134",
+    "name": "Sri Sathya Sai Institute of Higher Medical Sciences, Anantapur, Andhra Pradesh-515134",
+    "state": "Andhra Pradesh",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "BR_MAHAVIR_CANCER_SANSTHAN_AND_RESEARCH_CENTRE_PATNA_BIHAR_801505",
+    "name": "Mahavir Cancer Sansthan and Research Centre, Patna, Bihar-801505",
+    "state": "Bihar",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "KL_DR_TONYS_SUPER_SPECIALITY_EYE_INSTITUTE_ERNAKULAM_KERALA_683101",
+    "name": "Dr Tony`s Super Speciality Eye Institute, Ernakulam, Kerala-683101",
+    "state": "Kerala",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "MH_ASIAN_HEART_INSTITUTE_AND_RESEARCH_CENTRE_MUMBAI_MAHARASHTRA_400051",
+    "name": "Asian Heart Institute and Research Centre, Mumbai, Maharashtra-400051",
+    "state": "Maharashtra",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "UP_SUSHRUT_INSTITUTE_OF_PLASTIC_SURGERY_29_SHAHMEENA_ROAD_LUCKNOW_UTTAR_PRADESH_226003",
+    "name": "Sushrut Institute of Plastic Surgery, 29 Shahmeena Road, Lucknow, Uttar Pradesh-226003",
+    "state": "Uttar Pradesh",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "TG_RENOVA_SOUMYA_CANCER_CENTRE_KARKHANA_SECUNDERABAD_TELANGANA_500015",
+    "name": "Renova Soumya Cancer Centre, Karkhana, Secunderabad, Telangana-500015",
+    "state": "Telangana",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "PB_DR_OM_PARKASH_EYE_INSTITUTE_NOVELTY_CHOWK_AMRITSAR_PUNJAB_143001",
+    "name": "Dr Om Parkash Eye Institute, Novelty Chowk, Amritsar, Punjab-143001",
+    "state": "Punjab",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "MH_WAVIKAR_EYE_INSTITUTE_MAJIWADA_THANE_WEST_MAHARASHTRA_400601",
+    "name": "Wavikar Eye Institute, Majiwada, Thane West, Maharashtra-400601",
+    "state": "Maharashtra",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "AS_SRI_SANKARADEVA_NETHRALAYA_GUWAHATI_ASSAM_781028",
+    "name": "Sri Sankaradeva Nethralaya, Guwahati, Assam-781028",
+    "state": "Assam",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "WB_SAROJ_GUPTA_CANCER_CENTRE_WELFARE_HOME_AND_RESEARCH_INSTITUTE_KOLKATA_WEST_BENGAL_700063",
+    "name": "Saroj Gupta Cancer Centre Welfare Home and Research Institute, Kolkata, West Bengal-700063",
+    "state": "West Bengal",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "DL_VISION_EYE_CENTRE_DELHI_110049",
+    "name": "Vision Eye Centre, Delhi-110049",
+    "state": "Delhi",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "BR_ANUP_INSTITUTE_OF_ORTHOPAEDICS_AND_REHABILITATION_PATNA_BIHAR_800020",
+    "name": "Anup Institute of Orthopaedics and Rehabilitation, Patna, Bihar-800020",
+    "state": "Bihar",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "BR_BIHAR_STATE_INSTITUTE_OF_MENTAL_HEALTH_AND_ALLIED_SCIENCES_BIMHAS_KOILWAR_BHOJPUR_BIHAR_802160",
+    "name": "Bihar State Institute of Mental Health and Allied Sciences (BIMHAS), Koilwar, Bhojpur, Bihar-802160",
+    "state": "Bihar",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "MH_SARAKSHI_NETRALAYA_NAGPUR_MAHARASHTRA_440025",
+    "name": "Sarakshi Netralaya, Nagpur, Maharashtra-440025",
+    "state": "Maharashtra",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "GJ_ROTARY_EYE_INSTITUTE_NAVASARI_GUJARAT_396445",
+    "name": "Rotary Eye Institute, Navasari, Gujarat-396445",
+    "state": "Gujarat",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "KA_SHRI_BALAJI_INSTITUTE_OF_NEURO_SCIENCES_AND_TRAUMA_HUBLI_KARNATAKA_580021",
+    "name": "Shri Balaji Institute of Neuro Sciences and Trauma, Hubli, Karnataka-580021",
+    "state": "Karnataka",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "WB_BM_BIRLA_HEART_RESEARCH_CENTRE_ALIPORE_KOLKATA_WEST_BENGAL_700027",
+    "name": "BM Birla Heart Research Centre, Alipore, Kolkata, West Bengal-700027",
+    "state": "West Bengal",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "MH_ACPM_MEDICAL_COLLEGE_SAKRI_ROAD_DHULE_MAHARASHTRA_424001",
+    "name": "ACPM Medical College, Sakri Road, Dhule, Maharashtra-424001",
+    "state": "Maharashtra",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "DL_VENU_EYE_INSTITUTE_DELHI_110017",
+    "name": "Venu Eye Institute, Delhi-110017",
+    "state": "Delhi",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "WB_DR_BC_ROY_POST_GRADUATE_INSTITUTE_OF_PAEDIATRIC_SCIENCES_KOLKATA_WEST_BENGAL_700054",
+    "name": "Dr BC Roy Post Graduate Institute of Paediatric Sciences, Kolkata, West Bengal-700054",
+    "state": "West Bengal",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "UP_MAHARSHI_VISHWAMITRA_AUTONOMOUS_STATE_MEDICAL_COLLEGE_GHAZIPUR_UTTAR_PRADESH_233001",
+    "name": "Maharshi Vishwamitra Autonomous State Medical College, Ghazipur, Uttar Pradesh-233001",
+    "state": "Uttar Pradesh",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "BR_RAHMANIA_MEDICAL_CENTRE_BARIYAARPUR_MOTIHARI_BIHAR_845401",
+    "name": "Rahmania Medical Centre, Bariyaarpur, Motihari, Bihar-845401",
+    "state": "Bihar",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "KL_SREENETHRA_EYE_CARE_THIRUVANATHAPURAM_KERALA_695034",
+    "name": "Sreenethra Eye Care, Thiruvanathapuram, Kerala-695034",
+    "state": "Kerala",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "MP_RATAN_JYOTI_NETRALAYA_OPTHALMIC_INSTITUTE_AND_RESEARCH_CENTRE_GWALIOR_MADHYA_PRADESH_474002",
+    "name": "Ratan Jyoti Netralaya Opthalmic Institute and Research Centre, Gwalior, Madhya Pradesh-474002",
+    "state": "Madhya Pradesh",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "JH_RANCHI_INSTITUTE_OF_NUERO_PSYCHIATRY_AND_ALLIED_SCIENCES_RANCHI_JHARKHAND_834006",
+    "name": "Ranchi Institute of Nuero - Psychiatry and Allied Sciences, Ranchi, Jharkhand-834006",
+    "state": "Jharkhand",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "UP_PRAKASH_NETRA_KENDR_LUCKNOW_UTTAR_PRADESH_226010",
+    "name": "Prakash Netra Kendr, Lucknow, Uttar Pradesh-226010",
+    "state": "Uttar Pradesh",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "RJ_ALAKH_NAYAN_MANDIR_INSTTITUTE_OF_OPHTHALMOLOGY_UDAIPUR_RAJASTHAN_313001",
+    "name": "Alakh Nayan Mandir Insttitute of Ophthalmology, Udaipur, Rajasthan-313001",
+    "state": "Rajasthan",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "MP_UNIQUE_SUPER_SPECIALTY_CENTRE_INDORE_MADHYA_PRADESH_452009",
+    "name": "Unique Super Specialty Centre, Indore, Madhya Pradesh-452009",
+    "state": "Madhya Pradesh",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "KL_JYOTHIS_EYE_CARE_JYOTHIS_FEMTO_LASIK_AND_CATARACT_CENTRE_PALLIKKUNNU_KANNUR_KERALA_670004",
+    "name": "Jyothis Eye Care, Jyothis Femto Lasik and Cataract Centre, Pallikkunnu, Kannur, Kerala-670004",
+    "state": "Kerala",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "MH_SURAJ_EYE_INSTITUTE_NAGPUR_MAHARASHTRA_440001",
+    "name": "Suraj Eye Institute, Nagpur, Maharashtra-440001",
+    "state": "Maharashtra",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "CG_SHRI_AUROBINDO_MEDICAL_RESEARCH_CENTRE_RAIPUR_CHHATTISGARH_492001",
+    "name": "Shri Aurobindo Medical Research Centre, Raipur, Chhattisgarh-492001",
+    "state": "Chhattisgarh",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "AP_SRI_KIRAN_INSTITUTE_OF_OPHTHALMOLOGY_KAKINADA_ANDHRA_PRADESH_533005",
+    "name": "Sri Kiran Institute of Ophthalmology, Kakinada, Andhra Pradesh-533005",
+    "state": "Andhra Pradesh",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "AP_DR_RAMANA_RAJUS_VISION_TREE_SUPERSPECIALITY_EYE_CARE_CENTER_VISAKHAPATNAM_ANDHRA_PRADESH_530043",
+    "name": "Dr Ramana Raju's Vision Tree Superspeciality Eye Care Center, Visakhapatnam, Andhra Pradesh-530043",
+    "state": "Andhra Pradesh",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "TN_CHRISTIAN_MEDICAL_COLLEGE_VELLORE_TAMIL_NADU_632002",
+    "name": "Christian Medical College, Vellore, Tamil Nadu-632002",
+    "state": "Tamil Nadu",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "HR_AHOOJA_EYE_AND_DENTAL_INSTITUTE_DAYANAND_COLONY_GURUGRAM_HARYANA_122001",
+    "name": "Ahooja Eye and Dental Institute, Dayanand Colony, Gurugram, Haryana-122001",
+    "state": "Haryana",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "UP_VARDHMAN_TRAUMA_AND_LAPROSCOPY_CENTRE_MUZAFFARNAGAR_UTTAR_PRADESH_251001",
+    "name": "Vardhman Trauma and Laproscopy Centre, Muzaffarnagar, Uttar Pradesh-251001",
+    "state": "Uttar Pradesh",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "XX_JOTHI_EYE_CARE_CENTRE_CALVE_SUBRAYA_CHETTY_STREET_PONDICHERRY_605001",
+    "name": "Jothi Eye Care Centre, Calve Subraya Chetty Street, Pondicherry-605001",
+    "state": "Pondicherry",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "PB_CHUGH_EYE_SURGERY_CENTRE_LUDHIANA_PUNJAB_141002",
+    "name": "Chugh Eye Surgery Centre, Ludhiana, Punjab-141002",
+    "state": "Punjab",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "HR_ISHWAR_EYE_CENTRE_VIJAY_PARK_JHANG_COLONY_ROHTAK_HARYANA_124001",
+    "name": "Ishwar Eye Centre, Vijay Park Jhang Colony, Rohtak, Haryana-124001",
+    "state": "Haryana",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "KA_VIJAYA_ORTHO_AND_TRAUMA_CENTRE_AYODHYA_NAGAR_BELAGAVI_KARNATAKA_590001",
+    "name": "Vijaya Ortho and Trauma Centre, Ayodhya Nagar, Belagavi, Karnataka-590001",
+    "state": "Karnataka",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "OR_MAHANADI_NETRA_CHITSALAYA_SUBARNAPUR_ODISHA_767018",
+    "name": "Mahanadi Netra Chitsalaya, Subarnapur, Odisha-767018",
+    "state": "Odisha",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "TN_DHANVANTRI_CRITICAL_CARE_CENTER_KARUNGALPALAYAM_ERODE_TAMIL_NADU_638003",
+    "name": "Dhanvantri Critical Care Center, Karungalpalayam, Erode, Tamil Nadu-638003",
+    "state": "Tamil Nadu",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "DL_VIDYASAGAR_INSTITUTE_OF_MENTAL_HEALTH_AND_NEURO_SCIENCES_DELHI_110065",
+    "name": "Vidyasagar Institute of Mental Health and Neuro Sciences, Delhi-110065",
+    "state": "Delhi",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "CG_SHRI_BALAJI_INSTITUTE_OF_MEDICAL_SCIENCE_RAIPUR_CHHATTISGARH_492001",
+    "name": "Shri Balaji Institute of Medical Science, Raipur, Chhattisgarh-492001",
+    "state": "Chhattisgarh",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
+  },
+  {
+    "id": "MH_PAEDIATRIC_SURGERY_CENTRE_AND_PG_INSTITUTE_8750_VISHRAMBAG_SANGLI_MAHARASHTRA_416415",
+    "name": "Paediatric Surgery Centre & PG Institute, 8750 Vishrambag, Sangli, Maharashtra-416415",
+    "state": "Maharashtra",
+    "inferredCollegeType": "DNB Hospital",
+    "inferredOwnership": "Other",
+    "inferredInstitute": "Other recognized institution",
+    "mqs": [
+      "DNB"
+    ],
+    "oldCollegeType": "DNB Hospital",
+    "confidence": "MANUAL_REVIEW",
+    "reason": "No clear keyword or quota match."
   }
 ]

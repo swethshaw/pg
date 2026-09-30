@@ -1,65 +1,45 @@
 {
-  "timestamp": "2026-09-29T12:43:54.251Z",
-  "summary": {
-    "totalSourceRecords": 41206,
-    "totalOutputRecords": 175049,
-    "recordsRejected": 0,
-    "rejectionReasons": {},
+  "SOURCE": {
+    "totalRecords": 21871,
+    "uniqueInstitutes": 1900,
+    "uniqueCourses": 5,
+    "uniqueQuotas": 13,
+    "uniqueCategories": 14,
+    "uniqueCounsellings": 1
+  },
+  "OUTPUT": {
+    "totalCutoffRecords": 95519,
     "uniqueColleges": 2165,
-    "uniqueCourseTypes": [
-      "DNB",
-      "Diploma",
-      "MCh",
+    "courseTypeDistribution": [
       "MD",
+      "DNB",
       "MS",
-      "Master"
+      "NBE Diploma",
+      "Other"
     ],
-    "uniqueSpecialties": 69,
-    "uniqueCollegeTypes": [
-      "DNB Hospital",
+    "instituteTypeDistribution": [
+      "State Government Medical Institute",
+      "Private Medical College / Private University",
+      "ESIC Institute",
+      "Deemed University",
+      "Other recognized institution",
+      "Government Medical Institute",
+      "Central University Institute",
+      "Armed Forces Medical Services (AFMS)",
+      "Railway Institute",
+      "PSU / Public Sector Institute"
+    ],
+    "ownershipTypeDistribution": [
       "Government",
       "Private",
-      "Deemed University",
-      "Central University"
+      "ESIC",
+      "Deemed",
+      "Other",
+      "Central University",
+      "AFMS",
+      "Railway",
+      "PSU"
     ],
-    "uniqueQuotas": 79,
-    "uniqueStates": 35,
-    "uniqueRounds": 17,
-    "years": [
-      2024,
-      2025
-    ]
-  },
-  "distributions": {
-    "collegeTypes": {
-      "DNB Hospital": 770,
-      "Government": 1180,
-      "Private": 138,
-      "Deemed University": 54,
-      "Central University": 23
-    },
-    "courseTypes": {
-      "DNB": 21463,
-      "MD": 95605,
-      "MS": 45018,
-      "Diploma": 12926,
-      "MCh": 10,
-      "Master": 27
-    },
-    "years": {
-      "2024": 79272,
-      "2025": 95777
-    }
-  },
-  "validation": {
-    "overallPass": true,
-    "brokenForeignKeys": 0,
-    "duplicateColleges": 0,
-    "invalidCourseTypes": [],
-    "invalidCollegeTypes": [],
-    "invalidRanks": 0,
-    "collegesWithoutState": 0,
-    "errors": []
-  },
-  "ambiguousClassifications": 0
+    "classificationReviewCount": 124
+  }
 }
