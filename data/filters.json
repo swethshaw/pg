@@ -907,20 +907,40 @@
   ],
   "collegeTypes": [
     {
-      "code": "Central University",
-      "label": "Central University"
+      "code": "Armed Forces",
+      "label": "Armed Forces (Defense)"
     },
     {
-      "code": "DNB Hospital",
-      "label": "DNB Hospital"
+      "code": "Central University",
+      "label": "Central Universities (Govt)"
     },
     {
       "code": "Deemed University",
-      "label": "Deemed University"
+      "label": "Deemed Universities (Private)"
+    },
+    {
+      "code": "DNB / NBE (Govt & Private)",
+      "label": "DNB / NBE (Govt & Private)"
+    },
+    {
+      "code": "DNB Hospital",
+      "label": "DNB Hospital (DNB / NBE)"
     },
     {
       "code": "Government",
-      "label": "Government"
+      "label": "Government / All India"
+    },
+    {
+      "code": "Private Open Seats (Merit)",
+      "label": "Private Open Seats (Merit)"
+    },
+    {
+      "code": "Management / Institutional Seats",
+      "label": "Management / Institutional Seats"
+    },
+    {
+      "code": "Government / State General Seats",
+      "label": "Government / State General Seats"
     }
   ],
   "instituteTypes": [
@@ -1030,28 +1050,194 @@
   ],
   "quotas": [
     {
-      "code": "AFMS",
-      "label": "AFMS"
-    },
-    {
-      "code": "AFMS-DNB",
-      "label": "AFMS-DNB"
-    },
-    {
       "code": "AIQ",
-      "label": "AIQ"
+      "label": "AIQ — All India Quota (Govt)",
+      "optgroup": "Government / All India"
     },
     {
       "code": "AMU",
-      "label": "AMU"
-    },
-    {
-      "code": "APMgmt-S1-All-CatB",
-      "label": "APMgmt-S1-All-CatB"
+      "label": "AMU — Aligarh Muslim University (Central)",
+      "optgroup": "Central Universities (Govt)"
     },
     {
       "code": "BHU",
-      "label": "BHU"
+      "label": "BHU — Banaras Hindu University (Central)",
+      "optgroup": "Central Universities (Govt)"
+    },
+    {
+      "code": "DU",
+      "label": "DU — Delhi University (Central)",
+      "optgroup": "Central Universities (Govt)"
+    },
+    {
+      "code": "IP",
+      "label": "IP — IP University (Central)",
+      "optgroup": "Central Universities (Govt)"
+    },
+    {
+      "code": "JM",
+      "label": "JM — Jain Minority (Deemed Private)",
+      "optgroup": "Deemed Universities (Private)"
+    },
+    {
+      "code": "MM",
+      "label": "MM — Muslim Minority (Deemed Private)",
+      "optgroup": "Deemed Universities (Private)"
+    },
+    {
+      "code": "MNG",
+      "label": "MNG — Management (Deemed Private)",
+      "optgroup": "Deemed Universities (Private)"
+    },
+    {
+      "code": "NRI",
+      "label": "NRI — Deemed NRI (Private)",
+      "optgroup": "Deemed Universities (Private)"
+    },
+    {
+      "code": "AFMS",
+      "label": "AFMS — Armed Forces (Defense)",
+      "optgroup": "Armed Forces (Defense)"
+    },
+    {
+      "code": "AFMS-DNB",
+      "label": "AFMS-DNB — Armed Forces DNB",
+      "optgroup": "Armed Forces (Defense)"
+    },
+    {
+      "code": "DNB / NBE (Govt & Private)",
+      "label": "DNB / NBE (Govt & Private) — All DNB & NBE Seats",
+      "optgroup": "DNB / NBE (Govt & Private)"
+    },
+    {
+      "code": "DNB Post MBBS",
+      "label": "DNB Post MBBS (Govt & Private)",
+      "optgroup": "DNB / NBE (Govt & Private)"
+    },
+    {
+      "code": "NBE Diploma",
+      "label": "NBE Diploma (Govt & Private)",
+      "optgroup": "DNB / NBE (Govt & Private)"
+    },
+    {
+      "code": "Bihar Priv-Open",
+      "label": "Bihar Private (Open)",
+      "optgroup": "Private Open Seats (Merit)"
+    },
+    {
+      "code": "HP Priv All",
+      "label": "HP Private (Open)",
+      "optgroup": "Private Open Seats (Merit)"
+    },
+    {
+      "code": "KAR Priv Seats-Open",
+      "label": "Karnataka Private (Open)",
+      "optgroup": "Private Open Seats (Merit)"
+    },
+    {
+      "code": "MP Priv-NonDomicile",
+      "label": "MP Private (Non Domicile)",
+      "optgroup": "Private Open Seats (Merit)"
+    },
+    {
+      "code": "Private Open Seats (Merit)",
+      "label": "Private Open Seats (Merit) — All Open Merit Seats",
+      "optgroup": "Private Open Seats (Merit)"
+    },
+    {
+      "code": "Punjab Open Quota (AI Basis)",
+      "label": "Punjab Open (AI Basis)",
+      "optgroup": "Private Open Seats (Merit)"
+    },
+    {
+      "code": "Punjab Open Quota (AI Basis)-Converted",
+      "label": "Punjab Open (AI Basis) - Converted",
+      "optgroup": "Private Open Seats (Merit)"
+    },
+    {
+      "code": "RAJ Priv-All India",
+      "label": "Rajasthan Private (All India)",
+      "optgroup": "Private Open Seats (Merit)"
+    },
+    {
+      "code": "UP Priv-Open Quota",
+      "label": "UP Private (Open)",
+      "optgroup": "Private Open Seats (Merit)"
+    },
+    {
+      "code": "APMgmt-S1-All-CatB",
+      "label": "AP Mgmt (S1A)",
+      "optgroup": "Management / Institutional Seats"
+    },
+    {
+      "code": "HAR Priv-Mgmt",
+      "label": "Haryana Private (Mgmt)",
+      "optgroup": "Management / Institutional Seats"
+    },
+    {
+      "code": "KAR Others (Inst.Q)",
+      "label": "Karnataka Others (Inst)",
+      "optgroup": "Management / Institutional Seats"
+    },
+    {
+      "code": "Management / Institutional Seats",
+      "label": "Management / Institutional Seats — All Management Seats",
+      "optgroup": "Management / Institutional Seats"
+    },
+    {
+      "code": "PY Mgmt-Open",
+      "label": "Pondicherry Mgmt",
+      "optgroup": "Management / Institutional Seats"
+    },
+    {
+      "code": "RAJ Priv-Mgmt Quota",
+      "label": "Rajasthan Private (Mgmt)",
+      "optgroup": "Management / Institutional Seats"
+    },
+    {
+      "code": "Sikkim Mgmt Quota",
+      "label": "Sikkim Mgmt",
+      "optgroup": "Management / Institutional Seats"
+    },
+    {
+      "code": "TELMgmt-MQ1-CatB-All",
+      "label": "Telangana Mgmt (MQ1)",
+      "optgroup": "Management / Institutional Seats"
+    },
+    {
+      "code": "TN Mgmt Quota",
+      "label": "TN Mgmt",
+      "optgroup": "Management / Institutional Seats"
+    },
+    {
+      "code": "UK Priv-AllIndia/Mgmt",
+      "label": "Uttarakhand Private (AI/Mgmt)",
+      "optgroup": "Management / Institutional Seats"
+    },
+    {
+      "code": "WB Mgmt Quota",
+      "label": "WB Mgmt",
+      "optgroup": "Management / Institutional Seats"
+    },
+    {
+      "code": "Government / State General Seats",
+      "label": "Government / State General Seats — All Govt/General Seats",
+      "optgroup": "Government / State General Seats"
+    },
+    {
+      "code": "MP Govt-NonDomicile",
+      "label": "MP Govt (Non Domicile)",
+      "optgroup": "Government / State General Seats"
+    },
+    {
+      "code": "Other State",
+      "label": "Chhattisgarh Other State",
+      "optgroup": "Government / State General Seats"
+    },
+    {
+      "code": "Sikkim Gen Quota",
+      "label": "Sikkim General Quota",
+      "optgroup": "Government / State General Seats"
     },
     {
       "code": "Bihar DNB Seats",
@@ -1070,18 +1256,6 @@
       "label": "Bihar Priv-NRI"
     },
     {
-      "code": "Bihar Priv-Open",
-      "label": "Bihar Priv-Open"
-    },
-    {
-      "code": "DNB Post MBBS",
-      "label": "DNB Post MBBS"
-    },
-    {
-      "code": "DU",
-      "label": "DU"
-    },
-    {
       "code": "Delhi State Quota",
       "label": "Delhi State Quota"
     },
@@ -1098,32 +1272,8 @@
       "label": "HAR Priv-Govt Quota"
     },
     {
-      "code": "HAR Priv-Mgmt",
-      "label": "HAR Priv-Mgmt"
-    },
-    {
       "code": "HAR Priv-Minority",
       "label": "HAR Priv-Minority"
-    },
-    {
-      "code": "HP DNB Serv",
-      "label": "HP DNB Serv"
-    },
-    {
-      "code": "HP Govt Quota",
-      "label": "HP Govt Quota"
-    },
-    {
-      "code": "HP Priv All",
-      "label": "HP Priv All"
-    },
-    {
-      "code": "HP Priv NRI",
-      "label": "HP Priv NRI"
-    },
-    {
-      "code": "HP Private-StateQuota",
-      "label": "HP Private-StateQuota"
     },
     {
       "code": "Haryana DNB Serv",
@@ -1138,16 +1288,24 @@
       "label": "Haryana Priv NRI"
     },
     {
-      "code": "IP",
-      "label": "IP"
+      "code": "HP DNB Serv",
+      "label": "HP DNB Serv"
+    },
+    {
+      "code": "HP Govt Quota",
+      "label": "HP Govt Quota"
+    },
+    {
+      "code": "HP Priv NRI",
+      "label": "HP Priv NRI"
+    },
+    {
+      "code": "HP Private-StateQuota",
+      "label": "HP Private-StateQuota"
     },
     {
       "code": "JHKND Govt Quota",
       "label": "JHKND Govt Quota"
-    },
-    {
-      "code": "JM",
-      "label": "JM"
     },
     {
       "code": "KAR DNB Serv",
@@ -1166,20 +1324,12 @@
       "label": "KAR NRI Quota"
     },
     {
-      "code": "KAR Others (Inst.Q)",
-      "label": "KAR Others (Inst.Q)"
-    },
-    {
       "code": "KAR Priv Seats-GMP",
       "label": "KAR Priv Seats-GMP"
     },
     {
       "code": "KAR Priv Seats-Min.",
       "label": "KAR Priv Seats-Min."
-    },
-    {
-      "code": "KAR Priv Seats-Open",
-      "label": "KAR Priv Seats-Open"
     },
     {
       "code": "MAHA Priv-Mgmt Quota",
@@ -1198,20 +1348,8 @@
       "label": "MAHA-NRI Quota"
     },
     {
-      "code": "MM",
-      "label": "MM"
-    },
-    {
-      "code": "MNG",
-      "label": "MNG"
-    },
-    {
       "code": "MP Govt Quota",
       "label": "MP Govt Quota"
-    },
-    {
-      "code": "MP Govt-NonDomicile",
-      "label": "MP Govt-NonDomicile"
     },
     {
       "code": "MP Priv-NRI",
@@ -1222,36 +1360,12 @@
       "label": "MP Priv-NRINonDomicil"
     },
     {
-      "code": "MP Priv-NonDomicile",
-      "label": "MP Priv-NonDomicile"
-    },
-    {
       "code": "MP Priv-Open",
       "label": "MP Priv-Open"
     },
     {
-      "code": "NBE Diploma",
-      "label": "NBE Diploma"
-    },
-    {
-      "code": "NRI",
-      "label": "NRI"
-    },
-    {
-      "code": "Other State",
-      "label": "Other State"
-    },
-    {
-      "code": "PY Mgmt-Open",
-      "label": "PY Mgmt-Open"
-    },
-    {
-      "code": "Punjab Open Quota (AI Basis)",
-      "label": "Punjab Open Quota (AI Basis)"
-    },
-    {
-      "code": "Punjab Open Quota (AI Basis)-Converted",
-      "label": "Punjab Open Quota (AI Basis)-Converted"
+      "code": "Raj DNB Serv",
+      "label": "Raj DNB Serv"
     },
     {
       "code": "RAJ Govt - Govt Quota",
@@ -1262,44 +1376,12 @@
       "label": "RAJ Govt - Mgmt Quota"
     },
     {
-      "code": "RAJ Priv-All India",
-      "label": "RAJ Priv-All India"
-    },
-    {
       "code": "RAJ Priv-Govt Quota",
       "label": "RAJ Priv-Govt Quota"
     },
     {
-      "code": "RAJ Priv-Mgmt Quota",
-      "label": "RAJ Priv-Mgmt Quota"
-    },
-    {
-      "code": "Raj DNB Serv",
-      "label": "Raj DNB Serv"
-    },
-    {
-      "code": "Sikkim Gen Quota",
-      "label": "Sikkim Gen Quota"
-    },
-    {
-      "code": "Sikkim Mgmt Quota",
-      "label": "Sikkim Mgmt Quota"
-    },
-    {
-      "code": "TELMgmt-MQ1-CatB-All",
-      "label": "TELMgmt-MQ1-CatB-All"
-    },
-    {
-      "code": "TN Mgmt Quota",
-      "label": "TN Mgmt Quota"
-    },
-    {
       "code": "UK DNB Serv",
       "label": "UK DNB Serv"
-    },
-    {
-      "code": "UK Priv-AllIndia/Mgmt",
-      "label": "UK Priv-AllIndia/Mgmt"
     },
     {
       "code": "UK Priv-Govt Quota",
@@ -1318,10 +1400,6 @@
       "label": "UP Priv-Min. Quota"
     },
     {
-      "code": "UP Priv-Open Quota",
-      "label": "UP Priv-Open Quota"
-    },
-    {
       "code": "UP-DNB InS",
       "label": "UP-DNB InS"
     },
@@ -1336,10 +1414,6 @@
     {
       "code": "WB Govt Quota",
       "label": "WB Govt Quota"
-    },
-    {
-      "code": "WB Mgmt Quota",
-      "label": "WB Mgmt Quota"
     },
     {
       "code": "WB NRI Quota",

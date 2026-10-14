@@ -774,6 +774,14 @@ body {
 .badge-reach { background-color: var(--band-reach-bg); border-color: rgba(249, 115, 22, 0.3); color: var(--band-reach); }
 .badge-outside { background-color: var(--band-outside-bg); border-color: rgba(239, 68, 68, 0.3); color: var(--band-outside); }
 
+.badge-allotments {
+  font-size: 0.75rem;
+  opacity: 0.9;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  margin-left: 2px;
+}
+
 /* ============================================================
    RESPONSIVE
    ============================================================ */

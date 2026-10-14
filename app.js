@@ -12,17 +12,66 @@
   var QUOTA_LABELS = {};
 
   // Category eligibility: which seat categories can a candidate see?
+  // Category eligibility: which seat categories can a candidate see?
   var CATEGORY_ELIGIBILITY = {
-    'GN':     ['GN'],
-    'EW':     ['EW', 'GN'],
-    'BC':     ['BC', 'GN'],
-    'SC':     ['SC', 'GN'],
-    'ST':     ['ST', 'GN'],
-    'GN PwD': ['GN PwD', 'GN'],
-    'EW PwD': ['EW PwD', 'EW', 'GN PwD', 'GN'],
-    'BC PwD': ['BC PwD', 'BC', 'GN PwD', 'GN'],
-    'SC PwD': ['SC PwD', 'SC', 'GN PwD', 'GN'],
-    'ST PwD': ['ST PwD', 'ST', 'GN PwD', 'GN'],
+    'GN':                ['GN', 'GEN', 'UR'],
+    'EW':                ['EW', 'EWS', 'GN', 'GEN', 'UR'],
+    'BC':                ['BC', 'OBC', 'GN', 'GEN', 'UR'],
+    'SC':                ['SC', 'GN', 'GEN', 'UR'],
+    'ST':                ['ST', 'GN', 'GEN', 'UR'],
+    'GN PwD':            ['GN PwD', 'GEN-PwD', 'GN', 'GEN', 'UR'],
+    'EW PwD':            ['EW PwD', 'EWS-PwD', 'EW', 'EWS', 'GN PwD', 'GEN-PwD', 'GN', 'GEN', 'UR'],
+    'BC PwD':            ['BC PwD', 'OBC-PwD', 'BC', 'OBC', 'GN PwD', 'GEN-PwD', 'GN', 'GEN', 'UR'],
+    'SC PwD':            ['SC PwD', 'SC-PwD', 'SC', 'GN PwD', 'GEN-PwD', 'GN', 'GEN', 'UR'],
+    'ST PwD':            ['ST PwD', 'ST-PwD', 'ST', 'GN PwD', 'GEN-PwD', 'GN', 'GEN', 'UR'],
+    'AFMS-Priority III': ['AFMS-Priority III', 'GEN', 'GN', 'UR'],
+    'AFMS-Priority IV':  ['AFMS-Priority IV', 'AFMS-Priority III', 'GEN', 'GN', 'UR'],
+    'NRI-Priority I':    ['NRI-Priority I', 'GEN', 'GN', 'UR'],
+    'NRI-Priority II':   ['NRI-Priority II', 'NRI-Priority I', 'GEN', 'GN', 'UR']
+  };
+
+  // Open States Quotas by Institution Type
+  var OPEN_STATES_QUOTA_GROUPS = {
+    'Private Open Seats (Merit)': [
+      'Bihar Priv-Open',
+      'HP Priv All',
+      'KAR Priv Seats-Open',
+      'MP Priv-NonDomicile',
+      'Punjab Open Quota (AI Basis)',
+      'Punjab Open Quota (AI Basis)-Converted',
+      'RAJ Priv-All India',
+      'UP Priv-Open Quota'
+    ],
+    'Management / Institutional Seats': [
+      'APMgmt-S1-All-CatB',
+      'HAR Priv-Mgmt',
+      'KAR Others (Inst.Q)',
+      'PY Mgmt-Open',
+      'RAJ Priv-Mgmt Quota',
+      'Sikkim Mgmt Quota',
+      'TELMgmt-MQ1-CatB-All',
+      'TN Mgmt Quota',
+      'UK Priv-AllIndia/Mgmt',
+      'WB Mgmt Quota'
+    ],
+    'Government / State General Seats': [
+      'MP Govt-NonDomicile',
+      'Other State',
+      'Sikkim Gen Quota'
+    ]
+  };
+
+  // Open States Categories by Reservation Type
+  var OPEN_COMPETITION_CATEGORIES = [
+    'UR', 'GEN', 'OPN', 'AGE', 'UR-GEN', 'UR/X/OP', 'UR (Non Domicile)', 'UR-Female', 'GN'
+  ];
+  var MANAGEMENT_CATEGORIES = [
+    'MNG', 'MQ', 'MQ1', 'S1A', 'UR-MNG'
+  ];
+  var SOCIAL_GENDER_CATEGORIES = {
+    'OBC': ['OBC', 'OBC-Female', 'BC'],
+    'SC': ['SC', 'SC-Female'],
+    'ST': ['ST', 'ST-Female']
   };
 
   var USER_CATEGORIES = [
@@ -35,21 +84,31 @@
     { code: 'EW PwD', label: 'EWS PwD' },
     { code: 'BC PwD', label: 'OBC PwD' },
     { code: 'SC PwD', label: 'SC PwD' },
-    { code: 'ST PwD', label: 'ST PwD' }
+    { code: 'ST PwD', label: 'ST PwD' },
+    { code: 'AFMS-Priority III', label: 'AFMS Priority III' },
+    { code: 'AFMS-Priority IV', label: 'AFMS Priority IV' },
+    { code: 'NRI-Priority I', label: 'NRI Priority I' },
+    { code: 'NRI-Priority II', label: 'NRI Priority II' }
   ];
 
-  var PRE_PARA_CLINICAL = [
-    'Anatomy', 'Aviation Medicine/Aerospace Medicine', 'Bio-Chemistry', 'Biochemistry',
-    'Clinical Pathology', 'Community Health Administration', 'Forensic Medicine',
-    'Health Administration', 'Health Administration including Hospital Administration', 'Hospital Administration',
-    'Immuno Haematology & Blood Transfusion', 'Immuno Hematology & Transfusion Medicine', 'Immuno-Haematology and Blood Transfusion',
-    'Lab Medicine', 'Master of Public Health (Epidemiology)', 'Microbiology', 'Nuclear Medicine',
-    'Pathology', 'Pharmacology', 'Physiology', 'Public Health', 'Social & Preventive Medicine'
+  // Non-Clinical specialties: Pre-Clinical, Para-Clinical, Community & Public Health, Administration
+  var NON_CLINICAL_SPECIALTIES = [
+    // Pre-Clinical
+    'Anatomy', 'Physiology', 'Bio-Chemistry', 'Biochemistry',
+    // Para-Clinical (Pathology & Lab)
+    'Pathology', 'Clinical Pathology', 'Microbiology', 'Pharmacology', 'Forensic Medicine',
+    'Immuno Haematology & Blood Transfusion', 'Immuno Hematology & Transfusion Medicine',
+    'Immuno-Haematology and Blood Transfusion', 'Lab Medicine',
+    // Community & Public Health
+    'Social & Preventive Medicine', 'Public Health', 'Master of Public Health (Epidemiology)',
+    // Administration
+    'Hospital Administration', 'Community Health Administration', 'Health Administration',
+    'Health Administration including Hospital Administration'
   ];
 
   function getBranchType(specialty) {
     if (!specialty) return 'Other';
-    if (PRE_PARA_CLINICAL.indexOf(specialty) !== -1) return 'Non-Clinical';
+    if (NON_CLINICAL_SPECIALTIES.indexOf(specialty) !== -1) return 'Non-Clinical';
     return 'Clinical';
   }
 
@@ -207,8 +266,10 @@
     var errors = [];
     var sample = cutoffsData.slice(0, Math.min(cutoffsData.length, 1000));
     sample.forEach(function (c, i) {
-      if (c.authority !== 'MCC' && c.authority !== 'Open States') errors.push('Unknown authority at ' + i);
+      if (!c.authority) errors.push('Missing authority at ' + i);
       if (!collegesMap.has(c.collegeId)) errors.push('missing collegeId: ' + c.collegeId);
+      var count = c.allotments_count != null ? c.allotments_count : c.numberOfAllotments;
+      if (count == null || typeof count !== 'number' || count < 0) errors.push('invalid allotments_count at ' + i);
     });
     if (errors.length > 0) {
       console.warn('[VALIDATION] Data integrity issues:', errors);
@@ -240,17 +301,63 @@
       selectEl.appendChild(allOpt);
     }
 
-    items.forEach(function (item) {
-      var opt = document.createElement('option');
-      if (typeof item === 'object') {
-        opt.value = item.code || item.value;
-        opt.textContent = item.label || item.code;
-      } else {
-        opt.value = item;
-        opt.textContent = item;
-      }
-      selectEl.appendChild(opt);
+    var hasGroups = items.some(function(item) {
+      return typeof item === 'object' && item && item.optgroup;
     });
+
+    if (hasGroups) {
+      var groupsMap = {};
+      var groupOrder = [];
+      var ungrouped = [];
+
+      items.forEach(function (item) {
+        if (typeof item === 'object' && item && item.optgroup) {
+          if (!groupsMap[item.optgroup]) {
+            groupsMap[item.optgroup] = [];
+            groupOrder.push(item.optgroup);
+          }
+          groupsMap[item.optgroup].push(item);
+        } else {
+          ungrouped.push(item);
+        }
+      });
+
+      groupOrder.forEach(function (gName) {
+        var optgroup = document.createElement('optgroup');
+        optgroup.label = gName;
+        groupsMap[gName].forEach(function (item) {
+          var opt = document.createElement('option');
+          opt.value = item.code || item.value;
+          opt.textContent = item.label || item.code;
+          optgroup.appendChild(opt);
+        });
+        selectEl.appendChild(optgroup);
+      });
+
+      ungrouped.forEach(function (item) {
+        var opt = document.createElement('option');
+        if (typeof item === 'object') {
+          opt.value = item.code || item.value;
+          opt.textContent = item.label || item.code;
+        } else {
+          opt.value = item;
+          opt.textContent = item;
+        }
+        selectEl.appendChild(opt);
+      });
+    } else {
+      items.forEach(function (item) {
+        var opt = document.createElement('option');
+        if (typeof item === 'object') {
+          opt.value = item.code || item.value;
+          opt.textContent = item.label || item.code;
+        } else {
+          opt.value = item;
+          opt.textContent = item;
+        }
+        selectEl.appendChild(opt);
+      });
+    }
 
     // Re-apply value before initializing to make TomSelect pick it up
     if (selectEl.multiple) {
@@ -324,15 +431,32 @@
     var catArray = Array.isArray(categories) ? categories : [categories];
     catArray.forEach(function(cat) {
       if (!cat || cat === 'ALL') return;
-      var catEligible = CATEGORY_ELIGIBILITY[cat] || [cat];
-      // Add open state categories
-      var openCategories = ['GEN', 'MNG', 'MQ', 'MQ1', 'OPN', 'S1A', 'UR', 'UR-GEN', 'UR-MNG', 'AGE'];
-      if (cat === 'GN' || cat === 'EW' || cat === 'BC' || cat === 'SC' || cat === 'ST') {
-        catEligible = catEligible.concat(openCategories);
+      var catEligible = (CATEGORY_ELIGIBILITY[cat] || [cat]).slice();
+
+      // All qualifying candidate categories can compete for Open Competition and Management Seats
+      if (cat === 'GN' || cat === 'EW' || cat === 'BC' || cat === 'SC' || cat === 'ST' || cat.indexOf('PwD') !== -1) {
+        catEligible = catEligible.concat(OPEN_COMPETITION_CATEGORIES);
+        catEligible = catEligible.concat(MANAGEMENT_CATEGORIES);
       }
-      if (cat === 'BC') catEligible = catEligible.concat(['OBC', 'OBC-Female']);
-      if (cat === 'SC') catEligible = catEligible.concat(['SC', 'SC-Female']);
-      if (cat === 'ST') catEligible = catEligible.concat(['ST', 'ST-Female']);
+
+      // Social & Gender Reservations
+      if (cat === 'BC' || cat === 'BC PwD') {
+        catEligible = catEligible.concat(SOCIAL_GENDER_CATEGORIES['OBC']);
+      }
+      if (cat === 'SC' || cat === 'SC PwD') {
+        catEligible = catEligible.concat(SOCIAL_GENDER_CATEGORIES['SC']);
+      }
+      if (cat === 'ST' || cat === 'ST PwD') {
+        catEligible = catEligible.concat(SOCIAL_GENDER_CATEGORIES['ST']);
+      }
+      if (cat === 'EW' || cat === 'EW PwD') {
+        catEligible = catEligible.concat(['EWS', 'EW']);
+      }
+      if (cat === 'GN PwD') catEligible = catEligible.concat(['GEN-PwD']);
+      if (cat === 'EW PwD') catEligible = catEligible.concat(['EWS-PwD', 'GEN-PwD']);
+      if (cat === 'BC PwD') catEligible = catEligible.concat(['OBC-PwD', 'GEN-PwD']);
+      if (cat === 'SC PwD') catEligible = catEligible.concat(['SC-PwD', 'GEN-PwD']);
+      if (cat === 'ST PwD') catEligible = catEligible.concat(['ST-PwD', 'GEN-PwD']);
       
       catEligible.forEach(function(ec) {
         if (eligible.indexOf(ec) === -1) eligible.push(ec);
@@ -347,6 +471,51 @@
     return m ? parseFloat(m[1]) : 99;
   }
 
+  function matchCollegeType(filterType, collegeType, rowQuota, rowCounselling) {
+    if (!filterType || filterType === 'ALL') return true;
+    if (filterType === collegeType) return true;
+
+    // Open States Quota / Institution Types
+    if (OPEN_STATES_QUOTA_GROUPS[filterType] && rowQuota && OPEN_STATES_QUOTA_GROUPS[filterType].indexOf(rowQuota) !== -1) {
+      return true;
+    }
+
+    // DNB / NBE (Govt & Private) aliases
+    var dnbTypes = ['DNB / NBE (Govt & Private)', 'DNB Hospital', 'DNB'];
+    if (dnbTypes.indexOf(filterType) !== -1 && dnbTypes.indexOf(collegeType) !== -1) return true;
+
+    var govtTypes = ['Government / All India', 'Government'];
+    if (govtTypes.indexOf(filterType) !== -1 && govtTypes.indexOf(collegeType) !== -1) return true;
+
+    var centralTypes = ['Central Universities (Govt)', 'Central University'];
+    if (centralTypes.indexOf(filterType) !== -1 && centralTypes.indexOf(collegeType) !== -1) return true;
+
+    var deemedTypes = ['Deemed Universities (Private)', 'Deemed University', 'Deemed'];
+    if (deemedTypes.indexOf(filterType) !== -1 && deemedTypes.indexOf(collegeType) !== -1) return true;
+
+    var armedTypes = ['Armed Forces (Defense)', 'Armed Forces', 'AFMS'];
+    if (armedTypes.indexOf(filterType) !== -1 && armedTypes.indexOf(collegeType) !== -1) return true;
+
+    return false;
+  }
+
+  function matchQuota(filterQuota, rowQuota) {
+    if (!filterQuota || filterQuota === 'ALL') return true;
+    if (filterQuota === rowQuota) return true;
+
+    // DNB / NBE (Govt & Private) matches both DNB Post MBBS and NBE Diploma
+    if (filterQuota === 'DNB / NBE (Govt & Private)' && (rowQuota === 'DNB Post MBBS' || rowQuota === 'NBE Diploma')) {
+      return true;
+    }
+
+    // Open States Quota Groups
+    if (OPEN_STATES_QUOTA_GROUPS[filterQuota] && OPEN_STATES_QUOTA_GROUPS[filterQuota].indexOf(rowQuota) !== -1) {
+      return true;
+    }
+
+    return false;
+  }
+
   // ---- Filtering ----
   function applyFilters(userRank, userCategory, filters) {
     var eligible = getEligibleSeatCategories(userCategory);
@@ -359,7 +528,12 @@
       // Form/sidebar filters
       if (filters.quota && filters.quota.length > 0) {
         var quotaArray = Array.isArray(filters.quota) ? filters.quota : [filters.quota];
-        if (quotaArray.indexOf('ALL') === -1 && quotaArray.indexOf(row.quotaCode) === -1) return false;
+        if (quotaArray.indexOf('ALL') === -1) {
+          var quotaMatched = quotaArray.some(function(selQuota) {
+            return matchQuota(selQuota, row.quotaCode);
+          });
+          if (!quotaMatched) return false;
+        }
       }
       if (filters.course && filters.course.length > 0) {
         var courseArray = Array.isArray(filters.course) ? filters.course : [filters.course];
@@ -387,7 +561,12 @@
       var college = collegesMap.get(row.collegeId);
       if (filters.collegeType && filters.collegeType.length > 0) {
         var ctArray = Array.isArray(filters.collegeType) ? filters.collegeType : [filters.collegeType];
-        if (ctArray.indexOf('ALL') === -1 && ctArray.indexOf(college.collegeType) === -1) return false;
+        if (ctArray.indexOf('ALL') === -1) {
+          var ctMatched = ctArray.some(function(selType) {
+            return matchCollegeType(selType, college.collegeType, row.quotaCode, row.counselling);
+          });
+          if (!ctMatched) return false;
+        }
       }
       if (filters.state && college.state !== filters.state) return false;
 
@@ -519,7 +698,12 @@
       if (r.year) {
         roundLabel += ' ' + r.year;
       }
-      return '<span class="round-badge ' + badgeClass + '">' + roundLabel + ': <strong>' + r.closingRank.toLocaleString('en-IN') + '</strong></span>';
+      var count = r.allotments_count != null ? r.allotments_count : r.numberOfAllotments;
+      var countBadge = '';
+      if (count != null && count > 0) {
+        countBadge = ' <span class="badge-allotments" title="' + count + ' ' + (count === 1 ? 'allotment' : 'allotments') + '">(' + count + ' ' + (count === 1 ? 'seat' : 'seats') + ')</span>';
+      }
+      return '<span class="round-badge ' + badgeClass + '">' + roundLabel + ': <strong>' + r.closingRank.toLocaleString('en-IN') + '</strong>' + countBadge + '</span>';
     }).join(' ');
 
     var feeHtml = '';
@@ -531,6 +715,27 @@
       stipendHtml = '<span class="round-badge" style="background: #fdf4ff; color: #86198f; border: 1px solid #f5d0fe;">Stipend: <strong>' + escapeHtml(item.cutoff.stipend) + '</strong></span>';
     }
 
+    function getFriendlyCollegeType(cType, quotaCode, counselling) {
+      if (quotaCode) {
+        if (OPEN_STATES_QUOTA_GROUPS['Private Open Seats (Merit)'].indexOf(quotaCode) !== -1) {
+          return 'Private Open Seats (Merit)';
+        }
+        if (OPEN_STATES_QUOTA_GROUPS['Management / Institutional Seats'].indexOf(quotaCode) !== -1) {
+          return 'Management / Institutional Seats';
+        }
+        if (OPEN_STATES_QUOTA_GROUPS['Government / State General Seats'].indexOf(quotaCode) !== -1) {
+          return 'Government / State General Seats';
+        }
+      }
+      if (!cType) return '';
+      if (cType === 'DNB Hospital' || cType === 'DNB') return 'DNB / NBE (Govt & Private)';
+      if (cType === 'Government') return 'Government / All India';
+      if (cType === 'Central University') return 'Central Universities (Govt)';
+      if (cType === 'Deemed University') return 'Deemed Universities (Private)';
+      if (cType === 'Armed Forces') return 'Armed Forces (Defense)';
+      return cType;
+    }
+
     card.innerHTML =
       '<div class="result-card-top">' +
         '<h3 class="result-college-name">' + escapeHtml(item.college.name) + '</h3>' +
@@ -539,6 +744,7 @@
       '<div class="result-meta-row">' +
         '<div class="meta-group"><span class="meta-label">Seat Category:</span> <span class="meta-value">' + escapeHtml(item.cutoff.seatCategory) + '</span></div>' +
         '<div class="meta-group"><span class="meta-label">Quota:</span> <span class="meta-value">' + escapeHtml(quotaLabel) + '</span></div>' +
+        (item.college.collegeType ? '<div class="meta-group"><span class="meta-label">Type:</span> <span class="meta-value">' + escapeHtml(getFriendlyCollegeType(item.college.collegeType, item.cutoff.quotaCode, item.cutoff.counselling)) + '</span></div>' : '') +
         (stateLabel ? '<div class="meta-group"><span class="meta-label">State:</span> <span class="meta-value">' + stateLabel + '</span></div>' : '') +
       '</div>' +
       '<div class="result-rounds-container" style="margin-top: 12px; display: flex; flex-wrap: wrap; gap: 8px;">' +
@@ -599,7 +805,15 @@
       if (!college) return;
       
       var uniqueKey = row.collegeId + '|' + row.course + '|' + row.specialty + '|' + row.quotaCode;
-      var roundItem = { round: row.round, year: row.year, closingRank: row.closingRank, prediction: calculatePrediction(rank, row.closingRank) };
+      var allotmentsCount = row.allotments_count != null ? row.allotments_count : (row.numberOfAllotments != null ? row.numberOfAllotments : 0);
+      var roundItem = {
+        round: row.round,
+        year: row.year,
+        closingRank: row.closingRank,
+        allotments_count: allotmentsCount,
+        numberOfAllotments: allotmentsCount,
+        prediction: calculatePrediction(rank, row.closingRank)
+      };
 
       if (!enrichedMap[uniqueKey]) {
         enrichedMap[uniqueKey] = {
@@ -735,6 +949,20 @@
       });
     }
 
+    if (validQuotas.has('DNB Post MBBS') || validQuotas.has('NBE Diploma')) {
+      validQuotas.add('DNB / NBE (Govt & Private)');
+    }
+
+    // Open States Quota Groups: if any child quota is present, add the parent group
+    Object.keys(OPEN_STATES_QUOTA_GROUPS).forEach(function(groupName) {
+      var hasAny = OPEN_STATES_QUOTA_GROUPS[groupName].some(function(q) {
+        return validQuotas.has(q);
+      });
+      if (hasAny) {
+        validQuotas.add(groupName);
+      }
+    });
+
     var filteredQuotas = filtersData.quotas.filter(function(q) {
       return validQuotas.has(q.code);
     });
@@ -782,14 +1010,39 @@
   }
 
   function updateCollegeTypeDropdown() {
+    var counselling = dom.selectCounselling ? dom.selectCounselling.value : '';
     var validCollegeTypes = new Set();
-    if (cutoffsData && collegesMap) {
-      cutoffsData.forEach(function (row) {
-        var college = collegesMap.get(row.collegeId);
-        if (college && college.collegeType) {
-          validCollegeTypes.add(college.collegeType);
-        }
-      });
+
+    if (counselling === 'Open States' || (cutoffsData && cutoffsData.length > 0 && cutoffsData[0].counselling === 'Open States')) {
+      validCollegeTypes.add('Private Open Seats (Merit)');
+      validCollegeTypes.add('Management / Institutional Seats');
+      validCollegeTypes.add('Government / State General Seats');
+    } else {
+      if (cutoffsData && collegesMap) {
+        cutoffsData.forEach(function (row) {
+          var college = collegesMap.get(row.collegeId);
+          if (college && college.collegeType) {
+            validCollegeTypes.add(college.collegeType);
+          }
+        });
+      }
+
+      if (validCollegeTypes.has('DNB Hospital') || validCollegeTypes.has('DNB / NBE (Govt & Private)')) {
+        validCollegeTypes.add('DNB / NBE (Govt & Private)');
+        validCollegeTypes.add('DNB Hospital');
+      }
+      if (validCollegeTypes.has('Government')) {
+        validCollegeTypes.add('Government / All India');
+      }
+      if (validCollegeTypes.has('Central University')) {
+        validCollegeTypes.add('Central Universities (Govt)');
+      }
+      if (validCollegeTypes.has('Deemed University')) {
+        validCollegeTypes.add('Deemed Universities (Private)');
+      }
+      if (validCollegeTypes.has('Armed Forces')) {
+        validCollegeTypes.add('Armed Forces (Defense)');
+      }
     }
 
     var filteredTypes = filtersData.collegeTypes.filter(function(t) {
