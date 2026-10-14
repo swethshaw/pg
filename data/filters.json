@@ -941,6 +941,54 @@
     {
       "code": "Government / State General Seats",
       "label": "Government / State General Seats"
+    },
+    {
+      "code": "Government (State Domicile)",
+      "label": "Government (State Domicile)"
+    },
+    {
+      "code": "Private (State Domicile)",
+      "label": "Private (State Domicile)"
+    },
+    {
+      "code": "Non-Domicile / Open (All India)",
+      "label": "Non-Domicile / Open (All India)"
+    },
+    {
+      "code": "NRI Quota",
+      "label": "NRI Quota"
+    },
+    {
+      "code": "Government Merit Seats",
+      "label": "Government Merit Seats"
+    },
+    {
+      "code": "Institutional Preference (IP)",
+      "label": "Institutional Preference (IP)"
+    },
+    {
+      "code": "Private State Domicile",
+      "label": "Private State Domicile"
+    },
+    {
+      "code": "Private Open (Non-Domicile)",
+      "label": "Private Open (Non-Domicile)"
+    },
+    {
+      "code": "Private Premium / NRI & Minority",
+      "label": "Private Premium / NRI & Minority"
+    },
+    {
+      "code": "Government Payment Seats (RajMES)",
+      "label": "Government Payment Seats (RajMES)"
+    },
+    {
+      "code": "Private Premium / Management",
+      "label": "Private Premium / Management"
+    },
+    {
+      "code": "In-Service Cadre (DNB)",
+      "label": "In-Service Cadre (DNB)"
     }
   ],
   "instituteTypes": [
@@ -1261,31 +1309,53 @@
     },
     {
       "code": "HAR Govt-All",
-      "label": "HAR Govt-All"
+      "label": "Haryana State Quota",
+      "optgroup": "Government Merit Seats"
+    },
+    {
+      "code": "Institutional Preference (IP)",
+      "label": "Institutional Preference (IP) — All IP Seats",
+      "optgroup": "Institutional Preference (IP)"
     },
     {
       "code": "HAR Govt-Inst. Pref",
-      "label": "HAR Govt-Inst. Pref"
-    },
-    {
-      "code": "HAR Priv-Govt Quota",
-      "label": "HAR Priv-Govt Quota"
-    },
-    {
-      "code": "HAR Priv-Minority",
-      "label": "HAR Priv-Minority"
-    },
-    {
-      "code": "Haryana DNB Serv",
-      "label": "Haryana DNB Serv"
+      "label": "Haryana State Quota - Institutional Preference",
+      "optgroup": "Institutional Preference (IP)"
     },
     {
       "code": "Haryana Priv IP",
-      "label": "Haryana Priv IP"
+      "label": "Haryana Private Seats - Institutional Preference",
+      "optgroup": "Institutional Preference (IP)"
+    },
+    {
+      "code": "HAR Priv-Govt Quota",
+      "label": "Haryana Private Seats - State Quota",
+      "optgroup": "Private State Domicile"
+    },
+    {
+      "code": "Private Premium / NRI & Minority",
+      "label": "Private Premium / NRI & Minority — All NRI & Minority Seats",
+      "optgroup": "Private Premium / NRI & Minority"
     },
     {
       "code": "Haryana Priv NRI",
-      "label": "Haryana Priv NRI"
+      "label": "Haryana Private Seats - NRI Quota",
+      "optgroup": "Private Premium / NRI & Minority"
+    },
+    {
+      "code": "HAR Priv-Minority",
+      "label": "Haryana Private Seats - Minority Quota",
+      "optgroup": "Private Premium / NRI & Minority"
+    },
+    {
+      "code": "In-Service Cadre (DNB)",
+      "label": "In-Service Cadre (DNB) — District Hospital Seats",
+      "optgroup": "In-Service Cadre (DNB)"
+    },
+    {
+      "code": "Haryana DNB Serv",
+      "label": "Haryana DNB Inservice Seats",
+      "optgroup": "In-Service Cadre (DNB)"
     },
     {
       "code": "HP DNB Serv",
@@ -1348,36 +1418,74 @@
       "label": "MAHA-NRI Quota"
     },
     {
+      "code": "Government (State Domicile)",
+      "label": "Government (State Domicile) — All MP Govt Seats",
+      "optgroup": "Government (State Domicile)"
+    },
+    {
       "code": "MP Govt Quota",
-      "label": "MP Govt Quota"
+      "label": "MP Govt Quota",
+      "optgroup": "Government (State Domicile)"
     },
     {
-      "code": "MP Priv-NRI",
-      "label": "MP Priv-NRI"
-    },
-    {
-      "code": "MP Priv-NRINonDomicil",
-      "label": "MP Priv-NRINonDomicil"
+      "code": "Private (State Domicile)",
+      "label": "Private (State Domicile) — All MP Private Open Seats",
+      "optgroup": "Private (State Domicile)"
     },
     {
       "code": "MP Priv-Open",
-      "label": "MP Priv-Open"
+      "label": "MP Private Seats - Open Quota",
+      "optgroup": "Private (State Domicile)"
+    },
+    {
+      "code": "Non-Domicile / Open (All India)",
+      "label": "Non-Domicile / Open (All India) — All Non-Domicile Seats",
+      "optgroup": "Non-Domicile / Open (All India)"
+    },
+    {
+      "code": "NRI Quota",
+      "label": "NRI Quota — All MP NRI Seats",
+      "optgroup": "NRI Quota"
+    },
+    {
+      "code": "MP Priv-NRI",
+      "label": "MP Private Seats - NRI Quota",
+      "optgroup": "NRI Quota"
+    },
+    {
+      "code": "MP Priv-NRINonDomicil",
+      "label": "MP Private Seats - NRI Non Domicile",
+      "optgroup": "NRI Quota"
     },
     {
       "code": "Raj DNB Serv",
-      "label": "Raj DNB Serv"
+      "label": "Rajasthan DNB Inservice Seats",
+      "optgroup": "In-Service Cadre (DNB)"
     },
     {
       "code": "RAJ Govt - Govt Quota",
-      "label": "RAJ Govt - Govt Quota"
+      "label": "Rajasthan Govt Seats - Govt Quota",
+      "optgroup": "Government Merit Seats"
+    },
+    {
+      "code": "Government Payment Seats (RajMES)",
+      "label": "Government Payment Seats (RajMES) — All RajMES Payment Seats",
+      "optgroup": "Government Payment Seats (RajMES)"
     },
     {
       "code": "RAJ Govt - Mgmt Quota",
-      "label": "RAJ Govt - Mgmt Quota"
+      "label": "Rajasthan Govt Seats - Management Quota",
+      "optgroup": "Government Payment Seats (RajMES)"
     },
     {
       "code": "RAJ Priv-Govt Quota",
-      "label": "RAJ Priv-Govt Quota"
+      "label": "Rajasthan Private Seats - Govt Quota",
+      "optgroup": "Private State Domicile"
+    },
+    {
+      "code": "Private Premium / Management",
+      "label": "Private Premium / Management — All Private Mgmt Seats",
+      "optgroup": "Private Premium / Management"
     },
     {
       "code": "UK DNB Serv",

@@ -74,17 +74,95 @@
     'ST': ['ST', 'ST-Female']
   };
 
+  // Madhya Pradesh Quotas by Institution & Domicile Type
+  var MP_QUOTA_GROUPS = {
+    'Government (State Domicile)': [
+      'MP Govt Quota'
+    ],
+    'Private (State Domicile)': [
+      'MP Priv-Open'
+    ],
+    'Non-Domicile / Open (All India)': [
+      'MP Priv-NonDomicile',
+      'MP Govt-NonDomicile'
+    ],
+    'NRI Quota': [
+      'MP Priv-NRI',
+      'MP Priv-NRINonDomicil'
+    ]
+  };
+
+  // Haryana Quotas by Institution & Domicile Type
+  var HARYANA_QUOTA_GROUPS = {
+    'Government Merit Seats': [
+      'HAR Govt-All'
+    ],
+    'Institutional Preference (IP)': [
+      'HAR Govt-Inst. Pref',
+      'Haryana Priv IP'
+    ],
+    'Private State Domicile': [
+      'HAR Priv-Govt Quota'
+    ],
+    'Private Open (Non-Domicile)': [
+      'HAR Priv-Mgmt'
+    ],
+    'Private Premium / NRI & Minority': [
+      'Haryana Priv NRI',
+      'HAR Priv-Minority'
+    ],
+    'In-Service Cadre (DNB)': [
+      'Haryana DNB Serv'
+    ]
+  };
+
+  // Rajasthan Quotas by Institution & Fee/Merit Structure
+  var RAJASTHAN_QUOTA_GROUPS = {
+    'Government Merit Seats': [
+      'RAJ Govt - Govt Quota'
+    ],
+    'Government Payment Seats (RajMES)': [
+      'RAJ Govt - Mgmt Quota'
+    ],
+    'Private State Domicile': [
+      'RAJ Priv-Govt Quota'
+    ],
+    'Private Open (Non-Domicile)': [
+      'RAJ Priv-All India'
+    ],
+    'Private Premium / Management': [
+      'RAJ Priv-Mgmt Quota'
+    ],
+    'In-Service Cadre (DNB)': [
+      'Raj DNB Serv'
+    ]
+  };
+
   var USER_CATEGORIES = [
     { code: 'GN', label: 'General (UR)' },
     { code: 'EW', label: 'EWS' },
     { code: 'BC', label: 'OBC' },
+    { code: 'BCA', label: 'BCA (Haryana Block A)' },
+    { code: 'BCB', label: 'BCB (Haryana Block B)' },
+    { code: 'MBC', label: 'MBC (Rajasthan Most Backward)' },
     { code: 'SC', label: 'SC' },
+    { code: 'SCD', label: 'SCD (Haryana Deprived SC)' },
     { code: 'ST', label: 'ST' },
+    { code: 'ST-STA', label: 'ST-STA (Rajasthan Tribal Sub-Plan)' },
     { code: 'GN PwD', label: 'General PwD' },
     { code: 'EW PwD', label: 'EWS PwD' },
     { code: 'BC PwD', label: 'OBC PwD' },
     { code: 'SC PwD', label: 'SC PwD' },
     { code: 'ST PwD', label: 'ST PwD' },
+    { code: 'UR-Service', label: 'In-Service General (UR)' },
+    { code: 'OBC-Service', label: 'In-Service OBC' },
+    { code: 'BCA-Service', label: 'In-Service BCA (Haryana)' },
+    { code: 'BCB-Service', label: 'In-Service BCB (Haryana)' },
+    { code: 'SC-Service', label: 'In-Service SC' },
+    { code: 'SCD-Service', label: 'In-Service SCD (Haryana)' },
+    { code: 'ST-Service', label: 'In-Service ST' },
+    { code: 'EWS-Service', label: 'In-Service EWS' },
+    { code: 'IP', label: 'Institutional Preference (IP - Haryana)' },
     { code: 'AFMS-Priority III', label: 'AFMS Priority III' },
     { code: 'AFMS-Priority IV', label: 'AFMS Priority IV' },
     { code: 'NRI-Priority I', label: 'NRI Priority I' },
@@ -434,29 +512,88 @@
       var catEligible = (CATEGORY_ELIGIBILITY[cat] || [cat]).slice();
 
       // All qualifying candidate categories can compete for Open Competition and Management Seats
-      if (cat === 'GN' || cat === 'EW' || cat === 'BC' || cat === 'SC' || cat === 'ST' || cat.indexOf('PwD') !== -1) {
+      if (cat === 'GN' || cat === 'EW' || cat === 'BC' || cat === 'BCA' || cat === 'BCB' || cat === 'MBC' || cat === 'SC' || cat === 'SCD' || cat === 'ST' || cat === 'ST-STA' || cat.indexOf('PwD') !== -1) {
         catEligible = catEligible.concat(OPEN_COMPETITION_CATEGORIES);
         catEligible = catEligible.concat(MANAGEMENT_CATEGORIES);
+        // Madhya Pradesh Unreserved & Open NRI
+        catEligible = catEligible.concat(['UR/X/OP', 'UR (Non Domicile)', 'UR/NRI/OP', 'UR/NRI (Non Domicile)']);
+        // Haryana Open / Management / NRI / Minority
+        catEligible = catEligible.concat(['MNG', 'NRI', 'MINORITY']);
       }
 
       // Social & Gender Reservations
       if (cat === 'BC' || cat === 'BC PwD') {
         catEligible = catEligible.concat(SOCIAL_GENDER_CATEGORIES['OBC']);
+        catEligible = catEligible.concat(['OBC/X/OP', 'BCA', 'BCB', 'MBC']);
+      }
+      if (cat === 'BCA') {
+        catEligible = catEligible.concat(['BCA', 'BCA ESM', 'BCA ESM FF', 'UR', 'GEN', 'MNG']);
+      }
+      if (cat === 'BCB') {
+        catEligible = catEligible.concat(['BCB', 'BCB-PH', 'UR', 'GEN', 'MNG']);
+      }
+      if (cat === 'MBC') {
+        catEligible = catEligible.concat(['MBC', 'OBC', 'GEN', 'UR']);
       }
       if (cat === 'SC' || cat === 'SC PwD') {
         catEligible = catEligible.concat(SOCIAL_GENDER_CATEGORIES['SC']);
+        catEligible = catEligible.concat(['SC/X/OP', 'SCD', 'SC ESM']);
+      }
+      if (cat === 'SCD') {
+        catEligible = catEligible.concat(['SCD', 'SC', 'SC ESM', 'UR', 'GEN']);
       }
       if (cat === 'ST' || cat === 'ST PwD') {
         catEligible = catEligible.concat(SOCIAL_GENDER_CATEGORIES['ST']);
+        catEligible = catEligible.concat(['ST/X/OP', 'ST-STA']);
+      }
+      if (cat === 'ST-STA') {
+        catEligible = catEligible.concat(['ST-STA', 'ST', 'GEN', 'UR']);
       }
       if (cat === 'EW' || cat === 'EW PwD') {
-        catEligible = catEligible.concat(['EWS', 'EW']);
+        catEligible = catEligible.concat(['EWS', 'EW', 'EWS/X/OP']);
       }
-      if (cat === 'GN PwD') catEligible = catEligible.concat(['GEN-PwD']);
-      if (cat === 'EW PwD') catEligible = catEligible.concat(['EWS-PwD', 'GEN-PwD']);
-      if (cat === 'BC PwD') catEligible = catEligible.concat(['OBC-PwD', 'GEN-PwD']);
-      if (cat === 'SC PwD') catEligible = catEligible.concat(['SC-PwD', 'GEN-PwD']);
-      if (cat === 'ST PwD') catEligible = catEligible.concat(['ST-PwD', 'GEN-PwD']);
+
+      // In-Service Categories (MP, Haryana, Rajasthan)
+      if (cat === 'UR-Service') {
+        catEligible = catEligible.concat(['UR/X/OP Service', 'UR Service', 'UR ESM FF', 'UR FF', 'UR ESM', 'UR/X/OP', 'UR (Non Domicile)', 'UR', 'GEN']);
+      }
+      if (cat === 'OBC-Service' || cat === 'BC-Service') {
+        catEligible = catEligible.concat(['OBC/X/OP Service', 'BCA Service', 'BCB Service', 'UR Service', 'OBC/X/OP', 'BCA', 'BCB', 'OBC', 'UR/X/OP', 'UR (Non Domicile)', 'UR', 'GEN']);
+      }
+      if (cat === 'BCA-Service') {
+        catEligible = catEligible.concat(['BCA Service', 'UR Service', 'BCA', 'UR', 'GEN', 'MNG']);
+      }
+      if (cat === 'BCB-Service') {
+        catEligible = catEligible.concat(['BCB Service', 'UR Service', 'BCB', 'UR', 'GEN', 'MNG']);
+      }
+      if (cat === 'SC-Service') {
+        catEligible = catEligible.concat(['SC/X/OP Service', 'SC Service', 'SCD Service', 'UR Service', 'SC/X/OP', 'SC', 'SCD', 'UR/X/OP', 'UR (Non Domicile)', 'UR', 'GEN']);
+      }
+      if (cat === 'SCD-Service') {
+        catEligible = catEligible.concat(['SCD Service', 'SC Service', 'UR Service', 'SCD', 'SC', 'UR', 'GEN']);
+      }
+      if (cat === 'ST-Service') {
+        catEligible = catEligible.concat(['ST/X/OP Service', 'ST/X/OP', 'ST', 'UR/X/OP', 'UR (Non Domicile)', 'UR', 'GEN']);
+      }
+      if (cat === 'EWS-Service') {
+        catEligible = catEligible.concat(['EWS/X/OP Service', 'UR Service', 'EWS/X/OP', 'EWS', 'UR/X/OP', 'UR (Non Domicile)', 'UR', 'GEN']);
+      }
+
+      // Institutional Preference (Haryana IP)
+      if (cat === 'IP') {
+        catEligible = catEligible.concat([
+          'IP-UR', 'IP-BCA', 'IP-BCB', 'IP-SC', 'IP-SCD',
+          'IP-UR Service', 'IP-BCA Service', 'IP-BCB Service', 'IP-SC Service', 'IP-SCD Service',
+          'IP-UR-PH Service', 'IP-UR Service ESM FF', 'UR', 'GEN'
+        ]);
+      }
+
+      // PwD Horizontal Reservations
+      if (cat === 'GN PwD') catEligible = catEligible.concat(['GEN-PwD', 'UR/PH/OP', 'UR/PH/OP Service', 'UR-PH', 'UR-PH Service']);
+      if (cat === 'EW PwD') catEligible = catEligible.concat(['EWS-PwD', 'GEN-PwD', 'EWS/PH/OP', 'UR/PH/OP', 'UR-PH']);
+      if (cat === 'BC PwD') catEligible = catEligible.concat(['OBC-PwD', 'GEN-PwD', 'OBC/PH/OP', 'UR/PH/OP', 'UR-PH', 'BCB-PH', 'BCB-PH Service']);
+      if (cat === 'SC PwD') catEligible = catEligible.concat(['SC-PwD', 'GEN-PwD', 'SC/PH/OP', 'UR/PH/OP', 'UR-PH']);
+      if (cat === 'ST PwD') catEligible = catEligible.concat(['ST-PwD', 'GEN-PwD', 'ST/PH/OP', 'UR/PH/OP', 'UR-PH']);
       
       catEligible.forEach(function(ec) {
         if (eligible.indexOf(ec) === -1) eligible.push(ec);
@@ -475,9 +612,32 @@
     if (!filterType || filterType === 'ALL') return true;
     if (filterType === collegeType) return true;
 
+    // Madhya Pradesh Institution & Domicile Types
+    if (rowCounselling === 'Madhya Pradesh' || MP_QUOTA_GROUPS[filterType]) {
+      if (MP_QUOTA_GROUPS[filterType] && rowQuota && MP_QUOTA_GROUPS[filterType].indexOf(rowQuota) !== -1) {
+        return true;
+      }
+    }
+
+    // Haryana Institution & Quota Types
+    if (rowCounselling === 'Haryana' || HARYANA_QUOTA_GROUPS[filterType]) {
+      if (HARYANA_QUOTA_GROUPS[filterType] && rowQuota && HARYANA_QUOTA_GROUPS[filterType].indexOf(rowQuota) !== -1) {
+        return true;
+      }
+    }
+
+    // Rajasthan Institution & Quota Types
+    if (rowCounselling === 'Rajasthan' || RAJASTHAN_QUOTA_GROUPS[filterType]) {
+      if (RAJASTHAN_QUOTA_GROUPS[filterType] && rowQuota && RAJASTHAN_QUOTA_GROUPS[filterType].indexOf(rowQuota) !== -1) {
+        return true;
+      }
+    }
+
     // Open States Quota / Institution Types
-    if (OPEN_STATES_QUOTA_GROUPS[filterType] && rowQuota && OPEN_STATES_QUOTA_GROUPS[filterType].indexOf(rowQuota) !== -1) {
-      return true;
+    if (rowCounselling === 'Open States' || OPEN_STATES_QUOTA_GROUPS[filterType]) {
+      if (OPEN_STATES_QUOTA_GROUPS[filterType] && rowQuota && OPEN_STATES_QUOTA_GROUPS[filterType].indexOf(rowQuota) !== -1) {
+        return true;
+      }
     }
 
     // DNB / NBE (Govt & Private) aliases
@@ -499,7 +659,7 @@
     return false;
   }
 
-  function matchQuota(filterQuota, rowQuota) {
+  function matchQuota(filterQuota, rowQuota, rowCounselling) {
     if (!filterQuota || filterQuota === 'ALL') return true;
     if (filterQuota === rowQuota) return true;
 
@@ -508,9 +668,32 @@
       return true;
     }
 
+    // Madhya Pradesh Quota Groups
+    if (rowCounselling === 'Madhya Pradesh' || MP_QUOTA_GROUPS[filterQuota]) {
+      if (MP_QUOTA_GROUPS[filterQuota] && MP_QUOTA_GROUPS[filterQuota].indexOf(rowQuota) !== -1) {
+        return true;
+      }
+    }
+
+    // Haryana Quota Groups
+    if (rowCounselling === 'Haryana' || HARYANA_QUOTA_GROUPS[filterQuota]) {
+      if (HARYANA_QUOTA_GROUPS[filterQuota] && HARYANA_QUOTA_GROUPS[filterQuota].indexOf(rowQuota) !== -1) {
+        return true;
+      }
+    }
+
+    // Rajasthan Quota Groups
+    if (rowCounselling === 'Rajasthan' || RAJASTHAN_QUOTA_GROUPS[filterQuota]) {
+      if (RAJASTHAN_QUOTA_GROUPS[filterQuota] && RAJASTHAN_QUOTA_GROUPS[filterQuota].indexOf(rowQuota) !== -1) {
+        return true;
+      }
+    }
+
     // Open States Quota Groups
-    if (OPEN_STATES_QUOTA_GROUPS[filterQuota] && OPEN_STATES_QUOTA_GROUPS[filterQuota].indexOf(rowQuota) !== -1) {
-      return true;
+    if (rowCounselling === 'Open States' || OPEN_STATES_QUOTA_GROUPS[filterQuota]) {
+      if (OPEN_STATES_QUOTA_GROUPS[filterQuota] && OPEN_STATES_QUOTA_GROUPS[filterQuota].indexOf(rowQuota) !== -1) {
+        return true;
+      }
     }
 
     return false;
@@ -530,7 +713,7 @@
         var quotaArray = Array.isArray(filters.quota) ? filters.quota : [filters.quota];
         if (quotaArray.indexOf('ALL') === -1) {
           var quotaMatched = quotaArray.some(function(selQuota) {
-            return matchQuota(selQuota, row.quotaCode);
+            return matchQuota(selQuota, row.quotaCode, row.counselling);
           });
           if (!quotaMatched) return false;
         }
@@ -716,15 +899,38 @@
     }
 
     function getFriendlyCollegeType(cType, quotaCode, counselling) {
-      if (quotaCode) {
-        if (OPEN_STATES_QUOTA_GROUPS['Private Open Seats (Merit)'].indexOf(quotaCode) !== -1) {
-          return 'Private Open Seats (Merit)';
+      if (counselling === 'Madhya Pradesh') {
+        if (MP_QUOTA_GROUPS['Government (State Domicile)'].indexOf(quotaCode) !== -1) return 'Government (State Domicile)';
+        if (MP_QUOTA_GROUPS['Private (State Domicile)'].indexOf(quotaCode) !== -1) return 'Private (State Domicile)';
+        if (MP_QUOTA_GROUPS['Non-Domicile / Open (All India)'].indexOf(quotaCode) !== -1) return 'Non-Domicile / Open (All India)';
+        if (MP_QUOTA_GROUPS['NRI Quota'].indexOf(quotaCode) !== -1) return 'NRI Quota';
+      } else if (counselling === 'Haryana') {
+        for (var hGrp in HARYANA_QUOTA_GROUPS) {
+          if (HARYANA_QUOTA_GROUPS[hGrp].indexOf(quotaCode) !== -1) return hGrp;
         }
-        if (OPEN_STATES_QUOTA_GROUPS['Management / Institutional Seats'].indexOf(quotaCode) !== -1) {
-          return 'Management / Institutional Seats';
+      } else if (counselling === 'Rajasthan') {
+        for (var rGrp in RAJASTHAN_QUOTA_GROUPS) {
+          if (RAJASTHAN_QUOTA_GROUPS[rGrp].indexOf(quotaCode) !== -1) return rGrp;
         }
-        if (OPEN_STATES_QUOTA_GROUPS['Government / State General Seats'].indexOf(quotaCode) !== -1) {
-          return 'Government / State General Seats';
+      } else if (counselling === 'Open States') {
+        if (OPEN_STATES_QUOTA_GROUPS['Private Open Seats (Merit)'].indexOf(quotaCode) !== -1) return 'Private Open Seats (Merit)';
+        if (OPEN_STATES_QUOTA_GROUPS['Management / Institutional Seats'].indexOf(quotaCode) !== -1) return 'Management / Institutional Seats';
+        if (OPEN_STATES_QUOTA_GROUPS['Government / State General Seats'].indexOf(quotaCode) !== -1) return 'Government / State General Seats';
+      } else {
+        if (quotaCode) {
+          for (var hGrp2 in HARYANA_QUOTA_GROUPS) {
+            if (HARYANA_QUOTA_GROUPS[hGrp2].indexOf(quotaCode) !== -1) return hGrp2;
+          }
+          for (var rGrp2 in RAJASTHAN_QUOTA_GROUPS) {
+            if (RAJASTHAN_QUOTA_GROUPS[rGrp2].indexOf(quotaCode) !== -1) return rGrp2;
+          }
+          if (MP_QUOTA_GROUPS['Government (State Domicile)'].indexOf(quotaCode) !== -1) return 'Government (State Domicile)';
+          if (MP_QUOTA_GROUPS['Private (State Domicile)'].indexOf(quotaCode) !== -1) return 'Private (State Domicile)';
+          if (MP_QUOTA_GROUPS['Non-Domicile / Open (All India)'].indexOf(quotaCode) !== -1) return 'Non-Domicile / Open (All India)';
+          if (MP_QUOTA_GROUPS['NRI Quota'].indexOf(quotaCode) !== -1) return 'NRI Quota';
+          if (OPEN_STATES_QUOTA_GROUPS['Private Open Seats (Merit)'].indexOf(quotaCode) !== -1) return 'Private Open Seats (Merit)';
+          if (OPEN_STATES_QUOTA_GROUPS['Management / Institutional Seats'].indexOf(quotaCode) !== -1) return 'Management / Institutional Seats';
+          if (OPEN_STATES_QUOTA_GROUPS['Government / State General Seats'].indexOf(quotaCode) !== -1) return 'Government / State General Seats';
         }
       }
       if (!cType) return '';
@@ -963,8 +1169,48 @@
       }
     });
 
+    // Madhya Pradesh Quota Groups: if any child quota is present, add the parent group
+    Object.keys(MP_QUOTA_GROUPS).forEach(function(groupName) {
+      var hasAny = MP_QUOTA_GROUPS[groupName].some(function(q) {
+        return validQuotas.has(q);
+      });
+      if (hasAny) {
+        validQuotas.add(groupName);
+      }
+    });
+
     var filteredQuotas = filtersData.quotas.filter(function(q) {
       return validQuotas.has(q.code);
+    }).map(function(q) {
+      if (counselling === 'Haryana') {
+        var qObj = Object.assign({}, q);
+        for (var grp in HARYANA_QUOTA_GROUPS) {
+          if (q.code === grp || HARYANA_QUOTA_GROUPS[grp].indexOf(q.code) !== -1) {
+            qObj.optgroup = grp;
+            break;
+          }
+        }
+        return qObj;
+      } else if (counselling === 'Rajasthan') {
+        var qObj = Object.assign({}, q);
+        for (var grp in RAJASTHAN_QUOTA_GROUPS) {
+          if (q.code === grp || RAJASTHAN_QUOTA_GROUPS[grp].indexOf(q.code) !== -1) {
+            qObj.optgroup = grp;
+            break;
+          }
+        }
+        return qObj;
+      } else if (counselling === 'Madhya Pradesh') {
+        var qObj = Object.assign({}, q);
+        for (var grp in MP_QUOTA_GROUPS) {
+          if (q.code === grp || MP_QUOTA_GROUPS[grp].indexOf(q.code) !== -1) {
+            qObj.optgroup = grp;
+            break;
+          }
+        }
+        return qObj;
+      }
+      return q;
     });
 
     if (filteredQuotas.length === 0) {
@@ -1017,6 +1263,15 @@
       validCollegeTypes.add('Private Open Seats (Merit)');
       validCollegeTypes.add('Management / Institutional Seats');
       validCollegeTypes.add('Government / State General Seats');
+    } else if (counselling === 'Haryana' || (cutoffsData && cutoffsData.length > 0 && cutoffsData[0].counselling === 'Haryana')) {
+      for (var hGrp in HARYANA_QUOTA_GROUPS) validCollegeTypes.add(hGrp);
+    } else if (counselling === 'Rajasthan' || (cutoffsData && cutoffsData.length > 0 && cutoffsData[0].counselling === 'Rajasthan')) {
+      for (var rGrp in RAJASTHAN_QUOTA_GROUPS) validCollegeTypes.add(rGrp);
+    } else if (counselling === 'Madhya Pradesh' || (cutoffsData && cutoffsData.length > 0 && cutoffsData[0].counselling === 'Madhya Pradesh')) {
+      validCollegeTypes.add('Government (State Domicile)');
+      validCollegeTypes.add('Private (State Domicile)');
+      validCollegeTypes.add('Non-Domicile / Open (All India)');
+      validCollegeTypes.add('NRI Quota');
     } else {
       if (cutoffsData && collegesMap) {
         cutoffsData.forEach(function (row) {
